@@ -46,40 +46,10 @@
               }
             }
 
-            &.social-media {
-              margin-top: 25px;
-              li {
-                margin: 0 5px 0 0;
-                float: left;
-                a {
-                  background: url('/img/socialmedia.png');
-                  background-repeat: no-repeat;
-                  background-size: cover;
-                  text-indent: -10000px;
-                  display: inline-block;
-                  height: 31px;
-                  width: 31px;
-                }
 
-                &:nth-child(2) {
-                  a {
-                    background-position-x: -29px;
-                  }
-                }
 
-                &:nth-child(3) {
-                  a {
-                    background-position-x: -59px;
-                  }
-                }
 
-                &:nth-child(4) {
-                  a {
-                    background-position-x: -89px;
-                  }
-                }
-              }
-            }
+
           }
         }
         nav {
@@ -157,7 +127,13 @@
     }
   }
 }
+#social{
+  margin-top: 25px;
 
+  display: inline-block;
+  height: 29px;
+  width: 155px;
+}
 footer {
   background: $grey;
   height: 50px;
