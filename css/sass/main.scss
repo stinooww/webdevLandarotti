@@ -1,9 +1,10 @@
 @import "include-media";
-@import "auction";
-@import "faq";
+
 @import "nav";
 @import "footer";
-@import "main";
+@import "landing";
+@import "auction";
+@import "faq";
 @import "isearch";
 
 $font-weight-light:300;
@@ -11,7 +12,7 @@ $font-weight-regular:400;
 $font-weight-bold:600;
 $breakpoints: (small: 320px, medium: 768px, large: 1024px);
 $lightblue-overlay: #485cb2;
-$menucolor:#eaeaea;
+
 
 $green: #01a6a0;
 $danger: #fff1f1;
@@ -88,11 +89,6 @@ h5 {
 ul {
   list-style: none;
 }
-
-
-
-
-
 .input-field {
   height: 28px;
 
@@ -167,13 +163,23 @@ label {
 }
 /* Inclusive and exclusive operators for a finer control over the intervals */
 @include media(">medium", "<=large") {
-  .navbar {
+  .navbar, .landing {
     width: 1500px;
   }
 }
 @include media(">large") {
-  .navbar {
-    width: 1800px;
+  .navbar, .landing{
+    width: 100%;
     margin: 0;
+  }
+}
+@include media(">small", "<=medium") {
+  .navbar, .landing {
+    width: 1500px;
+  }
+}
+@include media("<small") {
+  .navbar, .landing {
+    width: 100%;
   }
 }
