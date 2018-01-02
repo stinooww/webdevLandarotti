@@ -1,0 +1,250 @@
+
+/*
+*
+*	CSS of the add auctions
+*
+*/
+#auctions-form {
+  .container {
+    form {
+      .row {
+        max-width: 753px;
+        margin: 0;
+        &:nth-child(2) {
+          .form-group {
+            &:first-child {
+              margin-right: calc(100%/753*60);
+            }
+          }
+        }
+
+        &:nth-child(3) {
+          .form-group {
+            &:first-child, &:nth-child(2) {
+              margin-right: calc(100%/753*60);
+            }
+          }
+        }
+        .form-group {
+          padding: 0;
+        }
+        .select, .title {
+          width: calc(100%/753*482);
+          @media (max-width: 767px) {
+            width: 100%;
+          }
+        }
+
+        label {
+          span {
+            font-size: .7em;
+          }
+        }
+
+        .small-input {
+          width: calc(100%/753*211);
+          @media (max-width: 767px) {
+            width: 100%;
+          }
+        }
+
+        input {
+          border-radius: 0;
+          font-size: 1.5em;
+          height: 48px;
+          padding: 0 0 0 15px;
+          &[type="text"] {
+            background-color: $lightestGrey;
+            border: 1px solid $lightergrey;
+          }
+
+          @media (max-width: 767px) {
+            padding: 0 15px;
+          }
+
+
+          &#title {
+            width: 100%;
+          }
+        }
+
+        .big-textarea {
+          width: 100%;
+          textarea {
+            width: 100%;
+            height: 125px;
+
+            background-color: $lightestGrey;
+            border: 1px solid $lightergrey;
+            resize: none;
+            padding: 15px 0 0 15px;
+
+            font-size: 1.5em;
+            color: #545353;
+          }
+        }
+
+        .file-upload {
+          width: 100%;
+          margin-bottom: 0;
+
+          p {
+            font-size: 1.5em;
+            color: #545353;
+            margin: 0;
+          }
+
+          .file-button {
+            height: 58px;
+            width: calc(100%/753*211);
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            text-align: center;
+            background-color: #757575;
+            margin-right: calc(100%/753*60);
+            margin-top: 35px;
+            font-size: 1.5em;
+            text-transform: uppercase;
+
+            p {
+              color: white;
+              font-size: 1em;
+
+              span {
+                display: block;
+                @media (max-width: 767px) {
+                  display: inline-block;
+                }
+              }
+            }
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @media (max-width: 767px) {
+              width: 100%;
+            }
+
+            &:last-child {
+              margin-right: 0;
+            }
+            input[type="file"] {
+              cursor: pointer;
+              height: 100%;
+              position:absolute;
+              top: 0;
+              right: 0;
+              z-index: 99;
+              /*This makes the button huge. If you want a bigger button, increase the font size*/
+              font-size:50px;
+              /*Opacity settings for all browsers*/
+              opacity: 0;
+              -moz-opacity: 0;
+              filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0)
+            }
+          }
+        }
+
+        .pricing {
+          padding: 0;
+          margin-top: 40px;
+          h3 {
+            font-family: 'Helvetica', sans-serif;
+            font-weight: lighter;
+            margin-bottom: 16px;
+          }
+
+          div {
+            margin-bottom: 0;
+          }
+
+          .small-input {
+            margin-right: calc(100%/753*60);
+
+            &:last-child {
+              margin: 0;
+            }
+
+            label {
+              font-size: 1.8em;
+            }
+          }
+
+          .info {
+            width: calc(100%/753*482);
+            @media (max-width: 767px) {
+              width: 100%;
+            }
+            span {
+              color: $blue;
+              font-size: 1.8em;
+            }
+
+            p {
+              margin: 0;
+              font-size: 1.4em;
+            }
+          }
+        }
+
+        .check {
+          padding: 0;
+          margin-top: 80px;
+          input, p {
+            float: left;
+          }
+
+          input {
+            height: auto;
+            margin-right: 14px;
+          }
+
+          p {
+            font-size: 1.5em;
+            margin: 0;
+            span {
+              color: $green;
+              text-decoration: underline;
+            }
+          }
+
+          &::after {
+            clear: both;
+            display: block;
+            content: "";
+          }
+        }
+
+        .submit {
+          padding: 0;
+          margin-top: 32px;
+          width: calc(100%/753*268);
+          @media (max-width: 767px) {
+            width: 100%;
+          }
+          input {
+            font-family: 'Helvetica', sans-serif;
+            font-weight: lighter;
+            font-size: 1.8em;
+            background-color: $green;
+            height: 60px;
+            width: 100%;
+            color: white;
+            text-align: center;
+            border: none;
+          }
+
+          a {
+            font-size: 1.4em;
+            margin-top: 26px;
+            display: block;
+            color: $green;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

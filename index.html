@@ -32,7 +32,7 @@
 <body>
 <nav class="navbar navbar-default">
 
-    <div class="container">
+    <div  id="headnav">
 
 
         <div class="navbar-header">
@@ -47,28 +47,30 @@
 
             </button>
 
-            <a href="/" class="navbar-brand logo">Landoretti</a>
+            <a href="index.html" class="navbar-brand logo"><img src="img/logo.png" alt="Landoretti"></a>
 
         </div>
 
-        <div class="information">
+        <div class="top-menu">
 
             <div class="collapse navbar-collapse navigation">
 
                 <ul class="nav navbar-nav">
-<li><a href="">watchlist</a></li>
-                    <li><a href="">profile</a></li>
+
+<li><a href=""><img src="img/icon/watchlist.png" alt="profile" class="navicons">watchlist</a></li>
+                    <li><a href=""><img src="img/icon/profile.png" alt="profile" class="navicons">profile</a></li>
+                    <li><a href="">logout</a></li>
                     <li><a href="">register</a></li>
                     <li><a href="">login</a></li>
 
                 </ul>
 
 
-                <form action="#" method="GET" class="navbar-right input-field">
+                <form action="#" method="GET" class="navbar-right input-field" id="search">
 
                     <input type="text" name="search" placeholder="Search">
 
-                    <input type="submit" value="search">
+                    <input type="image" value="search" src="img/icon/search.png">
 
                 </form>
 
@@ -78,7 +80,7 @@
 
     </div>
 
-    <div class="main-navigation">
+    <div class="main-menu">
 
         <div class="container">
 
@@ -109,6 +111,133 @@
     </div>
 
 </nav>
+<div class="landing">
+    <img src="img/landingspage.jpg" alt="landarotti" id="landing">
+    <div class="carousel">
+
+        <div class="container inleiding">
+
+            <div class="inleidingCirkel">
+
+                <span class="inner"></span>
+
+            </div>
+
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a.</p>
+
+        </div>
+
+    </div>
+
+    <div class="arrows"></div>
+
+</div>
+
+<!-- how content -->
+<section class="uitleg">
+
+    <div class="container">
+
+        <h2>How does it work?</h2>
+
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-4 col-md-4">
+
+                <div class="icon"></div>
+
+                <h3>Sign up</h3>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-4">
+
+                <div class="icon"></div>
+
+                <h3>Make deals</h3>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-4">
+
+                <div class="icon"></div>
+
+                <h3>Everyone happy!</h3>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Content of popular -->
+<section class="popular">
+
+    <h2>Most popular this week</h2>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-sm-12 col-md-4">
+
+                <div class="col-md-12 overlay">
+
+                    <a href="#">
+
+                        <div class="svg-icon"></div>
+
+                        <div class="transparent"></div>
+
+                    </a>
+
+                    <img src="/images/popular/popular-1.jpg" alt="popular-1">
+
+                </div>
+
+                <div class="col-md-12 overlay">
+
+                    <a href="#">
+
+                        <div class="svg-icon"></div>
+
+                        <div class="transparent"></div>
+
+                    </a>
+
+                    <img src="/images/popular/popular-2.jpg" alt="popular-2">
+
+                </div>
+
+            </div>
+
+            <div class="col-sm-8 col-md-8 overlay">
+
+                <a href="#">
+
+                    <div class="svg-icon"></div>
+
+                    <div class="transparent"></div>
+
+                </a>
+
+                <img src="/images/popular/popular-3.jpg" alt="popular-3">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 <section class="footer">
     <div class="line"></div>
     <div class="container">
@@ -277,16 +406,22 @@
 </section>
 <footer>
     <div class="container">
-        <div class="logo"></div>
+        <div class="logo"><img src="img/logo.png" alt="Landoretti"></div>
         <nav>
             <ul class="nav navbar-nav">
-
+                <li><a href="index.html">home</a></li>
+                <li><a href="art.html">art</a></li>
+                <li><a href="myauctions.html">myauctions</a></li>
+                <li><a href="mybids.html">mybids</a></li>
+                <li><a href="contact.html">contact</a></li>
 
             </ul>
 
             <ul class="nav navbar-nav navbar-right language">
 
-
+                <li><a href="nl">nl</a></li>
+                <li><a href="fr">fr</a></li>
+                <li><a href="en">en</a></li>
 
             </ul>
         </nav>

@@ -1,3 +1,4 @@
+/*algemene css*/
 body, html {
   height: 100%; }
 
@@ -8,7 +9,7 @@ body {
 h1 {
   font-family: 'Helvetica', sans-serif;
   font-size: 4.5em;
-  font-weight: lighter;
+  font-weight: 400;
   margin: 55px 0;
   color: #545353; }
 
@@ -16,7 +17,7 @@ h2 {
   font-family: 'Helvetica', sans-serif;
   font-size: 4em;
   color: #0a1e75;
-  font-weight: lighter;
+  font-weight: 300;
   margin-bottom: 50px;
   text-align: center; }
 
@@ -26,7 +27,7 @@ h3 {
 
 h4 {
   font-size: 2.2em;
-  font-weight: bold;
+  font-weight: 600;
   margin: 0;
   color: black; }
 
@@ -39,7 +40,636 @@ h5 {
 ul {
   list-style: none; }
 
-.bold {
-  font-weight: bold; }
+.input-field {
+  height: 28px; }
+  .input-field input {
+    padding-left: 8px;
+    font-size: 1.5em; }
+    .input-field input[type="text"] {
+      height: 28px;
+      width: 207px;
+      border: 1.5px solid;
+      border-color: #9e9e9e;
+      border-radius: 5px;
+      color: #1d1d1b; }
+    .input-field input[type="submit"] {
+      background-color: transparent;
+      border: none;
+      width: 18px;
+      height: 18px;
+      margin-left: 4px; }
+  .input-field.input-footer {
+    margin: 18px 0 0 0; }
+    .input-field.input-footer input[type="text"] {
+      height: 28px;
+      width: 183px; }
+
+label {
+  font-size: 2em;
+  color: #0a1e75;
+  font-weight: normal; }
+
+/*
+*
+*	CSS of the ISEARCH page
+*
+*/
+.isearch-bg {
+  background: url("/img/isearch.jpg");
+  background-size: cover;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  height: 536px;
+  width: 100%; }
+  .isearch-bg .container {
+    padding-top: 104px;
+    height: 100%; }
+    .isearch-bg .container .info {
+      position: relative;
+      height: calc(100%/432*332);
+      margin: 50px 0;
+      width: 314px;
+      color: white; }
+      .isearch-bg .container .info .top {
+        height: calc(100%/332*252); }
+        .isearch-bg .container .info .top h1 {
+          font-size: 3em;
+          padding: 30px 0 0 30px;
+          height: 71px;
+          color: white;
+          margin: 0;
+          border-bottom: 1px solid #6c7dc6; }
+        .isearch-bg .container .info .top p {
+          margin: 0;
+          font-size: 1.5em;
+          padding: 21px 30px 0 30px; }
+        .isearch-bg .container .info .top span {
+          padding-left: 30px;
+          margin-top: 14px;
+          display: inline-block; }
+          .isearch-bg .container .info .top span.bold {
+            font-size: 1.5em; }
+          .isearch-bg .container .info .top span.euro-size {
+            font-size: 1.8em;
+            padding-left: 0; }
+      .isearch-bg .container .info .bottom {
+        display: inline-block;
+        background-color: white;
+        height: calc(100%/332*80);
+        width: 100%;
+        color: #01a6a0;
+        padding-left: 30px;
+        font-size: 2em;
+        text-transform: uppercase;
+        align-items: center; }
+        .isearch-bg .container .info .bottom span {
+          display: inline-block;
+          background: url("/img/icon/link-arrow.png");
+          background-repeat: no-repeat;
+          height: 22px;
+          width: 11px;
+          margin-left: 20px; }
+        .isearch-bg .container .info .bottom:hover {
+          text-decoration: none; }
+
+#isearch-content .container {
+  padding: 0; }
+  @media (max-width: 767px) {
+    #isearch-content .container {
+      padding: 0 15px; } }
+  #isearch-content .container h3 {
+    font-family: 'Helvetica', sans-serif;
+    font-weight: lighter;
+    color: #545353;
+    margin-bottom: 23px; }
+  #isearch-content .container form {
+    margin-left: 15px;
+    margin-right: 15px; }
+    #isearch-content .container form .right-marg {
+      margin-right: calc(100%/1024*60); }
+    #isearch-content .container form .row .form-group {
+      padding: 0;
+      margin-bottom: 0; }
+      @media (max-width: 767px) {
+        #isearch-content .container form .row .form-group {
+          width: 100% !important;
+          margin-bottom: 40px; } }
+      #isearch-content .container form .row .form-group input {
+        border-radius: 0;
+        font-size: 1.5em;
+        height: 48px; }
+        #isearch-content .container form .row .form-group input[type="text"] {
+          background-color: #f5f5f5;
+          border: 1px solid #e5e5e5; }
+    #isearch-content .container form .row:first-child .form-group {
+      width: calc(100%/1024*482); }
+    @media (min-width: 768px) {
+      #isearch-content .container form .row:first-child {
+        margin-bottom: 40px; } }
+    #isearch-content .container form .row:nth-child(2) {
+      margin-bottom: 19px; }
+      #isearch-content .container form .row:nth-child(2) .form-group:first-child {
+        width: calc(100%/1024*751); }
+    #isearch-content .container form .row:nth-child(3) div {
+      padding: 0; }
+    #isearch-content .container form .row:nth-child(3) small {
+      font-size: 1.4em; }
+    #isearch-content .container form .row .button {
+      width: calc(100%/1024*211); }
+      @media (max-width: 767px) {
+        #isearch-content .container form .row .button {
+          margin-bottom: 0; } }
+      #isearch-content .container form .row .button input {
+        background-color: #757575;
+        width: 100%;
+        color: white;
+        font-weight: bold;
+        font-size: 1.4em; }
+
+#isearch-overview {
+  margin-top: 75px; }
+  #isearch-overview .container {
+    padding: 0; }
+    @media (max-width: 767px) {
+      #isearch-overview .container {
+        padding: 0 15px; } }
+    #isearch-overview .container h3 {
+      font-family: 'Helvetica', sans-serif;
+      font-weight: lighter;
+      color: #545353;
+      margin-bottom: 28px; }
+    #isearch-overview .container .articles {
+      float: left;
+      height: auto; }
+      #isearch-overview .container .articles::after {
+        clear: both;
+        display: block;
+        content: ""; }
+      #isearch-overview .container .articles article {
+        padding: 0;
+        height: 95px;
+        border: 1px solid #e5e5e5;
+        border-bottom: 0;
+        display: flex;
+        align-items: center; }
+        @media (max-width: 767px) {
+          #isearch-overview .container .articles article {
+            height: auto;
+            padding: 15px 0; } }
+        #isearch-overview .container .articles article:last-child {
+          border-bottom: 1px solid #e5e5e5; }
+        #isearch-overview .container .articles article .info {
+          width: calc(100%/1024*813);
+          padding-left: 0; }
+          #isearch-overview .container .articles article .info p {
+            padding-left: 46px;
+            margin-bottom: 0;
+            font-size: 1.5em;
+            color: #5c5c5c; }
+            @media (max-width: 767px) {
+              #isearch-overview .container .articles article .info p {
+                padding-left: 15px; } }
+            #isearch-overview .container .articles article .info p span {
+              font-weight: bold; }
+        #isearch-overview .container .articles article .button {
+          width: calc(100%/1024*211);
+          display: flex;
+          justify-content: center; }
+          #isearch-overview .container .articles article .button a {
+            display: inline-block;
+            width: 172px;
+            background-color: #f5f5f5;
+            height: 48px;
+            text-align: center;
+            line-height: 48px;
+            border: 1px solid #e5e5e5;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #0a1e75;
+            text-decoration: none; }
+            #isearch-overview .container .articles article .button a:hover {
+              background-color: #e1e1e1; }
+
+/*
+*
+*	CSS of the Faq
+*
+*/
+@media (min-width: 991px) {
+  #faq-filter .container {
+    padding: 0; } }
+#faq-filter .container .filter {
+  background-color: #f7f8f7;
+  height: 134px;
+  padding: 0 47px 0 50px;
+  font-size: 1.8em;
+  font-weight: bold;
+  border: 1px solid #e5e5e5;
+  display: flex;
+  align-items: center; }
+  @media (max-width: 991px) {
+    #faq-filter .container .filter {
+      height: auto;
+      padding: 15px; } }
+  #faq-filter .container .filter .filter-items {
+    width: 100%;
+    float: left; }
+    #faq-filter .container .filter .filter-items div {
+      padding: 0; }
+      #faq-filter .container .filter .filter-items div ul li {
+        line-height: 32px; }
+        #faq-filter .container .filter .filter-items div ul li a {
+          color: #01a6a0;
+          border-bottom: 2px solid #01a6a0; }
+#faq-filter .container .button {
+  float: right; }
+  #faq-filter .container .button a {
+    display: inline-block;
+    text-align: center;
+    line-height: 48px;
+    width: 117px;
+    height: 48px;
+    background-color: #f5f5f5;
+    border: 1px solid #e5e5e5;
+    border-top: 0;
+    font-weight: bold;
+    color: #0a1e75;
+    font-size: 1.2em;
+    text-decoration: none; }
+    #faq-filter .container .button a:hover {
+      background-color: #e1e1e1; }
+
+#faq-list {
+  margin-top: 57px; }
+  #faq-list .container .articles article {
+    min-height: 135px;
+    margin-bottom: 35px;
+    border-bottom: 1px solid #f4f4f4; }
+    @media (max-width: 991px) {
+      #faq-list .container .articles article {
+        height: auto; } }
+    #faq-list .container .articles article:last-child {
+      border: none;
+      margin-bottom: 0; }
+    #faq-list .container .articles article .qa {
+      float: left; }
+      #faq-list .container .articles article .qa ul li {
+        color: #0a1e75;
+        font-size: 3em; }
+        #faq-list .container .articles article .qa ul li:last-child {
+          color: #545353; }
+    #faq-list .container .articles article .info {
+      margin-left: 85px; }
+      #faq-list .container .articles article .info p {
+        font-size: 1.6em;
+        line-height: 22px;
+        color: #4e4e4e;
+        margin-top: 30px;
+        margin-bottom: 0; }
+        #faq-list .container .articles article .info p span {
+          font-weight: bold; }
+          #faq-list .container .articles article .info p span:last-child {
+            border-bottom: 2px solid #01a6a0;
+            color: #01a6a0; }
+
+/*
+*
+*	CSS of the add auctions
+*
+*/
+#auctions-form .container form .row {
+  max-width: 753px;
+  margin: 0; }
+  #auctions-form .container form .row:nth-child(2) .form-group:first-child {
+    margin-right: calc(100%/753*60); }
+  #auctions-form .container form .row:nth-child(3) .form-group:first-child, #auctions-form .container form .row:nth-child(3) .form-group:nth-child(2) {
+    margin-right: calc(100%/753*60); }
+  #auctions-form .container form .row .form-group {
+    padding: 0; }
+  #auctions-form .container form .row .select, #auctions-form .container form .row .title {
+    width: calc(100%/753*482); }
+    @media (max-width: 767px) {
+      #auctions-form .container form .row .select, #auctions-form .container form .row .title {
+        width: 100%; } }
+  #auctions-form .container form .row label span {
+    font-size: .7em; }
+  #auctions-form .container form .row .small-input {
+    width: calc(100%/753*211); }
+    @media (max-width: 767px) {
+      #auctions-form .container form .row .small-input {
+        width: 100%; } }
+  #auctions-form .container form .row input {
+    border-radius: 0;
+    font-size: 1.5em;
+    height: 48px;
+    padding: 0 0 0 15px; }
+    #auctions-form .container form .row input[type="text"] {
+      background-color: #f5f5f5;
+      border: 1px solid #e5e5e5; }
+    @media (max-width: 767px) {
+      #auctions-form .container form .row input {
+        padding: 0 15px; } }
+    #auctions-form .container form .row input#title {
+      width: 100%; }
+  #auctions-form .container form .row .big-textarea {
+    width: 100%; }
+    #auctions-form .container form .row .big-textarea textarea {
+      width: 100%;
+      height: 125px;
+      background-color: #f5f5f5;
+      border: 1px solid #e5e5e5;
+      resize: none;
+      padding: 15px 0 0 15px;
+      font-size: 1.5em;
+      color: #545353; }
+  #auctions-form .container form .row .file-upload {
+    width: 100%;
+    margin-bottom: 0; }
+    #auctions-form .container form .row .file-upload p {
+      font-size: 1.5em;
+      color: #545353;
+      margin: 0; }
+    #auctions-form .container form .row .file-upload .file-button {
+      height: 58px;
+      width: calc(100%/753*211);
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+      text-align: center;
+      background-color: #757575;
+      margin-right: calc(100%/753*60);
+      margin-top: 35px;
+      font-size: 1.5em;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #auctions-form .container form .row .file-upload .file-button p {
+        color: white;
+        font-size: 1em; }
+        #auctions-form .container form .row .file-upload .file-button p span {
+          display: block; }
+          @media (max-width: 767px) {
+            #auctions-form .container form .row .file-upload .file-button p span {
+              display: inline-block; } }
+      @media (max-width: 767px) {
+        #auctions-form .container form .row .file-upload .file-button {
+          width: 100%; } }
+      #auctions-form .container form .row .file-upload .file-button:last-child {
+        margin-right: 0; }
+      #auctions-form .container form .row .file-upload .file-button input[type="file"] {
+        cursor: pointer;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 99;
+        /*This makes the button huge. If you want a bigger button, increase the font size*/
+        font-size: 50px;
+        /*Opacity settings for all browsers*/
+        opacity: 0;
+        -moz-opacity: 0;
+        filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0); }
+  #auctions-form .container form .row .pricing {
+    padding: 0;
+    margin-top: 40px; }
+    #auctions-form .container form .row .pricing h3 {
+      font-family: 'Helvetica', sans-serif;
+      font-weight: lighter;
+      margin-bottom: 16px; }
+    #auctions-form .container form .row .pricing div {
+      margin-bottom: 0; }
+    #auctions-form .container form .row .pricing .small-input {
+      margin-right: calc(100%/753*60); }
+      #auctions-form .container form .row .pricing .small-input:last-child {
+        margin: 0; }
+      #auctions-form .container form .row .pricing .small-input label {
+        font-size: 1.8em; }
+    #auctions-form .container form .row .pricing .info {
+      width: calc(100%/753*482); }
+      @media (max-width: 767px) {
+        #auctions-form .container form .row .pricing .info {
+          width: 100%; } }
+      #auctions-form .container form .row .pricing .info span {
+        color: #0a1e75;
+        font-size: 1.8em; }
+      #auctions-form .container form .row .pricing .info p {
+        margin: 0;
+        font-size: 1.4em; }
+  #auctions-form .container form .row .check {
+    padding: 0;
+    margin-top: 80px; }
+    #auctions-form .container form .row .check input, #auctions-form .container form .row .check p {
+      float: left; }
+    #auctions-form .container form .row .check input {
+      height: auto;
+      margin-right: 14px; }
+    #auctions-form .container form .row .check p {
+      font-size: 1.5em;
+      margin: 0; }
+      #auctions-form .container form .row .check p span {
+        color: #01a6a0;
+        text-decoration: underline; }
+    #auctions-form .container form .row .check::after {
+      clear: both;
+      display: block;
+      content: ""; }
+  #auctions-form .container form .row .submit {
+    padding: 0;
+    margin-top: 32px;
+    width: calc(100%/753*268); }
+    @media (max-width: 767px) {
+      #auctions-form .container form .row .submit {
+        width: 100%; } }
+    #auctions-form .container form .row .submit input {
+      font-family: 'Helvetica', sans-serif;
+      font-weight: lighter;
+      font-size: 1.8em;
+      background-color: #01a6a0;
+      height: 60px;
+      width: 100%;
+      color: white;
+      text-align: center;
+      border: none; }
+    #auctions-form .container form .row .submit a {
+      font-size: 1.4em;
+      margin-top: 26px;
+      display: block;
+      color: #01a6a0;
+      text-align: center; }
+
+/*
+*
+*	CSS of the Footer
+*
+*/
+.footer {
+  height: 566px;
+  padding: 0 15px; }
+  @media (max-width: 767px) {
+    .footer {
+      height: auto; } }
+  .footer .line {
+    padding-top: 100px;
+    border-bottom: 1px solid #e5e5e5; }
+  .footer .container {
+    padding-top: 40px; }
+    .footer .container .row div {
+      padding: 0; }
+      .footer .container .row div::after {
+        clear: both;
+        display: block;
+        content: ""; }
+      .footer .container .row div .contact {
+        float: left;
+        margin-top: 30px; }
+        .footer .container .row div .contact ul {
+          margin: 0; }
+          .footer .container .row div .contact ul li {
+            color: #5c5c5c;
+            font-size: 1.5em; }
+            .footer .container .row div .contact ul li:nth-child(3) {
+              margin-bottom: 30px; }
+            .footer .container .row div .contact ul li a {
+              color: #01a6a0;
+              text-decoration: underline; }
+          .footer .container .row div .contact ul.social-media {
+            margin-top: 25px; }
+            .footer .container .row div .contact ul.social-media li {
+              margin: 0 5px 0 0;
+              float: left; }
+              .footer .container .row div .contact ul.social-media li a {
+                background: url("/img/socialmedia.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                text-indent: -10000px;
+                display: inline-block;
+                height: 31px;
+                width: 31px; }
+              .footer .container .row div .contact ul.social-media li:nth-child(2) a {
+                background-position-x: -29px; }
+              .footer .container .row div .contact ul.social-media li:nth-child(3) a {
+                background-position-x: -59px; }
+              .footer .container .row div .contact ul.social-media li:nth-child(4) a {
+                background-position-x: -89px; }
+      .footer .container .row div nav::after {
+        display: block;
+        content: "";
+        clear: both; }
+      @media (max-width: 767px) {
+        .footer .container .row div nav h4 {
+          display: none; } }
+      .footer .container .row div nav ul .dropdown a {
+        display: none; }
+        @media (max-width: 767px) {
+          .footer .container .row div nav ul .dropdown a {
+            display: block;
+            color: black;
+            font-weight: bold;
+            padding-left: 0; } }
+      .footer .container .row div nav ul .dropdown .dropdown-menu {
+        font-weight: normal;
+        font-size: 1em; }
+        @media (min-width: 768px) {
+          .footer .container .row div nav ul .dropdown .dropdown-menu {
+            position: static;
+            display: block;
+            border: none;
+            box-shadow: none;
+            font-size: 1em; } }
+        .footer .container .row div nav ul .dropdown .dropdown-menu li a {
+          font-weight: normal;
+          color: #01a6a0; }
+          @media (min-width: 768px) {
+            .footer .container .row div nav ul .dropdown .dropdown-menu li a {
+              display: block;
+              padding-left: 0; } }
+      .footer .container .row div nav ul {
+        font-size: 1.4em;
+        margin: 0 0 15px 0; }
+        .footer .container .row div nav ul li {
+          line-height: 1.3em; }
+          .footer .container .row div nav ul li a {
+            text-transform: none;
+            color: #01a6a0; }
+    .footer .container.copy {
+      padding-top: 0; }
+      .footer .container.copy p {
+        text-align: right;
+        font-size: 1.2em;
+        color: #777777;
+        line-height: 1.5;
+        margin: 0; }
+
+footer {
+  background: #eaeaea;
+  height: 50px;
+  box-sizing: content-box;
+  border-bottom: 4px solid #01a6a0;
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%; }
+  @media (max-width: 767px) {
+    footer {
+      height: 100%; } }
+  footer .container {
+    height: 100%; }
+    footer .container .logo {
+      background-image: url("/img/Logofooter.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 103px;
+      height: 140px;
+      position: absolute;
+      bottom: -4px;
+      box-shadow: 0px 0px 24px 0px rgba(1, 1, 1, 0.19); }
+    footer .container nav ul {
+      margin: 0;
+      padding-left: 170px; }
+      @media (max-width: 767px) {
+        footer .container nav ul {
+          padding-left: 0; } }
+      footer .container nav ul.language {
+        padding-left: 0;
+        font-size: 1.3em; }
+        footer .container nav ul.language li a {
+          font-weight: normal;
+          color: #0a1e75; }
+      footer .container nav ul:first-child li {
+        font-weight: bold;
+        margin-right: 30px; }
+        footer .container nav ul:first-child li a {
+          font-size: 1.5em;
+          color: #4e4e4e;
+          padding: 0;
+          line-height: 50px; }
+
+/*
+*
+* CSS of ERRORS
+*
+*/
+.errors {
+  border: none;
+  border-radius: 0;
+  background-color: #fff1f1;
+  padding-left: 50px;
+  font-size: 1.5em;
+  height: 115px;
+  display: flex;
+  align-items: center; }
+  .errors ul li {
+    list-style: disc;
+    color: #ff0400; }
+
+/* Inclusive and exclusive operators for a finer control over the intervals */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navbar {
+    width: 1500px; } }
+@media (min-width: 1025px) {
+  .navbar {
+    width: 1800px;
+    margin: 0; } }
 
 /*# sourceMappingURL=main.css.map */
