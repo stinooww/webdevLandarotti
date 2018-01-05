@@ -19,6 +19,7 @@ $hoverGrey: #565656;
 $blue: #0a1e75;
 $lightBlue: #0120a6;
 $lighterBlue: #2b45b5;
+$breakpoints: (small: 320px, medium: 768px, large: 1024px);
 
 .navbar-brand{
   padding:0 2px 0 0px;
@@ -82,9 +83,11 @@ nav {
 
   .container {
     padding: 0;
-    @media (max-width: 991px) {
+    @include media ("<large") {
       padding: 0 15px;
     }
+  }
+
     .navbar-header {
 
       .navbar-toggle {
@@ -119,10 +122,10 @@ nav {
       }
     }
 
-    .information {
+    .main-menu {
       padding-left: 170px;
 
-      @media (max-width: 767px) {
+      @include media ("<medium") {
         padding-left: 0;
 
         .navigation {
@@ -160,7 +163,7 @@ nav {
         }
       }
 
-      @media (min-width: 768px) and (max-width: 991px) {
+      @include media(">medium", "<=large") {
         padding-left: 100px;
       }
 
@@ -168,13 +171,13 @@ nav {
         border: none;
         padding-right: 0;
 
-        @media (max-width: 767px) {
+        @include media ("<medium") {
           margin-top: 90px;
         }
 
         ul {
           margin: 15px 0;
-          @media (max-width: 767px) {
+          @include media ("<medium") {
             display: inline-block;
           }
 
@@ -259,18 +262,19 @@ nav {
     background-color: $grey;
     height: 50px;
 
-    @media (max-width: 767px) {
+    @include media ("<medium") {
       height: auto;
     }
+  }
 
-    .container {
+  .container {
       .navigation {
         padding-right: 0;
         ul {
           &:first-child {
             padding-left: 170px;
             margin-top: 0;
-            @media (max-width: 767px) {
+            @include media ("<medium") {
               padding: 0;
               li {
                 margin: 0;
@@ -282,7 +286,7 @@ nav {
 
               }
             }
-            @media (min-width: 768px) and (max-width: 991px) {
+            @include media(">medium", "<=large") {
               padding-left: 100px;
             }
           }
@@ -291,7 +295,7 @@ nav {
             font-weight: normal;
             color: $blue;
 
-            @media (max-width: 768px) {
+            @include media ("<medium"){
               padding: 0 25px;
               text-align: center;
               li {
@@ -327,7 +331,7 @@ nav {
 
             margin-right: 30px;
 
-            @media (max-width: 991px) {
+            @include media ("<large") {
               font-size: 1.2em;
               margin-right: 25px;
             }
@@ -341,5 +345,5 @@ nav {
         }
       }
     }
-  }
-}
+
+
