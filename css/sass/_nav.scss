@@ -21,258 +21,307 @@ $lightBlue: #0120a6;
 $lighterBlue: #2b45b5;
 $breakpoints: (small: 320px, medium: 768px, large: 1024px);
 
+
+//.main-navigation {
+//  background-color: $grey;
+//  height: 50px;
+//
+//  @include media ("<medium") {
+//    height: auto;
+//  }
+//}
+//
+//.main-navigation{
+//  background-color: $menucolor;
+//}
+
+
+/*algemene css*/
 .navbar-brand{
-  padding:0 2px 0 0px;
+  padding:0 2px 0 0;
 }
-.navbar {
-  margin-bottom: 0;
-  border-top: 2px #01a6a0 solid;
+.container {
+  width: 1280px;
+  padding: 0;
+  @include media ("<=large") {
+    width: 855px;
+    padding: 0 15px;
+  }
 }
 
-.main-navigation{
-  background-color: $menucolor;
-}
-.top-menu ul{
-  padding-left: 67px;
-  li{
-    font-size: 1.3em;
-    &:nth-child(1):before {
-      width: 11px;
-      height: 10px;
-      float: left;
-      margin: 5px 10px 5px 0;
+.navbar {
+  border-top: 2px #01a6a0 solid;
+  a{
+    text-transform: uppercase;
+  }
+  position: absolute;
+  top: 0;
+  background-color: white;
+  border-top: 4px solid $green;
+  border-radius: 0;
+  margin: 0;
+
+  /* css voor hamburger menu- mobiel**/
+  .navbar-toggle {
+    border: none;
+
+    &:hover {
+      background-color: $lightgrey;
+    }
+
+    .icon-bar {
+      background-color: $darkgrey;
     }
   }
 
+  .navbar-brand {
+    position: absolute;
+    top: -4px;
+    background-image: url('/img/logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 103px;
+    height: 140px;
+
+    margin: 0;
+
+    @media (max-width: 767px) {
+      margin: 0 0 0 15px;
+    }
+
+    box-shadow: 0px 0px 24px 0px rgba(1, 1, 1, 0.19);
+    z-index: 99;
+  }
+
+
 
 }
-.main-menu{
-  background-color: $grey;
-  .navigation ul{
-    padding-left: 130px;
-  }
-}
+
+
+/*top menu */
 #headnav{
   padding:0 238px ;
   background-color: #ffffff;
+  @include media ("<=large") {
+    padding: 0px 60px;
+  }
 }
 #search{
   padding-top: 14px;
 }
 .navicons{
-
+  margin:0 5px 5px 0;
 }
 
-
-nav {
-
-  a {
-    text-transform: uppercase;
-  }
-}
-.navbar-default {
-  position: absolute;
-  top: 0;
-
-
-  background-color: white;
+.navigation {
   border: none;
-  border-top: 4px solid $green;
-  border-radius: 0;
-  margin: 0;
+  padding-right: 0;
+  ul {
+    margin: 15px 0 15px 132px;
+    padding-left: 67px;
+    li{
+      margin-left: 30px;
+      font-size: 1.3em;
+      float: left;
+      &:nth-child(1){
+        border-right: 1px solid $blue ;
+        padding-right: 20px;
+        @include media ("<=large") {
+          padding-right: 7px;
 
-  .container {
-    padding: 0;
-    @include media ("<large") {
-      padding: 0 15px;
-    }
-  }
-
-    .navbar-header {
-
-      .navbar-toggle {
-        border: none;
-
-        &:hover {
-          background-color: $lightgrey;
-        }
-
-        .icon-bar {
-          background-color: $darkgrey;
         }
       }
+      &:nth-child(2) {
+        border-right: 1px solid $blue ;
+        padding-right: 20px;
+        @include media ("<=large") {
+          padding-right: 7px;
 
-      .navbar-brand {
-        position: absolute;
-        top: -4px;
-        background-image: url('/img/logo.png');
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 103px;
-        height: 140px;
+        }
+      }
+      a{
+          padding: 5px 7px;
 
+        }
+
+      @include media ("<=large") {
         margin: 0;
 
-        @media (max-width: 767px) {
-          margin: 0 0 0 15px;
-        }
-
-        box-shadow: 0px 0px 24px 0px rgba(1, 1, 1, 0.19);
-        z-index: 99;
       }
     }
-
-    .main-menu {
-      padding-left: 170px;
-
-      @include media ("<medium") {
-        padding-left: 0;
-
-        .navigation {
-          padding: 0 10px;
-          ul {
-            padding-left: 0;
-            width: 100%;
-
-            li {
-              height: 50px;
-
-              a {
-                line-height: 50px;
-                border: none !important;
-                //width: 100%;
-              }
-
-              &:nth-child(1) {
-                &::before {
-                  margin: 20px 10px 20px 0 !important;
-                }
-              }
-
-              &:nth-child(2) {
-                &::before {
-                  margin: 18px 10px 18px 0 !important;
-                }
-              }
-
-              &:last-child {
-                padding-left: 0 !important;
-              }
-            }
-          }
-        }
-      }
-
-      @include media(">medium", "<=large") {
-        padding-left: 100px;
-      }
-
-      .navigation {
-        border: none;
-        padding-right: 0;
-
-        @include media ("<medium") {
-          margin-top: 90px;
-        }
-
-        ul {
-          margin: 15px 0;
-          @include media ("<medium") {
-            display: inline-block;
-          }
-
-          &.loggedin {
-            li {
-              font-size: 1.3em;
-
-              &:nth-child(1) {
-                &:before {
-                  content: "";
-                  display: block;
-                  background: url('/img/icon/watchlist.png') no-repeat;
-                  width: 11px;
-                  height: 10px;
-                  float: left;
-                  margin: 5px 10px 5px 0;
-                }
-
-                a {
-                  border-right: 1px solid $blue;
-                  float: left;
-                  padding-right: 20px;
-                }
-              }
-
-              &:nth-child(2) {
-                &:before {
-                  content: "";
-                  display: block;
-                  background: url('/img/icon/profile.png') no-repeat;
-                  width: 13px;
-                  height: 14px;
-                  margin: 3px 10px 3px 20px;
-                  float: left;
-                }
-
-                a {
-                  border-right: 1px solid $blue;
-                  float: left;
-                  padding-right: 20px;
-                }
-              }
-
-              a {
-                padding: 0;
-                color: $blue;
-              }
-
-              &:last-child {
-                padding-left: 20px;
-              }
-            }
-          }
-
-          &.login {
-            li {
-              font-size: 1.3em;
-
-              &:nth-child(1) {
-                a {
-                  border-right: 1px solid $blue;
-                  padding-right: 40px;
-                }
-              }
-
-              a {
-                padding: 0;
-                color: $blue;
-              }
-
-              &:last-child {
-                padding-left: 40px;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .main-navigation {
-    background-color: $grey;
-    height: 50px;
-
     @include media ("<medium") {
-      height: auto;
+      margin: 7px 0 3px 3px;
+      display: inline-block;
+    }
+    @include media ("<=large") {
+      margin: 15px 0 15px 80px;
+
+    }
+    /* todo: logged in fixe*/
+    &.loggedin {
+      li {
+        font-size: 1.3em;
+
+        &:nth-child(1) {
+          &:before {
+            content: "";
+            display: block;
+            background: url('/img/icon/watchlist.png') no-repeat;
+            width: 11px;
+            height: 10px;
+            float: left;
+            margin: 5px 10px 5px 0;
+          }
+
+          a {
+            border-right: 1px solid $blue;
+            float: left;
+            padding-right: 20px;
+          }
+        }
+
+        &:nth-child(2) {
+          &:before {
+            content: "";
+            display: block;
+            background: url('/img/icon/profile.png') no-repeat;
+            width: 13px;
+            height: 14px;
+            margin: 3px 10px 3px 20px;
+            float: left;
+          }
+
+          a {
+            border-right: 1px solid $blue;
+            float: left;
+            padding-right: 20px;
+          }
+        }
+
+        a {
+          padding: 0;
+          color: $blue;
+        }
+
+        &:last-child {
+          padding-left: 20px;
+        }
+      }
+    }
+
+    &.login {
+      li {
+        font-size: 1.3em;
+
+        &:nth-child(1) {
+          a {
+            border-right: 1px solid $blue;
+            padding-right: 40px;
+          }
+        }
+
+        a {
+          padding: 0;
+          color: $blue;
+        }
+
+        &:last-child {
+          padding-left: 40px;
+        }
+      }
+    }
+  }
+  @include media ("<medium") {
+    margin-top: 90px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ /* onderste menu css*/
+.main-menu{
+  background-color: $grey;
+  padding-left: 170px;
+  top: 0;
+  margin: 0;
+  border: none;
+  @include media ("<medium") {
+    padding-left: 0;
+
+    .menu {
+      padding: 0 10px;
+      ul {
+        padding-left: 0;
+        width: 100%;
+
+        li {
+          height: 50px;
+
+          a {
+            line-height: 50px;
+            border: none !important;
+            //width: 100%;
+          }
+
+          &:nth-child(1) {
+            &::before {
+              margin: 20px 10px 20px 0 !important;
+            }
+          }
+
+          &:nth-child(2) {
+            &::before {
+              margin: 18px 10px 18px 0 !important;
+            }
+          }
+
+          &:last-child {
+            padding-left: 0 !important;
+          }
+        }
+      }
     }
   }
 
-  .container {
-      .navigation {
+  @include media(">medium", "<=large") {
+    padding-left: 100px;
+  }
+
+
+}
+      .menu {
+
         padding-right: 0;
         ul {
+          li {
+            font-size: 1.5em;
+            font-weight: bold;
+
+            margin-right: 30px;
+
+            @include media ("<large") {
+              font-size: 1.2em;
+              margin-right: 25px;
+            }
+
+            a {
+              color: $darkgrey;
+              padding: 0;
+              line-height: 50px;
+            }
+          }
+          /*eerste ul menu*/
           &:first-child {
-            padding-left: 170px;
+            padding-left: 80px;
             margin-top: 0;
             @include media ("<medium") {
               padding: 0;
@@ -291,10 +340,26 @@ nav {
             }
           }
 
+          /*tweede ul menu*/
           &:last-child {
-            font-weight: normal;
-            color: $blue;
+            padding-left: 40px;
+            font-weight: bold !important;
+            color: red;
+            li {
+              margin-right: 15px;
+              a {
+                font-weight: normal;
+                color: $blue;
+              }
 
+              &.active {
+                a {
+                  background-color: transparent;
+
+                  font-weight: bolder !important;
+                }
+              }
+            }
             @include media ("<medium"){
               padding: 0 25px;
               text-align: center;
@@ -308,42 +373,11 @@ nav {
                 }
               }
             }
-
-            li {
-              margin-right: 15px;
-              a {
-                font-weight: normal;
-                color: $blue;
-              }
-
-              &.active {
-                a {
-                  background-color: transparent;
-                  font-weight: bold !important;
-                }
-              }
-            }
           }
 
-          li {
-            font-size: 1.5em;
-            font-weight: bold;
 
-            margin-right: 30px;
-
-            @include media ("<large") {
-              font-size: 1.2em;
-              margin-right: 25px;
-            }
-
-            a {
-              color: $darkgrey;
-              padding: 0;
-              line-height: 50px;
-            }
-          }
         }
       }
-    }
+
 
 
