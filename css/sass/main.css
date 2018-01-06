@@ -136,6 +136,11 @@
   @media (max-width: 767px) {
     .navigation {
       margin-top: 90px; } }
+  @media (max-width: 1024px) {
+    .navigation #search {
+      padding-right: 41px; }
+      .navigation #search .input-field input[type="text"] {
+        width: 161px !important; } }
 
 /* onderste menu css*/
 .main-menu {
@@ -144,28 +149,33 @@
   top: 0;
   margin: 0;
   border: none; }
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     .main-menu {
       padding-left: 0; }
-      .main-menu .menu {
-        padding: 0 10px; }
-        .main-menu .menu ul {
-          padding-left: 0;
-          width: 100%; }
-          .main-menu .menu ul li {
-            height: 50px; }
-            .main-menu .menu ul li a {
-              line-height: 50px;
-              border: none !important; }
-            .main-menu .menu ul li:nth-child(1)::before {
-              margin: 20px 10px 20px 0 !important; }
-            .main-menu .menu ul li:nth-child(2)::before {
-              margin: 18px 10px 18px 0 !important; }
-            .main-menu .menu ul li:last-child {
-              padding-left: 0 !important; } }
+      .main-menu .container {
+        margin: 0px; }
+      .main-menu .menu ul {
+        padding: 10px 10px 10px 200px !important;
+        width: 100%;
+        float: left; }
+        .main-menu .menu ul li {
+          height: 25px; }
+          .main-menu .menu ul li a {
+            line-height: 50px;
+            border: none !important; }
+          .main-menu .menu ul li:nth-child(1)::before {
+            margin: 20px 10px 20px 0 !important; }
+          .main-menu .menu ul li:nth-child(2)::before {
+            margin: 18px 10px 18px 0 !important; }
+          .main-menu .menu ul li:last-child {
+            padding-left: 0 !important; }
+        .main-menu .menu ul:nth-child(2) {
+          width: 20%;
+          float: left !important;
+          padding: 0px 0px 0px 50px !important; } }
 @media (min-width: 769px) and (max-width: 1024px) {
   .main-menu {
-    padding-left: 100px; } }
+    padding-left: 29px; } }
 
 .menu {
   padding-right: 0; }

@@ -147,6 +147,7 @@ $breakpoints: (small: 320px, medium: 768px, large: 1024px);
       @include media ("<=large") {
         margin: 0;
 
+
       }
     }
     @include media ("<medium") {
@@ -234,6 +235,17 @@ $breakpoints: (small: 320px, medium: 768px, large: 1024px);
   @include media ("<medium") {
     margin-top: 90px;
   }
+  #search{
+
+    @include media ("<=large") {
+      padding-right: 41px;
+      .input-field input[type="text"] {
+
+        width: 161px !important;
+      }
+
+    }
+  }
 }
 
 
@@ -254,17 +266,20 @@ $breakpoints: (small: 320px, medium: 768px, large: 1024px);
   top: 0;
   margin: 0;
   border: none;
-  @include media ("<medium") {
+  @include media ("<=medium") {
     padding-left: 0;
-
+.container{
+margin: 0px;
+}
     .menu {
-      padding: 0 10px;
-      ul {
-        padding-left: 0;
-        width: 100%;
 
+      ul {
+        padding: 10px 10px 10px 200px !important;
+
+        width: 100%;
+float: left;
         li {
-          height: 50px;
+          height:25px;
 
           a {
             line-height: 50px;
@@ -288,12 +303,18 @@ $breakpoints: (small: 320px, medium: 768px, large: 1024px);
             padding-left: 0 !important;
           }
         }
+        &:nth-child(2) {
+          width: 20%;
+          float: left !important;
+          padding: 0px 0px 0px 50px !important;
+
+        }
       }
     }
   }
 
   @include media(">medium", "<=large") {
-    padding-left: 100px;
+    padding-left: 29px;
   }
 
 
