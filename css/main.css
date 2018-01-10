@@ -712,6 +712,38 @@ footer {
 /*css van faq*/
 #faq-filter {
   padding-top: 5%; }
+  #faq-filter #faqImg {
+    width: 100%;
+    height: 60%; }
+  #faq-filter .inleiding {
+    background-color: #162a81a3;
+    position: relative;
+    height: 25%;
+    padding: 0;
+    width: 11%;
+    display: flex;
+    align-items: center; }
+    #faq-filter .inleiding p {
+      padding: 0 18px;
+      color: white; }
+  #faq-filter .inleidingCirkel {
+    position: absolute;
+    top: -16px;
+    left: -16px;
+    background-color: white;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    z-index: 1; }
+    #faq-filter .inleidingCirkel .inner {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #01a6a0;
+      border-radius: 50%;
+      width: 18px;
+      height: 18px; }
   @media (min-width: 991px) {
     #faq-filter .container {
       padding: 0; } }

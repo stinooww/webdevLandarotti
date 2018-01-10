@@ -1,10 +1,445 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Landoretti</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Css files -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+<nav class="navbar navbar-default">
 
+    <div  id="headnav">
+
+
+        <div class="navbar-header">
+
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navigation">
+
+                <span class="icon-bar"></span>
+
+                <span class="icon-bar"></span>
+
+                <span class="icon-bar"></span>
+
+            </button>
+
+            <a href="index.html" class="navbar-brand logo"><img src="img/logo.png" alt="Landoretti"></a>
+
+        </div>
+
+        <div class="top-menu">
+
+            <div class="collapse navbar-collapse navigation">
+
+                <ul class="nav navbar-nav">
+
+                    <li><a href=""><img src="img/icon/watchlist.png" alt="profile" class="navicons">watchlist</a></li>
+                    <li><a href=""><img src="img/icon/profile.png" alt="profile" class="navicons">profile</a></li>
+                    <li><a href="">logout</a></li>
+                    <li><a href="">register</a></li>
+                    <li><a href="">login</a></li>
+
+                </ul>
+
+
+                <form action="#" method="GET" class="navbar-right input-field" id="search">
+
+                    <input type="text" name="search" placeholder="Search">
+
+                    <input type="image" value="search" src="img/icon/search.png">
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="main-menu">
+
+        <div class="container">
+
+            <div class="collapse navbar-collapse menu">
+
+                <ul class="nav navbar-nav">
+
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="art.html">art</a></li>
+                    <li><a href="myauctions.html">myauctions</a></li>
+                    <li><a href="mybids.html">mybids</a></li>
+                    <li><a href="contact.html">contact</a></li>
+
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right taal">
+
+                    <li><a href="nl">nl</a></li>
+                    <li><a href="fr">fr</a></li>
+                    <li><a href="en" class="active">en</a></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<section id="auctions-form">
+    <div class="container">
+        <div class="breadcrumbs">
+            <ul>
+                <li><a href="index.html">Home &gt;</a></li>
+                <li><a href="#">Jasper Poppe &gt;</a></li>
+                <li><a href="#">My auctions &gt;</a></li>
+                <li><a href="#">New auction</a></li>
+            </ul>
+        </div>
+
+        <h1>Add a new auction</h1>
+
+
+
+        <form method="POST" action="">
+            <div class="row">
+                <div class="col-sm-6 form-group right-marg select">
+                    <select id="style">
+                        <option data-display="Style"></option>
+                        <option value="abstract">Abstract</option>
+                        <option value="african_american">African American</option>
+                        <option value="asian_contemporary">Asian Contemporary</option>
+                        <option value="conceptual">Conceptual</option>
+                        <option value="contemporary">Contemporary</option>
+                        <option value="emerging_artists">Emerging Artists</option>
+                        <option value="figurative">Figurative</option>
+                        <option value="middle_eastern_contemporary">Middle Eastern Contemporary</option>
+                        <option value="minimalism">Minimalism</option>
+                        <option value="modern">Modern</option>
+                        <option value="pop">Pop</option>
+                        <option value="urban">Urban</option>
+                        <option value="vintage_photographs">Vintage Photographs</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 form-group right-marg title">
+                    <label for="title">Auction title</label>
+                    <input type="text" class="form-control custom-input " name="title" id="title" placeholder="Auction title">
+                </div>
+                <div class="col-sm-6 form-group right-marg small-input">
+                    <label for="year">Year</label>
+                    <input type="text" class="form-control custom-input " name="year" id="year" placeholder="X X X X">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 form-group small-input">
+                    <label for="width">Width</label>
+                    <input type="text" class="form-control custom-input " name="width" id="width" placeholder="X X X X">
+                </div>
+                <div class="col-sm-4 form-group small-input">
+                    <label for="height">Height</label>
+                    <input type="text" class="form-control custom-input " name="height" id="height" placeholder="X X X X">
+                </div>
+                <div class="col-sm-4 form-group small-input">
+                    <label for="depth">Depth <span>(optional)</span></label>
+                    <input type="text" class="form-control custom-input " name="depth" id="depth" placeholder="X X X X">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 form-group big-textarea">
+                    <label for="description">Description</label>
+                    <textarea name="description" id="description" class="">What's the condition of the artwork?</textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 form-group big-textarea">
+                    <label for="origin">Origin</label>
+                    <textarea name="origin" id="origin" >What's the origin of the artwork?</textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 form-group file-upload">
+                    <label for="photos">Photos</label>
+                    <p>Please upload one picture with the signature of the artwork and one picture of the artwork.</p>
+                    <p>You can upload to 3 pictures with a maximum of of 10MB each.</p>
+                    <div class="col-sm-4 file-button">
+                        <p>upload image <span>of the artwork</span></p>
+                        <input type="file" name="image" id="image">
+                    </div>
+                    <div class="col-sm-4 file-button">
+                        <p>upload image <span>of the signature</span></p>
+                        <input type="file" name="signature" id="signature">
+                    </div>
+                    <div class="col-sm-4 file-button">
+                        <p>optional image</p>
+                        <input type="file" name="optional" id="optional">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 pricing">
+                    <h3>Pricing</h3>
+                    <div class="col-sm-4 form-group small-input">
+                        <label for="minimum">Minimum estimate price</label>
+                        <input type="text" class="form-control custom-input " name="minimum" id="minimum" placeholder="X X X X">
+                    </div>
+                    <div class="col-sm-4 form-group small-input">
+                        <label for="maximum">Maximum estimate price</label>
+                        <input type="text" class="form-control custom-input " name="maximum" id="maximum" placeholder="X X X X">
+                    </div>
+                    <div class="col-sm-4 form-group small-input">
+                        <label for="price">Buyout price <span>(optional)</span></label>
+                        <input type="text" class="form-control custom-input" name="price" id="price" placeholder="X X X X">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 pricing">
+                    <h3>Pricing</h3>
+                    <div class="col-sm-4 form-group small-input">
+                        <label for="end">End date</label>
+                        <input type="text" class="form-control custom-input " name="end" id="end" placeholder="DD/MM/YY">
+                    </div>
+                    <div class="col-sm-8 form-group info">
+                        <span>Attention</span>
+                        <p>You can not change the information after adding this auction.</p>
+                        <p>If you're not certain about the information of your artwork, please ask for help.</p>
+                        <p>We will answer your question as soon as possible.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 check">
+                    <input type="checkbox" name="check" id="check">
+                    <p>I agree to <span>The Terms & Conditions</span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 submit">
+                    <input type="submit" name="submit" value="ADD AUCTION">
+                    <a href="#">ASK A QUESTION ></a>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+<section class="footer">
+    <div class="line"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 col-md-3">
+                <nav>
+                    <h4>HELP</h4>
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle">HELP <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Login</a></li>
+                                <li><a href="#">Register</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <nav>
+                    <h4>HELP</h4>
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle">HELP <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Terms of Service</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="faq.html">FAQ</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">About Us</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <nav>
+                    <h4>LANGUAGES</h4>
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle">LANGUAGES <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">Nederlands</a></li>
+                                <li><a href="">Français</a></li>
+                                <li><a href="">English</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-sm-3 col-md-3">
+                <nav>
+                    <h4>STYLE</h4>
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle">STYLE <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Abstract</a></li>
+                                <li><a href="#">African American</a></li>
+                                <li><a href="#">Asian Contemporary</a></li>
+                                <li><a href="#">Conceptual</a></li>
+                                <li><a href="#">Contemporary</a></li>
+                                <li><a href="#">Emerging Artists</a></li>
+                                <li><a href="#">Figurative</a></li>
+                                <li><a href="#">Middle Eastern Contemporary</a></li>
+                                <li><a href="#">Minimalism</a></li>
+                                <li><a href="#">Modern</a></li>
+                                <li><a href="#">Pop</a></li>
+                                <li><a href="#">Urban</a></li>
+                                <li><a href="#">Vintage Photographs</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <nav>
+                    <h4>STYLE</h4>
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle">STYLE <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">Design</a></li>
+                                <li><a href="">Paintings and Works on Paper</a></li>
+                                <li><a href="">Photographs</a></li>
+                                <li><a href="">Prints and Multiples</a></li>
+                                <li><a href="">Sculpture</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-sm-3 col-md-3">
+                <nav>
+                    <h4>PRICE</h4>
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle">PRICE <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">Up to 5,000</a></li>
+                                <li><a href="">5,000–10,000</a></li>
+                                <li><a href="">10,000–25,000</a></li>
+                                <li><a href="">25,000–50,000</a></li>
+                                <li><a href="">50,000–100,000</a></li>
+                                <li><a href="">Above</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <nav>
+                    <h4>ERA</h4>
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle">ERA <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">Pre-War</a></li>
+                                <li><a href="">1940s–1950s</a></li>
+                                <li><a href="">1960s–1980s</a></li>
+                                <li><a href="">1990s–Present</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <nav>
+                    <h4>ENDINGS</h4>
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle">ENDINGS <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">Ending this Week</a></li>
+                                <li><a href="">Newly Listed</a></li>
+                                <li><a href="">Purchase Now</a></li>
+                                <li><a href="">1990s–Present</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-sm-3 col-md-3">
+                <div class="search">
+                    <h4>FIND WHAT YOU NEED.</h4>
+                    <form action="#" method="GET" class="input-field input-footer">
+
+                        <input type="text" name="search" placeholder="Search">
+
+                        <input type="image" value="search" src="img/icon/search.png">
+
+                    </form>
+                </div>
+                <div class="contact">
+                    <h4>CONTACT</h4>
+                    <ul>
+                        <li>Landoretti ART</li>
+                        <li>Straatnaam xxx</li>
+                        <li>xxxx, Oostende</li>
+                        <li>+xx (0)x xxx xx xx</li>
+                        <li><a href="#">info@landorettiart.com</a></li>
+                    </ul>
+                    <ul class="social-media">
+                        <img src="img/socialmedia.png" alt="social media" id="social">
+                        <!--<li><a href="#">facebook</a></li>-->
+                        <!--<li><a href="#">twitter</a></li>-->
+                        <!--<li><a href="#">youtube</a></li>-->
+                        <!--<li><a href="#">google</a></li>-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container copy">
+        <p>&copy; 2013 Studio6, Inc. All rights reserved.</p>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="logo"><img src="img/logo.png" alt="Landoretti"></div>
+        <nav>
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">home</a></li>
+                <li><a href="art.html">art</a></li>
+                <li><a href="myauctions.html">myauctions</a></li>
+                <li><a href="mybids.html">mybids</a></li>
+                <li><a href="contact.html">contact</a></li>
+
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right language">
+
+                <li><a href="nl">nl</a></li>
+                <li><a href="fr">fr</a></li>
+                <li><a href="en">en</a></li>
+
+            </ul>
+        </nav>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
