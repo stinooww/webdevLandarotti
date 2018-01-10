@@ -440,6 +440,7 @@ footer {
     width: 18px;
     height: 18px; }
 
+/** css van how does it work section*/
 #uitleg {
   height: auto;
   padding: 50px 0; }
@@ -462,25 +463,23 @@ footer {
     text-align: center;
     font-size: 1.5em; }
 
+/** css van most popular section*/
 #popular {
   background-color: #eaeaea;
   padding: 50px 0 100px 0; }
   #popular h2 {
     font-size: 3.5em;
     font-weight: 200; }
-  @media (max-width: 1024px) {
-    #popular .poprows {
-      padding: 0 15px; } }
   #popular .poprows div {
     padding: 0; }
-    #popular .poprows div.col-md-4 {
+    #popular .poprows div#leftArt {
       width: calc(100%/1024*314); }
-      @media (max-width: 767px) {
-        #popular .poprows div.col-md-4 {
+      @media (max-width: 768px) {
+        #popular .poprows div#leftArt {
           width: 100%; } }
-      #popular .poprows div.col-md-4 div.overlay a {
+      #popular .poprows div#leftArt div.overlay a {
         display: none; }
-        #popular .poprows div.col-md-4 div.overlay a .svg-icon {
+        #popular .poprows div#leftArt div.overlay a .svg-icon {
           position: absolute;
           left: 50%;
           top: 50%;
@@ -491,34 +490,32 @@ footer {
           width: calc(100%/702*115);
           height: calc(100%/348*113);
           z-index: 1; }
-        #popular .poprows div.col-md-4 div.overlay a .transparent {
+        #popular .poprows div#leftArt div.overlay a .transparent {
           position: absolute;
           background-color: #565656;
           height: 100%;
           width: 100%;
           opacity: 0.702; }
-      #popular .poprows div.col-md-4 div.overlay:hover a {
+      #popular .poprows div#leftArt div.overlay:hover a {
         display: block; }
-      #popular .poprows div.col-md-4 div img {
+      #popular .poprows div#leftArt div img {
         width: 100%; }
-      #popular .poprows div.col-md-4 div:first-child {
+      #popular .poprows div#leftArt div:first-child {
         margin-bottom: 7.5px; }
-    #popular .poprows div.col-md-8 {
+    #popular .poprows div#juweel {
       background-color: blue;
       width: calc(100%/1024*702);
       margin-left: calc(100%/1024*8); }
-      @media (max-width: 767px) {
-        #popular .poprows div.col-md-8 {
-          width: 100%;
-          margin: 7.5px 0 0 0; } }
-      #popular .poprows div.col-md-8.overlay {
+      #popular .poprows div#juweel img {
+        width: 100%; }
+      #popular .poprows div#juweel.overlay {
         -webkit-transition: 3s ease;
         -o-transition: 3s ease;
         -moz-transition: 3s ease;
         transition: 3s ease; }
-        #popular .poprows div.col-md-8.overlay a {
+        #popular .poprows div#juweel.overlay a {
           display: none; }
-          #popular .poprows div.col-md-8.overlay a .svg-icon {
+          #popular .poprows div#juweel.overlay a .svg-icon {
             position: absolute;
             left: 50%;
             top: 50%;
@@ -529,23 +526,28 @@ footer {
             width: calc(100%/702*115);
             height: calc(100%/348*113);
             z-index: 1; }
-          #popular .poprows div.col-md-8.overlay a .transparent {
+          #popular .poprows div#juweel.overlay a .transparent {
             position: absolute;
             background-color: #565656;
             height: 100%;
             width: 100%;
             opacity: 0.702; }
-        #popular .poprows div.col-md-8.overlay:hover {
+        #popular .poprows div#juweel.overlay:hover {
           -webkit-transition: 3s ease;
           -o-transition: 3s ease;
           -moz-transition: 3s ease;
           transition: 3s ease; }
-          #popular .poprows div.col-md-8.overlay:hover a {
+          #popular .poprows div#juweel.overlay:hover a {
             display: block; }
-      #popular .poprows div.col-md-8 img {
-        width: 100%; }
+      @media (max-width: 768px) {
+        #popular .poprows div#juweel {
+          width: 100%;
+          margin: 7.5px 0 0 0; } }
     #popular .poprows div div {
       padding: 0; }
+  @media (max-width: 1024px) {
+    #popular {
+      padding: 0 15px; } }
 
 /*
 *

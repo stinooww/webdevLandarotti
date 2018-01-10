@@ -70,7 +70,7 @@
 .inleiding{
   background-color: #162a81;
 }
-// icon of blue overlay
+// icon van de blauwe achtergnd
 .inleidingCirkel{
   position: absolute;
   top: -16px;
@@ -92,7 +92,7 @@
     height: 18px;
   }
 }
-
+/** css van how does it work section*/
 #uitleg {
   height: auto;
   padding: 50px 0;
@@ -122,7 +122,7 @@
 
 
 
-
+/** css van most popular section*/
 #popular{
   background-color: $grey;
   padding: 50px 0 100px 0;
@@ -131,15 +131,11 @@ h2{
   font-weight: 200;
 }
   .poprows{
-      @include media ("<=large") {
-        padding: 0 15px;
-      }
-
       div {
         padding: 0;
-        &.col-md-4 {
+        &#leftArt {
           width: calc(100%/1024*314);
-          @media (max-width: 767px) {
+          @include media ("<=medium") {
             width: 100%;
           }
 
@@ -185,15 +181,15 @@ h2{
           }
         }
 
-        &.col-md-8 {
+        &#juweel {
           background-color: blue;
           width: calc(100%/1024*702);
           margin-left: calc(100%/1024*8);
 
-          @media (max-width: 767px) {
+          img {
             width: 100%;
-            margin: 7.5px 0 0 0;
           }
+
 
           &.overlay {
             -webkit-transition: 3s ease;
@@ -235,8 +231,9 @@ h2{
             }
           }
 
-          img {
+          @include media ("<=medium") {
             width: 100%;
+            margin: 7.5px 0 0 0;
           }
         }
 
@@ -245,4 +242,8 @@ h2{
         }
       }
     }
+  @include media ("<=large") {
+    padding: 0 15px;
   }
+
+}
