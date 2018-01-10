@@ -234,17 +234,10 @@
             .menu ul:last-child li:hover {
               background-color: #d6d6d6; } }
 
-/*
-*
-*	CSS of the Footer
-*
-*/
+/**css v/d footer*/
 .footer {
   height: 566px;
   padding: 0 15px; }
-  @media (max-width: 767px) {
-    .footer {
-      height: auto; } }
   .footer .line {
     padding-top: 100px;
     border-bottom: 1px solid #e5e5e5; }
@@ -278,7 +271,7 @@
           display: none; } }
       .footer .container .row div nav ul .dropdown a {
         display: none; }
-        @media (max-width: 767px) {
+        @media (max-width: 319px) {
           .footer .container .row div nav ul .dropdown a {
             display: block;
             color: black;
@@ -324,6 +317,7 @@
   height: 29px;
   width: 155px; }
 
+/*onderste menu */
 footer {
   background: #eaeaea;
   height: 50px;
@@ -345,27 +339,27 @@ footer {
       height: 140px;
       position: absolute;
       bottom: -4px;
-      box-shadow: 0px 0px 24px 0px rgba(1, 1, 1, 0.19); }
+      box-shadow: 0 0 24px 0 rgba(1, 1, 1, 0.19); }
     footer .container nav ul {
       margin: 0;
       padding-left: 170px; }
-      @media (max-width: 767px) {
-        footer .container nav ul {
-          padding-left: 0; } }
-      footer .container nav ul.language {
-        padding-left: 0;
-        font-size: 1.3em; }
-        footer .container nav ul.language li a {
-          font-weight: normal;
-          color: #0a1e75; }
       footer .container nav ul:first-child li {
         font-weight: bold;
-        margin-right: 30px; }
+        margin-right: 40px; }
         footer .container nav ul:first-child li a {
           font-size: 1.5em;
           color: #4e4e4e;
           padding: 0;
           line-height: 50px; }
+      footer .container nav ul:nth-child(2) {
+        padding-left: 0;
+        font-size: 1.3em; }
+        footer .container nav ul:nth-child(2) li a {
+          font-weight: normal;
+          color: #0a1e75; }
+      @media (max-width: 767px) {
+        footer .container nav ul {
+          padding-left: 0; } }
 
 /*mainpage*/
 #landing #landingImg {
@@ -715,54 +709,52 @@ footer {
       color: #01a6a0;
       text-align: center; }
 
-/*
-*
-*	CSS of the Faq
-*
-*/
-@media (min-width: 991px) {
-  #faq-filter .container {
-    padding: 0; } }
-#faq-filter .container .filter {
-  background-color: #f7f8f7;
-  height: 134px;
-  padding: 0 47px 0 50px;
-  font-size: 1.8em;
-  font-weight: bold;
-  border: 1px solid #e5e5e5;
-  display: flex;
-  align-items: center; }
-  @media (max-width: 991px) {
-    #faq-filter .container .filter {
-      height: auto;
-      padding: 15px; } }
-  #faq-filter .container .filter .filter-items {
-    width: 100%;
-    float: left; }
-    #faq-filter .container .filter .filter-items div {
-      padding: 0; }
-      #faq-filter .container .filter .filter-items div ul li {
-        line-height: 32px; }
-        #faq-filter .container .filter .filter-items div ul li a {
-          color: #01a6a0;
-          border-bottom: 2px solid #01a6a0; }
-#faq-filter .container .button {
-  float: right; }
-  #faq-filter .container .button a {
-    display: inline-block;
-    text-align: center;
-    line-height: 48px;
-    width: 117px;
-    height: 48px;
-    background-color: #f5f5f5;
-    border: 1px solid #e5e5e5;
-    border-top: 0;
+/*css van faq*/
+#faq-filter {
+  padding-top: 5%; }
+  @media (min-width: 991px) {
+    #faq-filter .container {
+      padding: 0; } }
+  #faq-filter .container .filter {
+    background-color: #f7f8f7;
+    height: 134px;
+    padding: 0 47px 0 50px;
+    font-size: 1.8em;
     font-weight: bold;
-    color: #0a1e75;
-    font-size: 1.2em;
-    text-decoration: none; }
-    #faq-filter .container .button a:hover {
-      background-color: #e1e1e1; }
+    border: 1px solid #e5e5e5;
+    display: flex;
+    align-items: center; }
+    @media (max-width: 991px) {
+      #faq-filter .container .filter {
+        height: auto;
+        padding: 15px; } }
+    #faq-filter .container .filter .filter-items {
+      width: 100%;
+      float: left; }
+      #faq-filter .container .filter .filter-items div {
+        padding: 0; }
+        #faq-filter .container .filter .filter-items div ul li {
+          line-height: 32px; }
+          #faq-filter .container .filter .filter-items div ul li a {
+            color: #01a6a0;
+            border-bottom: 2px solid #01a6a0; }
+  #faq-filter .container .button {
+    float: right; }
+    #faq-filter .container .button a {
+      display: inline-block;
+      text-align: center;
+      line-height: 48px;
+      width: 117px;
+      height: 48px;
+      background-color: #f5f5f5;
+      border: 1px solid #e5e5e5;
+      border-top: 0;
+      font-weight: bold;
+      color: #0a1e75;
+      font-size: 1.2em;
+      text-decoration: none; }
+      #faq-filter .container .button a:hover {
+        background-color: #e1e1e1; }
 
 #faq-list {
   margin-top: 57px; }
@@ -803,7 +795,7 @@ footer {
 *
 */
 .isearch-bg {
-  background: url("/img/isearch.jpg");
+  background: url("/img/platenspeler.jpg");
   background-size: cover;
   background-position-x: center;
   background-repeat: no-repeat;

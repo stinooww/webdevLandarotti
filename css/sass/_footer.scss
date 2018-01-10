@@ -1,15 +1,7 @@
-
-/*
-*
-*	CSS of the Footer
-*
-*/
+/**css v/d footer*/
 .footer {
   height: 566px;
   padding: 0 15px;
-  @media (max-width: 767px) {
-    height: auto;
-  }
   .line {
     padding-top: 100px;
     border-bottom: 1px solid $lightergrey;
@@ -61,7 +53,7 @@
           }
 
           h4 {
-            @media (max-width: 767px) {
+            @include media("<medium")  {
               display: none;
             }
           }
@@ -70,7 +62,7 @@
               a {
                 display: none;
 
-                @media (max-width: 767px) {
+                @include media("<small") {
                   display: block;
                   color: black;
                   font-weight: bold;
@@ -80,7 +72,7 @@
               .dropdown-menu {
                 font-weight: normal;
                 font-size: 1em;
-                @media (min-width: 768px) {
+                @include media(">=medium") {
                   position: static;
                   display: block;
                   border: none;
@@ -91,7 +83,7 @@
                   a {
                     font-weight: normal;
                     color: $green;
-                    @media (min-width: 768px) {
+                    @include media(">=medium") {
                       display: block;
                       padding-left: 0;
                     }
@@ -129,10 +121,12 @@
 }
 #social{
   margin-top: 25px;
+
   display: inline-block;
   height: 29px;
   width: 155px;
 }
+/*onderste menu */
 footer {
   background: $grey;
   height: 50px;
@@ -143,7 +137,7 @@ footer {
   position: relative;
   width: 100%;
 
-  @media (max-width: 767px) {
+  @include media("<medium") {
     height: 100%;
   }
   .container {
@@ -157,34 +151,17 @@ footer {
 
       position: absolute;
       bottom: -4px;
-      box-shadow: 0px 0px 24px 0px rgba(1, 1, 1, 0.19);
+      box-shadow: 0 0 24px 0 rgba(1, 1, 1, 0.19);
     }
     nav {
       ul {
         margin: 0;
         padding-left: 170px;
 
-        @media (max-width: 767px) {
-          padding-left: 0;
-        }
-
-        &.language {
-          padding-left: 0;
-          font-size: 1.3em;
-
-          li {
-            a {
-              font-weight: normal;
-              color: $blue;
-              //line-height: 50px;
-            }
-          }
-        }
-
         &:first-child {
           li {
             font-weight: bold;
-            margin-right: 30px;
+            margin-right: 40px;
             a {
               font-size: 1.5em;
               color: $darkgrey;
@@ -193,6 +170,25 @@ footer {
             }
           }
         }
+        &:nth-child(2) {
+          padding-left: 0;
+          font-size: 1.3em;
+
+          li {
+            a {
+
+              font-weight: normal;
+              color: $blue;
+
+            }
+          }
+        }
+
+        @include media("<medium") {
+          padding-left: 0;
+        }
+
+
       }
     }
   }
