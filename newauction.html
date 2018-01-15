@@ -44,7 +44,7 @@
 
             </button>
 
-            <a href="index.html" class="navbar-brand logo"><img src="img/logo.png" alt="Landoretti"></a>
+            <a href="index.html" class="navbar-brand logo"></a>
 
         </div>
 
@@ -53,13 +53,15 @@
             <div class="collapse navbar-collapse navigation">
 
                 <ul class="nav navbar-nav">
+<div class="loggedIn">
 
                     <li><a href=""><img src="img/icon/watchlist.png" alt="profile" class="navicons">watchlist</a></li>
                     <li><a href=""><img src="img/icon/profile.png" alt="profile" class="navicons">profile</a></li>
-                    <li><a href="">logout</a></li>
+                    <li><a href="">logout</a></li></div>
+                    <div class="notLoggedIn">
                     <li><a href="">register</a></li>
-                    <li><a href="">login</a></li>
-
+                    <li><a href="" id="login">login</a></li>
+                    </div>
                 </ul>
 
 
@@ -109,26 +111,36 @@
 
 </nav>
 
-<section id="auctions-form">
+<section id="newAuction">
 
 
 
-        <img src="img/platenspeler.jpg" alt="landarotti vintage platenspeler" id="faqImg">
+        <!--<img src="img/platenspeler.jpg" alt="landarotti vintage platenspeler" id="faqImg">-->
 
-        <div class="container inleiding ">
+        <div  id="inleiding">
+<div class=" container visit">
 
             <div class="inleidingCirkel">
 
                 <span class="inner"></span>
 
             </div>
+
             <div id="actie">
                 <h1>Lorem Ipsum</h1>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. magnis dis parturient montes, nascetur ridiculus mus..</p>
+                <p>Lorem ipsum dolor sit amet, consec-</p><p>tetuer adipiscing elit. Aenean commo-</p> <p>do ligula eget dolor. Aenean massa.</p> <p>magnis dis parturient montes, nasce-</p><p>tur ridiculus mus..</p>
                 <p class="price">Price: <span id="euro">&euro;  299.99</span></p>
             </div>
-            <button class="btn"><a href="#">Visit auction <span> > </span>  </a></button>
+
+    <div id="loremBtn">
+        <a href="#">Visit auction <span> > </span>  </a>
+    </div>
+
         </div>
+        </div>
+
+
+
 
     <div class="container">
 

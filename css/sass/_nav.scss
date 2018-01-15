@@ -22,20 +22,6 @@ $lighterBlue: #2b45b5;
 $breakpoints: (small: 320px, medium: 768px, large: 1024px);
 
 
-//.main-navigation {
-//  background-color: $grey;
-//  height: 50px;
-//
-//  @include media ("<medium") {
-//    height: auto;
-//  }
-//}
-//
-//.main-navigation{
-//  background-color: $menucolor;
-//}
-
-
 /*algemene css*/
 .navbar-brand{
   padding:0 2px 0 0;
@@ -74,21 +60,25 @@ $breakpoints: (small: 320px, medium: 768px, large: 1024px);
     }
   }
 
-  .navbar-brand {
+  .logo{
     position: absolute;
     top: -4px;
-    background-image: url('/img/logo.png');
+    background-image: url('../img/logo.png');
     background-repeat: no-repeat;
     background-size: contain;
-    width: 103px;
-    height: 140px;
+    width: 71px;
+    height: 98px;
 
-    margin: 0;
+    margin: 0 0 0 2px;
 
-    @media (max-width: 767px) {
+    @include media("<medium") {
       margin: 0 0 0 15px;
     }
-
+    @include media(">large") {
+      margin: 0 0 0 15px;
+      width: 91px;
+      height: 124px;
+    }
     box-shadow: 0px 0px 24px 0px rgba(1, 1, 1, 0.19);
     z-index: 99;
   }
@@ -100,15 +90,15 @@ $breakpoints: (small: 320px, medium: 768px, large: 1024px);
 
 /*top menu */
 #headnav{
-  padding:0 238px ;
+  padding: 0 140px;
   background-color: #ffffff;
-  @include media ("<=large") {
-    padding: 0px 60px;
+  @include media (">large") {
+
+    padding:0 300px ;
   }
+
 }
-#search{
-  padding-top: 14px;
-}
+
 .navicons{
   margin:0 5px 5px 0;
 }
@@ -117,29 +107,37 @@ $breakpoints: (small: 320px, medium: 768px, large: 1024px);
   border: none;
   padding-right: 0;
   ul {
-    margin: 15px 0 15px 132px;
+    margin: 5px 0 5px 40px;
     padding-left: 67px;
     li{
-      margin-left: 30px;
-      font-size: 1.3em;
+      margin-left: 25px;
+      font-size: 0.9em;
       float: left;
+      @include media (">large") {
+        margin-left: 30px;
+        font-size: 1.3em;
+      }
       &:nth-child(1){
-        padding-right: 20px;
+        padding-right: 7px;
           border-right: 1px solid $blue ;
           height: 19px;
-
-        @include media ("<=large") {
-          padding-right: 7px;
-
+        .navicons{
+          margin:0 5px 5px 0;
+        }
+        @include media (">large") {
+          padding-right: 20px;
+          height: 19px;
         }
       }
       &:nth-child(2) {
         border-right: 1px solid $blue ;
-        padding-right: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
         height: 19px;
-        @include media ("<=large") {
-          padding-right: 7px;
+        @include media (">large") {
 
+          padding-left: 10px;
+          padding-right: 20px;
         }
       }
       a{
@@ -157,8 +155,8 @@ $breakpoints: (small: 320px, medium: 768px, large: 1024px);
       margin: 7px 0 3px 3px;
       display: inline-block;
     }
-    @include media ("<=large") {
-      margin: 15px 0 15px 80px;
+    @include media (">large") {
+      margin: 15px 0 15px 132px;
 
     }
     /* todo: logged in fixe                                         */
@@ -238,17 +236,73 @@ $breakpoints: (small: 320px, medium: 768px, large: 1024px);
   @include media ("<medium") {
     margin-top: 90px;
   }
-  #search{
+  .find{
+    height: 28px;
+    padding-top: 6px;
 
-    @include media ("<=large") {
-      padding-right: 41px;
-      .input-field input[type="text"] {
+    @include media (">large") {
+      padding-top: 16px;
+    }
 
-        width: 161px !important;
+    input {
+      padding-left: 8px;
+      font-size: 1.5em;
+      &[type="text"] {
+        height: 24px;
+        width: 146px;
+        border: 1px solid ;
+        border-color: $darkergrey;
+        border-radius: 4px;
+        color: $darkestgrey;
+
+        @include media (">large") {
+          height: 35px;
+          width: 290px;
+          border: 1.5px solid;
+          border-color: $darkergrey;
+          border-radius: 4px;
+          color: $darkestgrey;
+        }
+
       }
 
+      &[type="image"] {
+        background-color: transparent;
+        border: none;
+        width: 20px;
+        height: 15px;
+        padding-left: 4px;
+        margin-left: 0px;
+        @include media (">large") {
+          width: 30px;
+          height: 22px;
+          padding-left: 4px;
+          background-color: transparent;
+          border: none;
+        }
+        }
+
+
+      @include media (">large") {
+
+        .input-field input[type="text"] {
+
+          width: 161px !important;
+        }
+
+      }
+    }
+    &.input-footer {
+      margin: 18px 0 0 0;
+      input {
+        &[type="text"] {
+          height: 28px;
+          width: 183px;
+        }
+      }
     }
   }
+
 }
 
 
@@ -265,7 +319,7 @@ $breakpoints: (small: 320px, medium: 768px, large: 1024px);
  /* onderste menu css*/
 .main-menu{
   background-color: $grey;
-  padding-left: 170px;
+  padding-left: 290px;
   top: 0;
   margin: 0;
   border: none;
@@ -366,7 +420,7 @@ float: left;
 
           /*tweede ul menu*/
           &:last-child {
-            padding-left: 40px;
+            padding-right: 116px;
             font-weight: bold !important;
             color: red;
             li {

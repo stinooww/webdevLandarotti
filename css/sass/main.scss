@@ -89,43 +89,7 @@ h5 {
 ul {
   list-style: none;
 }
-.input-field {
-  height: 28px;
 
-
-  input {
-    padding-left: 8px;
-    font-size: 1.5em;
-    &[type="text"] {
-      height: 28px;
-      width: 207px;
-      border: 1.5px solid ;
-      border-color: $darkergrey;
-      border-radius: 5px;
-      color: $darkestgrey;
-    }
-
-    &[type="submit"] {
-      background-color: transparent;
-      border: none;
-
-      width: 18px;
-      height: 18px;
-      margin-left: 4px;
-    }
-
-
-  }
-  &.input-footer {
-    margin: 18px 0 0 0;
-    input {
-      &[type="text"] {
-        height: 28px;
-        width: 183px;
-      }
-    }
-  }
-}
 
 label {
   font-size: 2em;
@@ -136,11 +100,7 @@ label {
 
 
 
-/*
-*
-* CSS of ERRORS
-*
-*/
+/*errors */
 .errors {
   border: none;
   border-radius: 0;
