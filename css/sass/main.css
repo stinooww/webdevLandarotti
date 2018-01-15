@@ -298,14 +298,40 @@
       height: auto; } }
   .footer .container {
     padding-top: 40px; }
-    .footer .container .find1 {
+    .footer .container div::after {
+      display: block;
+      content: ""; }
+    .footer .container div #leftFoot div ul {
+      float: left;
+      font-size: 1.4em;
+      padding-left: 0;
+      margin: 0 0 15px 0; }
+      .footer .container div #leftFoot div ul li {
+        margin-top: 3px;
+        line-height: 1.3em; }
+        .footer .container div #leftFoot div ul li a {
+          text-transform: none;
+          color: #01a6a0; }
+    .footer .container div #leftFoot div::after {
+      display: block;
+      content: "";
+      clear: both; }
+    @media (max-width: 767px) {
+      .footer .container div #leftFoot div h4 {
+        display: none; } }
+    .footer .container div .find1 {
       height: 50px; }
-      .footer .container .find1 .input-field {
-        padding-top: 12px; }
-      .footer .container .find1 input {
+      .footer .container div .find1 h4 {
+        font-size: 1.6em; }
+      @media (min-width: 1025px) {
+        .footer .container div .find1 {
+          font-size: 2.2em; } }
+      .footer .container div .find1 .input-field {
+        padding: 20px 0; }
+      .footer .container div .find1 input {
         padding-left: 8px;
         font-size: 1.5em; }
-        .footer .container .find1 input[type="text"] {
+        .footer .container div .find1 input[type="text"] {
           height: 24px;
           width: 146px;
           border: 1px solid;
@@ -313,13 +339,13 @@
           border-radius: 4px;
           color: #1d1d1b; }
           @media (min-width: 1025px) {
-            .footer .container .find1 input[type="text"] {
+            .footer .container div .find1 input[type="text"] {
               height: 30px;
               width: 248px;
               border: 1px solid;
               border-color: #9e9e9e;
               border-radius: 4px; } }
-        .footer .container .find1 input[type="image"] {
+        .footer .container div .find1 input[type="image"] {
           background-color: transparent;
           border: none;
           width: 20px;
@@ -327,7 +353,7 @@
           padding-left: 4px;
           margin-left: 0px; }
           @media (min-width: 1025px) {
-            .footer .container .find1 input[type="image"] {
+            .footer .container div .find1 input[type="image"] {
               padding-top: 3px;
               width: 25px;
               height: 21px;
@@ -335,92 +361,49 @@
               background-color: transparent;
               border: none; } }
         @media (min-width: 1025px) {
-          .footer .container .find1 input .input-field input[type="text"] {
+          .footer .container div .find1 input .input-field input[type="text"] {
             width: 161px !important; } }
-      .footer .container .find1.input-footer {
-        margin: 18px 0 0 0; }
-        .footer .container .find1.input-footer input[type="text"] {
-          height: 28px;
-          width: 183px; }
-    .footer .container div {
-      padding: 0; }
-      .footer .container div::after {
-        clear: both;
-        display: block;
-        content: ""; }
-      .footer .container div .contact {
-        float: left;
-        margin-top: 30px; }
-        .footer .container div .contact ul {
-          padding: 0;
-          margin: 0; }
-          .footer .container div .contact ul li {
-            color: #5c5c5c;
-            font-size: 1.5em; }
-            .footer .container div .contact ul li:nth-child(3) {
-              margin-bottom: 30px; }
-            .footer .container div .contact ul li .contactInf {
-              margin-left: 40px;
-              padding-left: 40px !important; }
-            .footer .container div .contact ul li a {
-              color: #01a6a0;
-              text-decoration: underline; }
-      .footer .container div div::after {
-        display: block;
-        content: "";
-        clear: both; }
-      @media (max-width: 767px) {
-        .footer .container div div h4 {
-          display: none; } }
-      .footer .container div div ul .dropdown a {
-        display: none; }
-        @media (max-width: 319px) {
-          .footer .container div div ul .dropdown a {
-            display: block;
-            color: black;
-            font-weight: bold;
-            padding-left: 0; } }
-      .footer .container div div ul .dropdown .dropdown-menu {
-        font-weight: normal;
-        font-size: 1em; }
-        @media (min-width: 768px) {
-          .footer .container div div ul .dropdown .dropdown-menu {
-            position: static;
-            display: block;
-            border: none;
-            box-shadow: none;
-            font-size: 1em; } }
-        .footer .container div div ul .dropdown .dropdown-menu li a {
-          font-weight: normal;
-          color: #01a6a0; }
-          @media (min-width: 768px) {
-            .footer .container div div ul .dropdown .dropdown-menu li a {
-              display: block;
-              padding-left: 0; } }
-      .footer .container div div ul {
-        float: left;
-        font-size: 1.4em;
-        padding-left: 0;
-        margin: 0 0 15px 0; }
-        .footer .container div div ul li {
-          line-height: 1.3em; }
-          .footer .container div div ul li a {
-            text-transform: none;
-            color: #01a6a0; }
-    .footer .container.copy {
-      padding-top: 0; }
-      .footer .container.copy p {
-        text-align: right;
+    .footer .container div .contact {
+      float: left;
+      margin-top: 60px; }
+      .footer .container div .contact h4 {
+        font-size: 1.8em; }
+      .footer .container div .contact ul {
+        padding: 0;
+        margin: 0; }
+        .footer .container div .contact ul li {
+          color: #5c5c5c;
+          font-size: 1.7em; }
+          .footer .container div .contact ul li:nth-child(3) {
+            margin-bottom: 30px; }
+          .footer .container div .contact ul li .contactInf {
+            margin-left: 40px;
+            padding-left: 40px !important; }
+          .footer .container div .contact ul li a {
+            color: #01a6a0;
+            text-decoration: underline; }
+            @media (max-width: 1024px) {
+              .footer .container div .contact ul li a {
+                font-size: 0.9em; } }
+        .footer .container div .contact ul:last-child #social {
+          float: left;
+          margin-top: 25px;
+          display: inline-block;
+          height: 35px;
+          width: 167px; }
+    .footer .container div .copy {
+      padding-top: 300px; }
+      .footer .container div .copy div {
+        padding: 20px 0; }
+        .footer .container div .copy div img {
+          padding: 10px 0 10px 10px;
+          width: 26%; }
+      .footer .container div .copy p {
+        padding-left: 10px;
         font-size: 1.2em;
         color: #777777;
         line-height: 1.5;
         margin: 0; }
-
-#social {
-  margin-top: 25px;
-  display: inline-block;
-  height: 29px;
-  width: 155px; }
 
 /*onderste menu */
 footer {
@@ -431,7 +414,8 @@ footer {
   display: flex;
   align-items: center;
   position: relative;
-  width: 100%; }
+  width: 100%;
+  margin-top: 80px; }
   @media (max-width: 767px) {
     footer {
       height: 100%; } }
@@ -448,6 +432,7 @@ footer {
     footer .container div ul {
       margin: 0;
       padding-left: 170px;
+      text-transform: uppercase;
       /*eerste menu*/
       /*tweede menu*/ }
       footer .container div ul:first-child li {
