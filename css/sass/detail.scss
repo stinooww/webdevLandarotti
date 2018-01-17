@@ -31,25 +31,24 @@ $lightBlue: #0120a6;
 $lighterBlue: #2b45b5;
 
 
-/** css van de detail pagina*/
 
-#dance {
+section{
   margin-top: 140px;
   .container {
     h1 {
       margin-bottom: 0;
     }
-    .datum {
+    p{
       font-size: 1.4em;
       margin: 5px 0 23px 0;
 
       span {
         color: $blue;
       }
-  i{
-    margin-left: 15px;
-    color: $blue;
-  }
+      i{
+        margin-left: 15px;
+        color: $blue;
+      }
     }
 
     .detail {
@@ -68,7 +67,7 @@ $lighterBlue: #2b45b5;
             width: 100%;
           }
 
-          .danceoftimeDetail {
+          .detail-pictures {
             height: 502px;
             .main {
               height: 381px;
@@ -147,7 +146,7 @@ $lighterBlue: #2b45b5;
             }
           }
 
-          .danceoftimeInfo {
+          .information {
             text-align: right;
             margin-bottom: 50px;
             .title {
@@ -200,7 +199,7 @@ $lighterBlue: #2b45b5;
 
           .bid {
             border: 1px solid $lightergrey;
-            height: 100%;
+            //height: 100%;
             text-align: right;
             height: 233px;
 
@@ -231,7 +230,7 @@ $lighterBlue: #2b45b5;
               }
             }
 
-            .bidden {
+            .bid-system {
               p {
                 font-size: 1.4em;
                 margin: 0;
@@ -239,15 +238,18 @@ $lighterBlue: #2b45b5;
                 height: 24px;
               }
 
-
-                #bidform {
+              div {
+                form {
                   width: 100%;
                   height: 60px;
                   background-color: $green;
                   display: flex;
 
                   padding: 12px 20px 11px 18px;
-
+                  i{
+                    color: white;
+                    margin-left: 15px;
+                  }
                   input {
                     float: left;
                     &[type="text"] {
@@ -267,14 +269,8 @@ $lighterBlue: #2b45b5;
                       margin-left: 14px;
                     }
                   }
-                  i{
-                    color: white;
-padding: 0 15px;
-                  }
                 }
-
-
-
+              }
             }
 
             .link {
@@ -290,9 +286,9 @@ padding: 0 15px;
           }
         }
 
-        .description {
+        .info-auction {
           height: 383px;
-
+          background-color: #f4f4f4;
           margin: 50px 0;
           border: 1px solid #e5e5e5;
 
@@ -376,7 +372,7 @@ padding: 0 15px;
                   height: 100%;
                   text-transform: uppercase;
 
-                  display: flex;
+                  //display: flex;
                   justify-content: center;
                   align-items: center;
 
@@ -498,6 +494,4 @@ padding: 0 15px;
       }
     }
   }
-
-
 }
