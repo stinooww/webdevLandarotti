@@ -42,7 +42,7 @@ section{
       font-size: 1.4em;
       margin: 5px 0 23px 0;
 
-      span {
+      #bids{
         color: $blue;
       }
       i{
@@ -55,11 +55,9 @@ section{
       .row {
         margin: 0;
 
-        .no-padding {
+        .DoTLeft {
           padding: 0;
-        }
 
-        .col-sm-8 {
           width: calc(100%/1024*710);
           margin-right: calc(100%/1024*64);
 
@@ -135,11 +133,12 @@ section{
             }
           }
         }
+        .DoTRight{
+          padding: 0;
 
-        .col-sm-4 {
           width: calc(100%/1024*250);
 
-          @media (max-width: 767px) {
+          @include media("<medium")  {
             width: 100%;
             &.no-padding {
               margin-top: 50px;
@@ -422,7 +421,7 @@ section{
 
         .related-items {
           height: 100%;
-          .image {
+          .kunstwerk{
             height: 250px;
             width: 100%;
 
@@ -463,7 +462,7 @@ section{
                 }
               }
 
-              .visit-auction {
+              .visit {
                 float: left;
                 border-bottom: 1px solid #e5e5e5;
                 margin-top: -7px;

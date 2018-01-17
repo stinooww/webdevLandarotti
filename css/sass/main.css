@@ -1218,52 +1218,51 @@ section {
   section .container #datum {
     font-size: 1.4em;
     margin: 5px 0 23px 0; }
-    section .container #datum span {
+    section .container #datum #bids {
       color: #0a1e75; }
     section .container #datum i {
       margin-left: 15px;
       color: #0a1e75; }
   section .container .danceOfTime .row {
     margin: 0; }
-    section .container .danceOfTime .row .no-padding {
-      padding: 0; }
-    section .container .danceOfTime .row .col-sm-8 {
+    section .container .danceOfTime .row .DoTLeft {
+      padding: 0;
       width: calc(100%/1024*710);
       margin-right: calc(100%/1024*64); }
       @media (max-width: 767px) {
-        section .container .danceOfTime .row .col-sm-8 {
+        section .container .danceOfTime .row .DoTLeft {
           width: 100%; } }
-      section .container .danceOfTime .row .col-sm-8 .detail-pictures {
+      section .container .danceOfTime .row .DoTLeft .detail-pictures {
         height: 502px; }
-        section .container .danceOfTime .row .col-sm-8 .detail-pictures .main {
+        section .container .danceOfTime .row .DoTLeft .detail-pictures .main {
           height: 381px;
           margin-bottom: 12px; }
-          section .container .danceOfTime .row .col-sm-8 .detail-pictures .main img {
+          section .container .danceOfTime .row .DoTLeft .detail-pictures .main img {
             border: 1px solid #a4a4a4;
             width: 100%;
             height: 100%;
             object-fit: cover; }
-        section .container .danceOfTime .row .col-sm-8 .detail-pictures .thumbnails {
+        section .container .danceOfTime .row .DoTLeft .detail-pictures .thumbnails {
           display: inline-block;
           width: 100%; }
-          section .container .danceOfTime .row .col-sm-8 .detail-pictures .thumbnails::after {
+          section .container .danceOfTime .row .DoTLeft .detail-pictures .thumbnails::after {
             clear: both;
             display: block;
             content: ""; }
-          section .container .danceOfTime .row .col-sm-8 .detail-pictures .thumbnails a {
+          section .container .danceOfTime .row .DoTLeft .detail-pictures .thumbnails a {
             background-color: red;
             float: left;
             width: calc(100%/710*229);
             padding: 0;
             height: 109px;
             cursor: pointer; }
-            section .container .danceOfTime .row .col-sm-8 .detail-pictures .thumbnails a:hover .overlay {
+            section .container .danceOfTime .row .DoTLeft .detail-pictures .thumbnails a:hover .overlay {
               background-color: rgba(255, 255, 255, 0); }
-            section .container .danceOfTime .row .col-sm-8 .detail-pictures .thumbnails a:nth-child(1) {
+            section .container .danceOfTime .row .DoTLeft .detail-pictures .thumbnails a:nth-child(1) {
               margin-right: calc(100%/710*12); }
-            section .container .danceOfTime .row .col-sm-8 .detail-pictures .thumbnails a:nth-child(2) {
+            section .container .danceOfTime .row .DoTLeft .detail-pictures .thumbnails a:nth-child(2) {
               margin-right: calc(100%/710*11); }
-            section .container .danceOfTime .row .col-sm-8 .detail-pictures .thumbnails a .overlay {
+            section .container .danceOfTime .row .DoTLeft .detail-pictures .thumbnails a .overlay {
               position: absolute;
               left: 0;
               top: 0;
@@ -1272,109 +1271,110 @@ section {
               background-color: rgba(255, 255, 255, 0.7);
               border: 1px solid #a4a4a4;
               z-index: 1; }
-            section .container .danceOfTime .row .col-sm-8 .detail-pictures .thumbnails a img {
+            section .container .danceOfTime .row .DoTLeft .detail-pictures .thumbnails a img {
               width: 100%;
               object-fit: cover;
               height: 100%;
               border: 1px solid #a4a4a4; }
-    section .container .danceOfTime .row .col-sm-4 {
+    section .container .danceOfTime .row .DoTRight {
+      padding: 0;
       width: calc(100%/1024*250); }
       @media (max-width: 767px) {
-        section .container .danceOfTime .row .col-sm-4 {
+        section .container .danceOfTime .row .DoTRight {
           width: 100%; }
-          section .container .danceOfTime .row .col-sm-4.no-padding {
+          section .container .danceOfTime .row .DoTRight.no-padding {
             margin-top: 50px; } }
-      section .container .danceOfTime .row .col-sm-4 .information {
+      section .container .danceOfTime .row .DoTRight .information {
         text-align: right;
         margin-bottom: 50px; }
-        section .container .danceOfTime .row .col-sm-4 .information .title {
+        section .container .danceOfTime .row .DoTRight .information .title {
           border-bottom: 1px solid #e5e5e5;
           height: 51px; }
-          section .container .danceOfTime .row .col-sm-4 .information .title h6 {
+          section .container .danceOfTime .row .DoTRight .information .title h6 {
             font-family: 'Helvetica', sans-serif;
             font-size: 2.7em;
             color: black;
             margin: 0; }
-          section .container .danceOfTime .row .col-sm-4 .information .title a {
+          section .container .danceOfTime .row .DoTRight .information .title a {
             font-size: 1.4em; }
-        section .container .danceOfTime .row .col-sm-4 .information .expire {
+        section .container .danceOfTime .row .DoTRight .information .expire {
           border-bottom: 1px solid #e5e5e5;
           height: 73px;
           display: flex;
           align-items: center;
           justify-content: flex-end; }
-          section .container .danceOfTime .row .col-sm-4 .information .expire div p {
+          section .container .danceOfTime .row .DoTRight .information .expire div p {
             font-size: 1.4em;
             margin: 0; }
-            section .container .danceOfTime .row .col-sm-4 .information .expire div p.date {
+            section .container .danceOfTime .row .DoTRight .information .expire div p.date {
               color: #01a6a0; }
-        section .container .danceOfTime .row .col-sm-4 .information .description {
+        section .container .danceOfTime .row .DoTRight .information .description {
           margin-top: 22px; }
-          section .container .danceOfTime .row .col-sm-4 .information .description p {
+          section .container .danceOfTime .row .DoTRight .information .description p {
             font-size: 1.3em;
             margin: 0; }
-          section .container .danceOfTime .row .col-sm-4 .information .description a {
+          section .container .danceOfTime .row .DoTRight .information .description a {
             font-size: 1.4em;
             font-weight: bold;
             color: black;
             border-bottom: 2px solid black; }
-      section .container .danceOfTime .row .col-sm-4 .bid {
+      section .container .danceOfTime .row .DoTRight .bid {
         border: 1px solid #e5e5e5;
         text-align: right;
         height: 233px; }
-        section .container .danceOfTime .row .col-sm-4 .bid .info {
+        section .container .danceOfTime .row .DoTRight .bid .info {
           height: 111px;
           display: flex;
           align-items: center;
           justify-content: flex-end;
           margin-right: 20px; }
-          section .container .danceOfTime .row .col-sm-4 .bid .info div p {
+          section .container .danceOfTime .row .DoTRight .bid .info div p {
             margin: 0;
             font-size: 1.6em;
             color: #0a1e75; }
-            section .container .danceOfTime .row .col-sm-4 .bid .info div p.price {
+            section .container .danceOfTime .row .DoTRight .bid .info div p.price {
               font-weight: bold;
               font-size: 2.5em; }
-          section .container .danceOfTime .row .col-sm-4 .bid .info div a {
+          section .container .danceOfTime .row .DoTRight .bid .info div a {
             font-size: 1.4em;
             font-weight: bold;
             color: #01a6a0;
             border-bottom: 1px solid #01a6a0; }
-        section .container .danceOfTime .row .col-sm-4 .bid .bid-system p {
+        section .container .danceOfTime .row .DoTRight .bid .bid-system p {
           font-size: 1.4em;
           margin: 0;
           padding-right: 20px;
           height: 24px; }
-        section .container .danceOfTime .row .col-sm-4 .bid .bid-system div form {
+        section .container .danceOfTime .row .DoTRight .bid .bid-system div form {
           width: 100%;
           height: 60px;
           background-color: #01a6a0;
           display: flex;
           padding: 12px 20px 11px 18px; }
-          section .container .danceOfTime .row .col-sm-4 .bid .bid-system div form i {
+          section .container .danceOfTime .row .DoTRight .bid .bid-system div form i {
             color: white;
             margin-left: 15px; }
-          section .container .danceOfTime .row .col-sm-4 .bid .bid-system div form input {
+          section .container .danceOfTime .row .DoTRight .bid .bid-system div form input {
             float: left; }
-            section .container .danceOfTime .row .col-sm-4 .bid .bid-system div form input[type="text"] {
+            section .container .danceOfTime .row .DoTRight .bid .bid-system div form input[type="text"] {
               font-family: 'Helvetica', sans-serif;
               height: 37px;
               width: 112px;
               font-size: 1.7em;
               padding-left: 14px; }
-            section .container .danceOfTime .row .col-sm-4 .bid .bid-system div form input[type="submit"] {
+            section .container .danceOfTime .row .DoTRight .bid .bid-system div form input[type="submit"] {
               background: transparent;
               border: none;
               color: white;
               font-size: 1.4em;
               font-weight: bold;
               margin-left: 14px; }
-        section .container .danceOfTime .row .col-sm-4 .bid .link {
+        section .container .danceOfTime .row .DoTRight .bid .link {
           text-align: center;
           font-size: 1.4em;
           height: 37px;
           line-height: 37px; }
-          section .container .danceOfTime .row .col-sm-4 .bid .link a {
+          section .container .danceOfTime .row .DoTRight .bid .link a {
             color: #0a1e75;
             border-bottom: 1px solid #0a1e75; }
     section .container .danceOfTime .row .DescriptionDoT {
@@ -1469,10 +1469,10 @@ section {
           margin-right: 0; }
         section #related .container .col-sm-3 .related-items {
           height: 100%; }
-          section #related .container .col-sm-3 .related-items .image {
+          section #related .container .col-sm-3 .related-items .kunstwerk {
             height: 250px;
             width: 100%; }
-            section #related .container .col-sm-3 .related-items .image img {
+            section #related .container .col-sm-3 .related-items .kunstwerk img {
               width: 100%;
               height: 100%;
               object-fit: cover; }
@@ -1495,17 +1495,17 @@ section {
               font-size: 1.4em; }
               section #related .container .col-sm-3 .related-items .kunstwerkinfo p.price {
                 font-size: 1.8em; }
-            section #related .container .col-sm-3 .related-items .kunstwerkinfo .visit-auction {
+            section #related .container .col-sm-3 .related-items .kunstwerkinfo .visit {
               float: left;
               border-bottom: 1px solid #e5e5e5;
               margin-top: -7px;
               text-align: center;
               line-height: 48px; }
-              section #related .container .col-sm-3 .related-items .kunstwerkinfo .visit-auction p, section #related .container .col-sm-3 .related-items .kunstwerkinfo .visit-auction a {
+              section #related .container .col-sm-3 .related-items .kunstwerkinfo .visit p, section #related .container .col-sm-3 .related-items .kunstwerkinfo .visit a {
                 float: left; }
-              section #related .container .col-sm-3 .related-items .kunstwerkinfo .visit-auction p {
+              section #related .container .col-sm-3 .related-items .kunstwerkinfo .visit p {
                 margin-right: 11px; }
-              section #related .container .col-sm-3 .related-items .kunstwerkinfo .visit-auction a {
+              section #related .container .col-sm-3 .related-items .kunstwerkinfo .visit a {
                 height: 50px;
                 width: 117px;
                 border: 1px solid #e5e5e5;
