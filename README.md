@@ -1,2 +1,2 @@
 # webdevLandarotti
-Web development 3 - part 2: Landarotti
+Web development 3 - deel  2: Web applicatie: Landarotti

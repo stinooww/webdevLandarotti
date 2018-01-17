@@ -55,6 +55,9 @@
   @media (min-width: 1025px) {
     #headnav {
       padding: 0 300px; } }
+  @media (max-width: 320px) {
+    #headnav {
+      padding: 0 !important; } }
 
 .navicons {
   margin: 0 5px 5px 0; }
@@ -301,6 +304,8 @@
     .footer .container div::after {
       display: block;
       content: ""; }
+    .footer .container div #leftFoot div h4 {
+      font-size: 1.8em; }
     .footer .container div #leftFoot div ul {
       float: left;
       font-size: 1.4em;
@@ -323,9 +328,10 @@
       height: 50px; }
       .footer .container div .find1 h4 {
         font-size: 1.6em; }
-      @media (min-width: 1025px) {
-        .footer .container div .find1 {
-          font-size: 2.2em; } }
+        @media (min-width: 1025px) {
+          .footer .container div .find1 h4 {
+            font-size: 1.8em;
+            font-weight: 700; } }
       .footer .container div .find1 .input-field {
         padding: 20px 0; }
       .footer .container div .find1 input {
@@ -340,6 +346,7 @@
           color: #1d1d1b; }
           @media (min-width: 1025px) {
             .footer .container div .find1 input[type="text"] {
+              font-size: 1.1em;
               height: 30px;
               width: 248px;
               border: 1px solid;
@@ -366,6 +373,9 @@
     .footer .container div .contact {
       float: left;
       margin-top: 60px; }
+      @media (max-width: 768px) {
+        .footer .container div .contact {
+          margin-top: 0px; } }
       .footer .container div .contact h4 {
         font-size: 1.8em; }
       .footer .container div .contact ul {
@@ -393,17 +403,32 @@
           width: 167px; }
     .footer .container div .copy {
       padding-top: 300px; }
+      @media (max-width: 768px) {
+        .footer .container div .copy {
+          padding-top: 0px; }
+          .footer .container div .copy div img {
+            width: 15%; } }
       .footer .container div .copy div {
         padding: 20px 0; }
         .footer .container div .copy div img {
           padding: 10px 0 10px 10px;
           width: 26%; }
+          @media (max-width: 1024px) {
+            .footer .container div .copy div img {
+              width: 45%;
+              padding-left: 5px; } }
+          @media (max-width: 320px) {
+            .footer .container div .copy div img {
+              width: 15%; } }
       .footer .container div .copy p {
         padding-left: 10px;
         font-size: 1.2em;
         color: #777777;
         line-height: 1.5;
         margin: 0; }
+        @media (max-width: 1024px) {
+          .footer .container div .copy p {
+            font-size: 0.9em; } }
 
 /*onderste menu */
 footer {
@@ -416,9 +441,17 @@ footer {
   position: relative;
   width: 100%;
   margin-top: 80px; }
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     footer {
-      height: 100%; } }
+      width: 1500px;
+      margin-top: 0px !important;
+      height: 17%; }
+      footer .container {
+        width: 1280px; }
+        footer .container div ul {
+          padding-top: 2%; }
+          footer .container div ul:first-child li {
+            margin-right: 40px; } }
   footer .container {
     height: 100%; }
     footer .container .logo {
@@ -429,15 +462,34 @@ footer {
       position: absolute;
       bottom: -4px;
       box-shadow: 0 0 24px 0 rgba(1, 1, 1, 0.19); }
+      @media (max-width: 320px) {
+        footer .container .logo {
+          height: 80px;
+          width: 40px; } }
     footer .container div ul {
       margin: 0;
       padding-left: 170px;
       text-transform: uppercase;
       /*eerste menu*/
       /*tweede menu*/ }
+      @media (max-width: 1024px) {
+        footer .container div ul {
+          padding-left: 240px; } }
+      @media (max-width: 320px) {
+        footer .container div ul {
+          width: 50%;
+          float: left; } }
       footer .container div ul:first-child li {
         font-weight: bold;
-        margin-right: 40px; }
+        margin-right: 65px; }
+        @media (max-width: 1024px) {
+          footer .container div ul:first-child li {
+            margin-right: 25px; } }
+        @media (max-width: 320px) {
+          footer .container div ul:first-child li {
+            margin-right: 0px;
+            float: left;
+            width: 40px; } }
         footer .container div ul:first-child li a {
           font-size: 1.5em;
           color: #4e4e4e;
@@ -446,9 +498,23 @@ footer {
       footer .container div ul:nth-child(2) {
         padding-left: 0;
         font-size: 1.3em; }
+        @media (min-width: 1025px) {
+          footer .container div ul:nth-child(2) {
+            padding-right: 50px; } }
+        @media (max-width: 320px) {
+          footer .container div ul:nth-child(2) {
+            width: 50%;
+            float: left; } }
         footer .container div ul:nth-child(2) li a {
           font-weight: normal;
           color: #0a1e75; }
+        @media (max-width: 320px) {
+          footer .container div ul:nth-child(2) li {
+            margin-right: 0px;
+            float: left;
+            width: 40px; } }
+        footer .container div ul:nth-child(2) li .active {
+          font-weight: bold; }
       @media (max-width: 767px) {
         footer .container div ul {
           padding-left: 0; } }
@@ -1214,11 +1280,14 @@ label {
   .navbar, .landing {
     width: 100%;
     margin: 0; } }
-@media (min-width: 321px) and (max-width: 768px) {
+@media (min-width: 381px) and (max-width: 768px) {
   .navbar, .landing {
     width: 1500px; } }
-@media (max-width: 319px) {
+@media (max-width: 379px) {
   .navbar, .landing {
-    width: 100%; } }
+    width: 100%; }
+
+  .container {
+    width: 1000px !important; } }
 
 /*# sourceMappingURL=main.css.map */

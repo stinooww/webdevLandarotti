@@ -96,7 +96,10 @@ $breakpoints: (small: 320px, medium: 768px, large: 1024px);
 
     padding:0 300px ;
   }
+  @include media("<=small") {
 
+    padding:0 !important;
+  }
 }
 
 .navicons{

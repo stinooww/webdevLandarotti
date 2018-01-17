@@ -10,7 +10,7 @@
 $font-weight-light:300;
 $font-weight-regular:400;
 $font-weight-bold:600;
-$breakpoints: (small: 320px, medium: 768px, large: 1024px);
+$breakpoints: (small: 380px, medium: 768px, large: 1024px);
 $lightblue-overlay: #485cb2;
 
 
@@ -139,5 +139,8 @@ label {
 @include media("<small") {
   .navbar, .landing {
     width: 100%;
+  }
+  .container{
+    width: 1000px !important;
   }
 }

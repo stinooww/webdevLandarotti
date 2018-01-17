@@ -23,7 +23,9 @@
             #leftFoot {
               //margin-bottom: 50px;
               div {
-
+h4{
+  font-size: 1.8em;
+}
                 ul {
                   float: left;
                   font-size: 1.4em;
@@ -56,10 +58,12 @@
               height: 50px;
               h4{
                 font-size: 1.6em;
+                @include media (">large") {
+                  font-size: 1.8em;
+                  font-weight: 700;
+                }
               }
-              @include media (">large") {
-                font-size: 2.2em;
-              }
+
               .input-field {
                 padding: 20px 0;
                 //margin: 18px 0 ;
@@ -84,6 +88,7 @@
                   color: $darkestgrey;
 
                   @include media (">large") {
+                    font-size: 1.1em;
                     height: 30px;
                     width: 248px;
                     border: 1px solid;
@@ -125,6 +130,13 @@
             .contact {
               float: left;
               margin-top: 60px;
+
+              @include media ("<=medium") {
+               margin-top: 0px;
+              }
+              @include media ("<small") {
+
+              }
               h4 {
                 font-size: 1.8em;
               }
@@ -166,11 +178,30 @@
             }
             .copy {
               padding-top: 300px;
+              @include media ("<=medium") {
+                padding-top: 0px;
+                div{
+                  img{
+                    width: 15%;
+                  }
+                }
+              }
+              @include media ("<=small") {
+
+              }
               div{
                 padding: 20px 0;
                 img{
                   padding: 10px 0 10px 10px;
                   width: 26%;
+                  @include media ("<=large") {
+                    width: 45%;
+                    padding-left: 5px;
+                  }
+                  @include media("<=small") {
+
+                    width: 15%;
+                  }
                 }
               }
               p {
@@ -179,13 +210,19 @@
                 color: rgb(119, 119, 119);
                 line-height: 1.5;
                 margin: 0;
+                @include media("<=large") {
+                  font-size: 0.9em;
+                }
               }
+
+              }
+
             }
           }
 
 
 
-  }
+
 
 
 
@@ -202,10 +239,32 @@ footer {
   align-items: center;
   position: relative;
   width: 100%;
-margin-top: 80px;
-  @include media("<medium") {
-    height: 100%;
+  margin-top: 80px;
+
+  @include media ("<=medium") {
+    width: 1500px;
+    margin-top: 0px !important;
+    height: 17%;
+    .container{
+      width: 1280px;
+      div{
+        ul{
+          padding-top: 2%;
+          &:first-child {
+            li{
+              margin-right: 40px;
+            }
+
+          }
+        }
+      }
+    }
   }
+  @include media ("<=small") {
+
+  }
+
+
   .container {
     height: 100%;
     .logo {
@@ -216,17 +275,38 @@ margin-top: 80px;
       position: absolute;
       bottom: -4px;
       box-shadow: 0 0 24px 0 rgba(1, 1, 1, 0.19);
+
+      @include media("<=small") {
+
+        height: 80px;
+        width: 40px;
+      }
     }
     div {
       ul {
         margin: 0;
         padding-left: 170px;
         text-transform: uppercase;
+        @include media("<=large") {
+          padding-left: 240px;
+        }
+        @include media("<=small") {
+width: 50%;
+float: left;
+        }
 /*eerste menu*/
         &:first-child {
           li {
             font-weight: bold;
-            margin-right: 40px;
+            margin-right: 65px;
+            @include media("<=large") {
+              margin-right: 25px;
+            }
+            @include media("<=small") {
+              margin-right: 0px;
+              float: left;
+width: 40px;
+            }
             a {
               font-size: 1.5em;
               color: $darkgrey;
@@ -238,14 +318,29 @@ margin-top: 80px;
         /*tweede menu*/
         &:nth-child(2) {
           padding-left: 0;
-          font-size: 1.3em;
+          @include media(">large") {
+            padding-right: 50px;
+          }
 
+          font-size: 1.3em;
+          @include media("<=small") {
+            width: 50%;
+            float: left;
+          }
           li {
             a {
 
               font-weight: normal;
               color: $blue;
 
+            }
+            @include media("<=small") {
+              margin-right: 0px;
+              float: left;
+              width: 40px;
+            }
+            .active{
+              font-weight: bold;
             }
           }
         }
