@@ -51,7 +51,7 @@ section{
       }
     }
 
-    .detail {
+    .danceOfTime {
       .row {
         margin: 0;
 
@@ -63,7 +63,7 @@ section{
           width: calc(100%/1024*710);
           margin-right: calc(100%/1024*64);
 
-          @media (max-width: 767px) {
+          @include media("<medium")  {
             width: 100%;
           }
 
@@ -199,7 +199,7 @@ section{
 
           .bid {
             border: 1px solid $lightergrey;
-            //height: 100%;
+
             text-align: right;
             height: 233px;
 
@@ -294,7 +294,7 @@ section{
 
           padding: 35px 20px;
 
-          @media (max-width: 767px) {
+          @include media("<medium")  {
             height: auto;
           }
 
@@ -304,7 +304,7 @@ section{
             margin-right: calc(100%/984*64);
             height: 100%;
 
-            @media (max-width: 767px) {
+            @include media("<medium") {
               width: 100%;
             }
             .text {
@@ -331,8 +331,8 @@ section{
             height: 100%;
             width: calc(100%/984*230);
             padding: 0 0 0 20px;
-
-            @media (max-width: 767px) {
+            border-left: grey solid 0.8px;
+            @include media("<medium") {
               width: 100%;
               padding-left: 0;
               margin-top: 20px;
@@ -379,6 +379,7 @@ section{
                 }
               }
             }
+
           }
         }
       }
@@ -389,7 +390,7 @@ section{
     height: 547px;
     background-color: #f4f4f4;
 
-    @media (max-width: 767px) {
+    @include media("<medium") {
       height: auto;
     }
 
@@ -404,13 +405,14 @@ section{
       }
 
       .col-sm-3 {
+
         width: calc(100%/1024*250);
         height: 382px;
         margin-right: calc(100%/1024*8);
         padding: 0;
         margin-bottom: 50px;
 
-        @media (max-width: 767px) {
+        @include media("<medium") {
           width: 100%;
         }
 
@@ -418,7 +420,7 @@ section{
           margin-right: 0;
         }
 
-        .item {
+        .related-items {
           height: 100%;
           .image {
             height: 250px;
@@ -431,20 +433,18 @@ section{
             }
           }
 
-          .info {
+          .kunstwerkinfo {
             height: 132px;
             padding-top: 25px;
 
             display: flex;
-            // align-items: center;
-            justify-content: center;
-            div {
-              p, h6 {
-                margin: 0;
-              }
 
-              > a {
-                font-size: 1.5em;
+            justify-content: center;
+
+
+             a {
+               font-weight: 500;
+                font-size: 1.7em;
                 color: $blue;
               }
 
@@ -452,9 +452,11 @@ section{
                 font-size: 2em;
                 color: #545353;
                 line-height: 16px;
+                margin: 0;
               }
 
               p {
+                margin: 0;
                 font-size: 1.4em;
                 &.price {
                   font-size: 1.8em;
@@ -485,7 +487,7 @@ section{
 
                 }
               }
-            }
+
           }
         }
       }

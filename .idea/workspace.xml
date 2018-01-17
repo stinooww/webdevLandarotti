@@ -29,8 +29,8 @@
             <file leaf-file-name="detail.scss" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/css/sass/detail.scss">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="7106">
-                    <caret line="484" column="0" lean-forward="false" selection-start-line="484" selection-start-column="0" selection-end-line="484" selection-end-column="0" />
+                  <state relative-caret-position="1028">
+                    <caret line="489" column="0" lean-forward="false" selection-start-line="489" selection-start-column="0" selection-end-line="489" selection-end-column="0" />
                     <folding />
                   </state>
                 </provider>
@@ -81,17 +81,14 @@
       <file leaf-file-name="detail.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="246" column="66" lean-forward="false" selection-start-line="246" selection-start-column="66" selection-end-line="246" selection-end-column="66" />
+            <state relative-caret-position="542">
+              <caret line="301" column="135" lean-forward="false" selection-start-line="301" selection-start-column="81" selection-end-line="301" selection-end-column="135" />
               <folding>
                 <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="e#4212#4216#0" expanded="true" />
                 <element signature="e#4257#4261#0" expanded="true" />
                 <element signature="e#4308#4312#0" expanded="true" />
-                <element signature="e#11582#11586#0" expanded="true" />
-                <element signature="e#12358#12362#0" expanded="true" />
-                <element signature="e#13138#13142#0" expanded="true" />
-                <element signature="e#13917#13921#0" expanded="true" />
+                <element signature="n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#1;n#div#0;n#div#1;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -104,8 +101,8 @@
       <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/sass/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+            <state relative-caret-position="1241">
+              <caret line="127" column="0" lean-forward="false" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -141,8 +138,10 @@
       <find>bid-system</find>
       <find>system</find>
       <find>date</find>
-      <find>description</find>
       <find>ask</find>
+      <find>description</find>
+      <find>col-sm-3</find>
+      <find>item</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -176,8 +175,8 @@
         <option value="$PROJECT_DIR$/isearch.html" />
         <option value="$PROJECT_DIR$/faq.html" />
         <option value="$PROJECT_DIR$/css/sass/main.scss" />
-        <option value="$PROJECT_DIR$/css/sass/detail.scss" />
         <option value="$PROJECT_DIR$/detail.html" />
+        <option value="$PROJECT_DIR$/css/sass/detail.scss" />
       </list>
     </option>
   </component>
@@ -302,7 +301,7 @@
       <workItem from="1515580906406" duration="20619000" />
       <workItem from="1515664668161" duration="20709000" />
       <workItem from="1516021304778" duration="12802000" />
-      <workItem from="1516179649495" duration="20494000" />
+      <workItem from="1516179649495" duration="21660000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1514460452668</created>
@@ -486,11 +485,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516225235872</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="detail pagina">
+      <created>1516226465890</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1516226465890</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122614000" />
+    <option name="totallyTimeSpent" value="123780000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1938" y="13" width="1044" height="1047" extended-state="0" />
@@ -1017,33 +1023,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/sass/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        <state relative-caret-position="1241">
+          <caret line="127" column="0" lean-forward="false" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/sass/detail.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7106">
-          <caret line="484" column="0" lean-forward="false" selection-start-line="484" selection-start-column="0" selection-end-line="484" selection-end-column="0" />
+        <state relative-caret-position="1028">
+          <caret line="489" column="0" lean-forward="false" selection-start-line="489" selection-start-column="0" selection-end-line="489" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="246" column="66" lean-forward="false" selection-start-line="246" selection-start-column="66" selection-end-line="246" selection-end-column="66" />
+        <state relative-caret-position="542">
+          <caret line="301" column="135" lean-forward="false" selection-start-line="301" selection-start-column="81" selection-end-line="301" selection-end-column="135" />
           <folding>
             <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="e#4212#4216#0" expanded="true" />
             <element signature="e#4257#4261#0" expanded="true" />
             <element signature="e#4308#4312#0" expanded="true" />
-            <element signature="e#11582#11586#0" expanded="true" />
-            <element signature="e#12358#12362#0" expanded="true" />
-            <element signature="e#13138#13142#0" expanded="true" />
-            <element signature="e#13917#13921#0" expanded="true" />
+            <element signature="n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#1;n#div#0;n#div#1;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
