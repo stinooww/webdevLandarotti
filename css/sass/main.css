@@ -1211,6 +1211,312 @@ footer {
             #isearch-overview .container .articles article .button a:hover {
               background-color: #e1e1e1; }
 
+/** css van de detail pagina*/
+#dance {
+  margin-top: 140px; }
+  #dance .container h1 {
+    margin-bottom: 0; }
+  #dance .container .datum {
+    font-size: 1.4em;
+    margin: 5px 0 23px 0; }
+    #dance .container .datum span {
+      color: #0a1e75; }
+    #dance .container .datum i {
+      margin-left: 15px;
+      color: #0a1e75; }
+  #dance .container .detail .row {
+    margin: 0; }
+    #dance .container .detail .row .no-padding {
+      padding: 0; }
+    #dance .container .detail .row .col-sm-8 {
+      width: calc(100%/1024*710);
+      margin-right: calc(100%/1024*64); }
+      @media (max-width: 767px) {
+        #dance .container .detail .row .col-sm-8 {
+          width: 100%; } }
+      #dance .container .detail .row .col-sm-8 .danceoftimeDetail {
+        height: 502px; }
+        #dance .container .detail .row .col-sm-8 .danceoftimeDetail .main {
+          height: 381px;
+          margin-bottom: 12px; }
+          #dance .container .detail .row .col-sm-8 .danceoftimeDetail .main img {
+            border: 1px solid #a4a4a4;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
+        #dance .container .detail .row .col-sm-8 .danceoftimeDetail .thumbnails {
+          display: inline-block;
+          width: 100%; }
+          #dance .container .detail .row .col-sm-8 .danceoftimeDetail .thumbnails::after {
+            clear: both;
+            display: block;
+            content: ""; }
+          #dance .container .detail .row .col-sm-8 .danceoftimeDetail .thumbnails a {
+            background-color: red;
+            float: left;
+            width: calc(100%/710*229);
+            padding: 0;
+            height: 109px;
+            cursor: pointer; }
+            #dance .container .detail .row .col-sm-8 .danceoftimeDetail .thumbnails a:hover .overlay {
+              background-color: rgba(255, 255, 255, 0); }
+            #dance .container .detail .row .col-sm-8 .danceoftimeDetail .thumbnails a:nth-child(1) {
+              margin-right: calc(100%/710*12); }
+            #dance .container .detail .row .col-sm-8 .danceoftimeDetail .thumbnails a:nth-child(2) {
+              margin-right: calc(100%/710*11); }
+            #dance .container .detail .row .col-sm-8 .danceoftimeDetail .thumbnails a .overlay {
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 100%;
+              height: 100%;
+              background-color: rgba(255, 255, 255, 0.7);
+              border: 1px solid #a4a4a4;
+              z-index: 1; }
+            #dance .container .detail .row .col-sm-8 .danceoftimeDetail .thumbnails a img {
+              width: 100%;
+              object-fit: cover;
+              height: 100%;
+              border: 1px solid #a4a4a4; }
+    #dance .container .detail .row .col-sm-4 {
+      width: calc(100%/1024*250); }
+      @media (max-width: 767px) {
+        #dance .container .detail .row .col-sm-4 {
+          width: 100%; }
+          #dance .container .detail .row .col-sm-4.no-padding {
+            margin-top: 50px; } }
+      #dance .container .detail .row .col-sm-4 .danceoftimeInfo {
+        text-align: right;
+        margin-bottom: 50px; }
+        #dance .container .detail .row .col-sm-4 .danceoftimeInfo .title {
+          border-bottom: 1px solid #e5e5e5;
+          height: 51px; }
+          #dance .container .detail .row .col-sm-4 .danceoftimeInfo .title h6 {
+            font-family: 'Helvetica', sans-serif;
+            font-size: 2.7em;
+            color: black;
+            margin: 0; }
+          #dance .container .detail .row .col-sm-4 .danceoftimeInfo .title a {
+            font-size: 1.4em; }
+        #dance .container .detail .row .col-sm-4 .danceoftimeInfo .expire {
+          border-bottom: 1px solid #e5e5e5;
+          height: 73px;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end; }
+          #dance .container .detail .row .col-sm-4 .danceoftimeInfo .expire div p {
+            font-size: 1.4em;
+            margin: 0; }
+            #dance .container .detail .row .col-sm-4 .danceoftimeInfo .expire div p.date {
+              color: #01a6a0; }
+        #dance .container .detail .row .col-sm-4 .danceoftimeInfo .description {
+          margin-top: 22px; }
+          #dance .container .detail .row .col-sm-4 .danceoftimeInfo .description p {
+            font-size: 1.3em;
+            margin: 0; }
+          #dance .container .detail .row .col-sm-4 .danceoftimeInfo .description a {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: black;
+            border-bottom: 2px solid black; }
+      #dance .container .detail .row .col-sm-4 .bid {
+        border: 1px solid #e5e5e5;
+        height: 100%;
+        text-align: right;
+        height: 233px; }
+        #dance .container .detail .row .col-sm-4 .bid .info {
+          height: 111px;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          margin-right: 20px; }
+          #dance .container .detail .row .col-sm-4 .bid .info div p {
+            margin: 0;
+            font-size: 1.6em;
+            color: #0a1e75; }
+            #dance .container .detail .row .col-sm-4 .bid .info div p.price {
+              font-weight: bold;
+              font-size: 2.5em; }
+          #dance .container .detail .row .col-sm-4 .bid .info div a {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #01a6a0;
+            border-bottom: 1px solid #01a6a0; }
+        #dance .container .detail .row .col-sm-4 .bid .bidden p {
+          font-size: 1.4em;
+          margin: 0;
+          padding-right: 20px;
+          height: 24px; }
+        #dance .container .detail .row .col-sm-4 .bid .bidden #bidform {
+          width: 100%;
+          height: 60px;
+          background-color: #01a6a0;
+          display: flex;
+          padding: 12px 20px 11px 18px; }
+          #dance .container .detail .row .col-sm-4 .bid .bidden #bidform input {
+            float: left; }
+            #dance .container .detail .row .col-sm-4 .bid .bidden #bidform input[type="text"] {
+              font-family: 'Helvetica', sans-serif;
+              height: 37px;
+              width: 112px;
+              font-size: 1.7em;
+              padding-left: 14px; }
+            #dance .container .detail .row .col-sm-4 .bid .bidden #bidform input[type="submit"] {
+              background: transparent;
+              border: none;
+              color: white;
+              font-size: 1.4em;
+              font-weight: bold;
+              margin-left: 14px; }
+          #dance .container .detail .row .col-sm-4 .bid .bidden #bidform i {
+            color: white;
+            padding: 0 15px; }
+        #dance .container .detail .row .col-sm-4 .bid .link {
+          text-align: center;
+          font-size: 1.4em;
+          height: 37px;
+          line-height: 37px; }
+          #dance .container .detail .row .col-sm-4 .bid .link a {
+            color: #0a1e75;
+            border-bottom: 1px solid #0a1e75; }
+    #dance .container .detail .row .description {
+      height: 383px;
+      margin: 50px 0;
+      border: 1px solid #e5e5e5;
+      padding: 35px 20px; }
+      @media (max-width: 767px) {
+        #dance .container .detail .row .description {
+          height: auto; } }
+      #dance .container .detail .row .description .col-sm-9 {
+        padding: 0;
+        width: calc(100%/984*690);
+        margin-right: calc(100%/984*64);
+        height: 100%; }
+        @media (max-width: 767px) {
+          #dance .container .detail .row .description .col-sm-9 {
+            width: 100%; } }
+        #dance .container .detail .row .description .col-sm-9 .text:first-child {
+          margin-bottom: 27px; }
+        #dance .container .detail .row .description .col-sm-9 .text h6 {
+          font-size: 1.3em;
+          font-weight: bold;
+          color: black;
+          margin: 0; }
+        #dance .container .detail .row .description .col-sm-9 .text p {
+          font-size: 1.2em;
+          color: #595959;
+          line-height: 20px;
+          margin-bottom: 0; }
+      #dance .container .detail .row .description .col-sm-3 {
+        height: 100%;
+        width: calc(100%/984*230);
+        padding: 0 0 0 20px; }
+        @media (max-width: 767px) {
+          #dance .container .detail .row .description .col-sm-3 {
+            width: 100%;
+            padding-left: 0;
+            margin-top: 20px; } }
+        #dance .container .detail .row .description .col-sm-3 div .artist, #dance .container .detail .row .description .col-sm-3 div .dimensions, #dance .container .detail .row .description .col-sm-3 div .color {
+          margin-bottom: 30px; }
+          #dance .container .detail .row .description .col-sm-3 div .artist p, #dance .container .detail .row .description .col-sm-3 div .dimensions p, #dance .container .detail .row .description .col-sm-3 div .color p {
+            margin: 0;
+            font-size: 1.3em;
+            color: #595959;
+            line-height: 20px; }
+            #dance .container .detail .row .description .col-sm-3 div .artist p.title, #dance .container .detail .row .description .col-sm-3 div .dimensions p.title, #dance .container .detail .row .description .col-sm-3 div .color p.title {
+              font-weight: bold;
+              color: black; }
+        #dance .container .detail .row .description .col-sm-3 div .ask {
+          height: 59px;
+          background-color: #757575;
+          width: 209px;
+          border-radius: 0;
+          text-align: center;
+          display: flex;
+          align-items: center; }
+          #dance .container .detail .row .description .col-sm-3 div .ask a {
+            display: block;
+            color: white;
+            font-weight: bold;
+            font-size: 1.4em;
+            width: 100%;
+            height: 100%;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+            #dance .container .detail .row .description .col-sm-3 div .ask a:hover {
+              text-decoration: none; }
+  #dance .related-items {
+    height: 547px;
+    background-color: #f4f4f4; }
+    @media (max-width: 767px) {
+      #dance .related-items {
+        height: auto; } }
+    #dance .related-items .container {
+      height: 100%; }
+      #dance .related-items .container h2 {
+        font-size: 3em;
+        text-align: left;
+        margin-top: 44px;
+        line-height: 23px; }
+      #dance .related-items .container .col-sm-3 {
+        width: calc(100%/1024*250);
+        height: 382px;
+        margin-right: calc(100%/1024*8);
+        padding: 0;
+        margin-bottom: 50px; }
+        @media (max-width: 767px) {
+          #dance .related-items .container .col-sm-3 {
+            width: 100%; } }
+        #dance .related-items .container .col-sm-3:last-child {
+          margin-right: 0; }
+        #dance .related-items .container .col-sm-3 .item {
+          height: 100%; }
+          #dance .related-items .container .col-sm-3 .item .image {
+            height: 250px;
+            width: 100%; }
+            #dance .related-items .container .col-sm-3 .item .image img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover; }
+          #dance .related-items .container .col-sm-3 .item .info {
+            height: 132px;
+            padding-top: 25px;
+            display: flex;
+            justify-content: center; }
+            #dance .related-items .container .col-sm-3 .item .info div p, #dance .related-items .container .col-sm-3 .item .info div h6 {
+              margin: 0; }
+            #dance .related-items .container .col-sm-3 .item .info div > a {
+              font-size: 1.5em;
+              color: #0a1e75; }
+            #dance .related-items .container .col-sm-3 .item .info div h6 {
+              font-size: 2em;
+              color: #545353;
+              line-height: 16px; }
+            #dance .related-items .container .col-sm-3 .item .info div p {
+              font-size: 1.4em; }
+              #dance .related-items .container .col-sm-3 .item .info div p.price {
+                font-size: 1.8em; }
+            #dance .related-items .container .col-sm-3 .item .info div .visit-auction {
+              float: left;
+              border-bottom: 1px solid #e5e5e5;
+              margin-top: -7px;
+              text-align: center;
+              line-height: 48px; }
+              #dance .related-items .container .col-sm-3 .item .info div .visit-auction p, #dance .related-items .container .col-sm-3 .item .info div .visit-auction a {
+                float: left; }
+              #dance .related-items .container .col-sm-3 .item .info div .visit-auction p {
+                margin-right: 11px; }
+              #dance .related-items .container .col-sm-3 .item .info div .visit-auction a {
+                height: 50px;
+                width: 117px;
+                border: 1px solid #e5e5e5;
+                color: #0a1e75;
+                font-size: 1.2em;
+                font-weight: bold;
+                text-transform: uppercase; }
+
 /*algemene css*/
 body, html {
   height: 100%; }
