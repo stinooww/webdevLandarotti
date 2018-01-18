@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e17788e8-bd02-436d-bc9a-b13213b5bc47" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/.sass-cache/654a45c0d1142468d393d61408432722c8c486a1/_nav.scssc" afterPath="$PROJECT_DIR$/css/.sass-cache/654a45c0d1142468d393d61408432722c8c486a1/_nav.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css.map" afterPath="$PROJECT_DIR$/css/main.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/sass/_nav.scss" afterPath="$PROJECT_DIR$/css/sass/_nav.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/sass/main.css" afterPath="$PROJECT_DIR$/css/sass/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/sass/main.css.map" afterPath="$PROJECT_DIR$/css/sass/main.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -275,7 +267,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="1953" />
-    <option name="y" value="4" />
+    <option name="y" value="7" />
     <option name="width" value="1044" />
     <option name="height" value="1047" />
   </component>
@@ -388,7 +380,7 @@
       <workItem from="1515580906406" duration="20619000" />
       <workItem from="1515664668161" duration="20709000" />
       <workItem from="1516021304778" duration="12802000" />
-      <workItem from="1516179649495" duration="54923000" />
+      <workItem from="1516179649495" duration="54955000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1514460452668</created>
@@ -663,14 +655,21 @@
       <option name="project" value="LOCAL" />
       <updated>1516311990116</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="login en logged in">
+      <created>1516319863673</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1516319863673</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157043000" />
+    <option name="totallyTimeSpent" value="157075000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1953" y="4" width="1044" height="1047" extended-state="0" />
+    <frame x="1953" y="7" width="1044" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2027833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -698,7 +697,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="aanpassinge in landingspage css" />
     <MESSAGE value="aanpassinge in landingspage en nav" />
     <MESSAGE value="responsive nav (2)" />
     <MESSAGE value="responsive nav (3)" />
@@ -723,7 +721,8 @@
     <MESSAGE value=" add new auction  -- form drop down en # inputs" />
     <MESSAGE value=" add new auction  -- start form validatie" />
     <MESSAGE value=" add new auction  -- start form validatie  aanpasinge auction css" />
-    <option name="LAST_COMMIT_MESSAGE" value=" add new auction  -- start form validatie  aanpasinge auction css" />
+    <MESSAGE value="login en logged in" />
+    <option name="LAST_COMMIT_MESSAGE" value="login en logged in" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
