@@ -32,7 +32,7 @@
 <body>
 <nav class="navbar navbar-default">
 
-    <div class="container">
+    <div  id="headnav">
 
 
         <div class="navbar-header">
@@ -47,25 +47,32 @@
 
             </button>
 
-            <a href="/" class="navbar-brand logo">Landoretti</a>
+            <a href="index.html" class="navbar-brand logo"></a>
 
         </div>
 
-        <div class="information">
+        <div class="top-menu">
 
             <div class="collapse navbar-collapse navigation">
 
                 <ul class="nav navbar-nav">
 
+                    <li><a href=""><img src="img/icon/watchlist.png" alt="profile" class="navicons">watchlist</a></li>
+                    <li><a href=""><img src="img/icon/profile.png" alt="profile" class="navicons">profile</a></li>
+                    <li><a href="">logout</a></li>
+                    <li><a href="">register</a></li>
+                    <li><a href="">login</a></li>
 
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="art.html">art</a></li>
-                    <li><a href="myauctions.html">myauctions</a></li>
-                    <li><a href="mybids.html">mybids</a></li>
-                    <li><a href="contact.html">contact</a></li>
                 </ul>
 
 
+                <form action="#" method="GET" class="navbar-right input-field find">
+
+                    <input type="text" name="search" placeholder="Search">
+
+                    <input type="image" value="search" src="img/icon/search.png">
+
+                </form>
 
             </div>
 
@@ -73,24 +80,27 @@
 
     </div>
 
-    <div class="main-navigation">
+    <div class="main-menu">
 
         <div class="container">
 
-            <div class="collapse navbar-collapse navigation">
+            <div class="collapse navbar-collapse menu">
 
                 <ul class="nav navbar-nav">
 
-
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="art.html">art</a></li>
+                    <li><a href="myauctions.html">myauctions</a></li>
+                    <li><a href="mybids.html">mybids</a></li>
+                    <li><a href="contact.html">contact</a></li>
 
                 </ul>
 
-                <ul class="nav navbar-nav navbar-right language">
+                <ul class="nav navbar-nav navbar-right taal">
 
                     <li><a href="nl">nl</a></li>
-
                     <li><a href="fr">fr</a></li>
-                    <li><a href="en">en</a></li>
+                    <li><a href="en" class="active">en</a></li>
 
                 </ul>
 
@@ -101,140 +111,198 @@
     </div>
 
 </nav>
-<section id="auctions-form">
-    <div class="container">
+
+
+<section >
+    <div class="container" id="myAuctions">
         <div class="breadcrumbs">
             <ul>
-                <li><a href="index.php">Home &gt;</a></li>
-                <li><a href="#">Jasper Poppe &gt;</a></li>
-                <li><a href="#">My auctions &gt;</a></li>
-                <li><a href="#">New auction</a></li>
+                <li><a href="index.html">Home &gt;</a>
+               <a href="#">Jasper Poppe &gt;</a>
+               <a href="#">My auctions</a></li>
             </ul>
         </div>
 
-        <h1>Add a new auction</h1>
+        <h1>My auctions</h1>
 
-        <form>
-            <div class="row">
-                <div class="col-sm-6 form-group right-marg select">
-                    <select id="style">
-                        <option data-display="Style"></option>
-                        <option value="abstract">Abstract</option>
-                        <option value="african_american">African American</option>
-                        <option value="asian_contemporary">Asian Contemporary</option>
-                        <option value="conceptual">Conceptual</option>
-                        <option value="contemporary">Contemporary</option>
-                        <option value="emerging_artists">Emerging Artists</option>
-                        <option value="figurative">Figurative</option>
-                        <option value="middle_eastern_contemporary">Middle Eastern Contemporary</option>
-                        <option value="minimalism">Minimalism</option>
-                        <option value="modern">Modern</option>
-                        <option value="pop">Pop</option>
-                        <option value="urban">Urban</option>
-                        <option value="vintage_photographs">Vintage Photographs</option>
-                    </select>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6 form-group right-marg title">
-                    <label for="title">Auction title</label>
-                    <input type="text" class="form-control" name="title" id="title" placeholder="Auction title">
-                </div>
-                <div class="col-sm-6 form-group right-marg small-input">
-                    <label for="title">Year</label>
-                    <input type="text" class="form-control" name="title" id="title" placeholder="X X X X">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 form-group small-input">
-                    <label for="title">Width</label>
-                    <input type="text" class="form-control" name="title" id="title" placeholder="Auction title">
-                </div>
-                <div class="col-sm-4 form-group small-input">
-                    <label for="title">Height</label>
-                    <input type="text" class="form-control" name="title" id="title" placeholder="X X X X">
-                </div>
-                <div class="col-sm-4 form-group small-input">
-                    <label for="title">Depth <span>(optional)</span></label>
-                    <input type="text" class="form-control" name="title" id="title" placeholder="X X X X">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 form-group big-textarea">
-                    <label for="description">Description</label>
-                    <textarea name="description" id="description">What's the condition of the artwork?</textarea>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 form-group big-textarea">
-                    <label for="description">Origin</label>
-                    <textarea name="description" id="description">What's the origin of the artwork?</textarea>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 form-group file-upload">
-                    <label for="description">Photos</label>
-                    <p>Please upload one picture with the signature of the artwork and one picture of the artwork.</p>
-                    <p>You can upload to 3 pictures with a maximum of of 10MB each.</p>
-                    <div class="col-sm-4 file-button">
-                        <p>upload image <span>of the artwork</span></p>
-                        <input type="file" name="artwork" id="artwork">
-                    </div>
-                    <div class="col-sm-4 file-button">
-                        <p>upload image <span>of the signature</span></p>
-                        <input type="file" name="signature" id="signature">
-                    </div>
-                    <div class="col-sm-4 file-button">
-                        <p>optional image</p>
-                        <input type="file" name="optional" id="optional">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 pricing">
-                    <h3>Pricing</h3>
-                    <div class="col-sm-4 form-group small-input">
-                        <label for="minimum">Minimum estimate price</label>
-                        <input type="text" class="form-control" name="minimum" id="minimum" placeholder="X X X X">
-                    </div>
-                    <div class="col-sm-4 form-group small-input">
-                        <label for="maximum">Maximum estimate price</label>
-                        <input type="text" class="form-control" name="maximum" id="maximum" placeholder="X X X X">
-                    </div>
-                    <div class="col-sm-4 form-group small-input">
-                        <label for="title">Buyout price <span>(optional)</span></label>
-                        <input type="text" class="form-control" name="title" id="title" placeholder="X X X X">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 pricing">
-                    <h3>Pricing</h3>
-                    <div class="col-sm-4 form-group small-input">
-                        <label for="end">End date</label>
-                        <input type="text" class="form-control" name="end" id="end" placeholder="DD/MM/YY">
-                    </div>
-                    <div class="col-sm-8 form-group info">
-                        <span>Attention</span>
-                        <p>You can not change the information after adding this auction.</p>
-                        <p>If you're not certain about the information of your artwork, please ask for help.</p>
-                        <p>We will answer your question as soon as possible.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 check">
-                    <input type="checkbox" name="check" id="check">
-                    <p>I agree to <span>The Terms & Conditions</span></p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 submit">
-                    <input type="submit" value="ADD AUCTION">
-                    <a href="#">ASK A QUESTION ></a>
-                </div>
-            </div>
-        </form>
+        <a class="pull-right text-uppercase" href="newauction.html">add new auction <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+
+        <div class="pending">
+            <h3>Pending</h3>
+            <table>
+                <thead>
+                <tr>
+                    <th>Auction details</th>
+                    <th>Estimated price</th>
+                    <th>End date</th>
+                    <th>Remaining time</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="image">
+                            <img src="img/kunstwerk4.jpg" alt="oldschool radio">
+                        </div>
+                        <div class="info">
+                            <div>
+                                <h3>Dance of Time III</h3>
+                                <a href="#">1979, Salvador Dali</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>&euro; 8.900</td>
+                    <td>September 09, 2013 13:00 p.m. (EST)</td>
+                    <td>25d 14u 44m</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="image">
+                            <img src="img/man.jpg" alt="kunstwerk blauwe man">
+                        </div>
+                        <div class="info">
+                            <div>
+                                <h3>Dance of Time III</h3>
+                                <a href="#">1979, Salvador Dali</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>&euro; 8.900</td>
+                    <td>September 09, 2013 13:00 p.m. (EST)</td>
+                    <td>25d 14u 44m</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="refused">
+            <h3>Refused</h3>
+            <table>
+                <thead>
+                <tr>
+                    <th>Auction details</th>
+                    <th>Estimated price</th>
+                    <th>End date</th>
+                    <th>Remaining time</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="image">
+                            <img src="img/kunstwerk3.jpg" alt="Oranje vrouw">
+                        </div>
+                        <div class="info">
+                            <div>
+                                <h3>Dance of Time III</h3>
+                                <a href="#">1979, Salvador Dali</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>&euro; 8.900</td>
+                    <td>September 09, 2013 13:00 p.m. (EST)</td>
+                    <td>x</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="active">
+            <h3>Active</h3>
+            <p>You currently have no active auctions. Please add a new auction or wait for approval.</p>
+        </div>
+        <div class="expired">
+            <h3>Expired</h3>
+            <table>
+                <thead>
+                <tr>
+                    <th>Auction details</th>
+                    <th>Estimated price</th>
+                    <th>End date</th>
+                    <th>Remaining time</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="image">
+                            <img src="img/kunstwerk.jpg" alt="stuk lichaam kunstwerk">
+                        </div>
+                        <div class="info">
+                            <div>
+                                <h3>Dance of Time III</h3>
+                                <a href="#">1979, Salvador Dali</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>&euro; 8.900</td>
+                    <td>September 09, 2013 13:00 p.m. (EST)</td>
+                    <td>x</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="sold">
+            <h3>Sold</h3>
+            <table>
+                <thead>
+                <tr>
+                    <th>Auction details</th>
+                    <th>Estimated price</th>
+                    <th>End date</th>
+                    <th>Remaining time</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="image">
+                            <img src="img/kunstwerk.jpg" alt="kunstwerk klok">
+                        </div>
+                        <div class="info">
+                            <div>
+                                <h3>Dance of Time III</h3>
+                                <a href="#">1979, Salvador Dali</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>&euro; 8.900</td>
+                    <td>September 09, 2013 13:00 p.m. (EST)</td>
+                    <td>sold</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="image">
+                            <img src="img/kunstwerk2.jpg" alt="rare mannen kunstwerk">
+                        </div>
+                        <div class="info">
+                            <div>
+                                <h3>Dance of Time III</h3>
+                                <a href="#">1979, Salvador Dali</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>&euro; 8.900</td>
+                    <td>September 09, 2013 13:00 p.m. (EST)</td>
+                    <td>sold</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="image">
+                            <img src="img/vrouw.jpg" alt="kunstwerk vrouw">
+                        </div>
+                        <div class="info">
+                            <div>
+                                <h3>Dance of Time III</h3>
+                                <a href="#">1979, Salvador Dali</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>&euro; 8.900</td>
+                    <td>September 09, 2013 13:00 p.m. (EST)</td>
+                    <td>sold</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </section>
 <section class="footer">
@@ -423,6 +491,7 @@
 
     </div>
 </footer>
+<script src="https://use.fontawesome.com/4501d3005f.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>

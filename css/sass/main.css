@@ -1513,6 +1513,119 @@ section {
                 font-size: 1.2em;
                 font-weight: bold; }
 
+table {
+  width: 100%; }
+  table thead tr {
+    border: 1px solid #cacaca; }
+    table thead tr th {
+      background-color: #f8f8f8;
+      text-align: center;
+      height: 35px;
+      color: #545353;
+      font-size: .95em;
+      font-weight: normal; }
+      table thead tr th:first-child {
+        width: calc(100%/1024*535); }
+      table thead tr th:nth-child(2) {
+        width: calc(100%/1024*162); }
+      table thead tr th:nth-child(3) {
+        width: calc(100%/1024*162); }
+      table thead tr th:nth-child(4) {
+        width: calc(100%/1024*165); }
+  table tbody tr td {
+    height: 135px;
+    border: 1px solid #cacaca;
+    text-align: center;
+    color: #545353; }
+    table tbody tr td .image {
+      background-color: red;
+      display: block;
+      height: 100%;
+      width: 135px;
+      float: left; }
+    table tbody tr td:nth-child(2) {
+      font-size: 1.35em; }
+    table tbody tr td:nth-child(3) {
+      font-size: .9em;
+      line-height: 20px; }
+    table tbody tr td:nth-child(4) {
+      font-size: 1em; }
+    table tbody tr td .info {
+      float: left;
+      height: 100%;
+      margin-left: 47px;
+      text-align: left;
+      display: flex;
+      align-items: center; }
+      table tbody tr td .info h3 {
+        font-size: 1.45em;
+        font-weight: normal;
+        margin: 0 !important; }
+      table tbody tr td .info a {
+        font-size: 1.05em;
+        color: #0a1e75; }
+
+#myAuctions h1 {
+  margin-bottom: 0; }
+#myAuctions > a {
+  font-size: 1.2em;
+  color: #0a1e75;
+  font-weight: bold;
+  background-color: #f5f5f5;
+  border: 1px solid #e5e5e5;
+  width: 157px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center; }
+#myAuctions .pending, #myAuctions .refused, #myAuctions .active, #myAuctions .expired, #myAuctions .sold {
+  margin-bottom: 55px; }
+  #myAuctions .pending h3, #myAuctions .refused h3, #myAuctions .active h3, #myAuctions .expired h3, #myAuctions .sold h3 {
+    font-family: 'Helvetica', sans-serif;
+    font-weight: lighter;
+    margin-bottom: 27px; }
+#myAuctions .pending {
+  clear: both;
+  display: block;
+  content: "";
+  margin-bottom: 55px; }
+#myAuctions .active p {
+  font-size: 1.6em;
+  color: #545353; }
+#myAuctions .sold {
+  margin-bottom: 0; }
+
+#my-watchlist .container h1 {
+  margin-bottom: 0; }
+#my-watchlist .container .btns {
+  height: 50px; }
+  #my-watchlist .container .btns a {
+    font-size: 1.2em;
+    color: #0a1e75;
+    font-weight: bold;
+    background-color: #f5f5f5;
+    border: 1px solid #e5e5e5;
+    width: 157px;
+    height: 100%;
+    line-height: 50px;
+    text-align: center;
+    margin-bottom: 46px; }
+    #my-watchlist .container .btns a.small-margin {
+      margin-right: 5px; }
+#my-watchlist .container .watchlist .filter ul {
+  display: inline-block; }
+  #my-watchlist .container .watchlist .filter ul li {
+    float: left;
+    font-size: 1.2em; }
+    #my-watchlist .container .watchlist .filter ul li:first-child {
+      font-weight: bold; }
+      #my-watchlist .container .watchlist .filter ul li:first-child a {
+        padding-bottom: 7px;
+        border-bottom: 3px solid #d4d4d4; }
+    #my-watchlist .container .watchlist .filter ul li:nth-child(2), #my-watchlist .container .watchlist .filter ul li:nth-child(3) {
+      margin-left: 6px; }
+    #my-watchlist .container .watchlist .filter ul li a {
+      color: #545353; }
+
 /*algemene css*/
 body, html {
   height: 100%; }
