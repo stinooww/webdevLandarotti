@@ -26,14 +26,7 @@ $breakpoints: (small: 320px, medium: 768px, large: 1024px);
 .navbar-brand{
   padding:0 2px 0 0;
 }
-.container {
-  width: 1280px;
-  padding: 0;
-  @include media ("<=large") {
-    width: 855px;
-    padding: 0 15px;
-  }
-}
+
 
 .navbar {
   border-top: 2px #01a6a0 solid;

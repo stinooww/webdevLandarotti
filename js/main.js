@@ -32,10 +32,11 @@ function send(e) {
     var end = document.getElementById( "end");
     var endLen = end.length;
     var check = document.getElementById( "check");
-    var checkLen
+    var checkLen;
     var isValid = false;
 
-if(selectDdl == 0){
+if(selectDdl === 0){
+    console.log(dropdownList);
     console.log('leeg');
 }
 

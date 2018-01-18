@@ -9,7 +9,7 @@
       margin-bottom: 0;
     }
 
-    > a {
+    .links{
       font-size: 1.2em;
       color: $blue;
       font-weight: bold;
@@ -21,7 +21,9 @@
       line-height: 50px;
       text-align: center;
     }
-
+  //#arrow{
+  //  color: $blue;
+  //}
     .pending, .refused, .active, .expired, .sold {
       margin-bottom: 55px;
       h3 {

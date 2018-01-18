@@ -1,5 +1,4 @@
 @import "include-media";
-
 @import "nav";
 @import "footer";
 @import "landing";
@@ -167,7 +166,7 @@ padding-top: 10px;
 
           color: $green;
         }
-        i{
+        img{
           margin-left: 20px;
           color: $green;
           padding: 20px 0;
@@ -176,8 +175,27 @@ padding-top: 10px;
     }
   }
 }
+/* breadcrumbs css **/
+.breadcrumbs {
+  font-size: 1.5em;
+  margin-top: 36px;
+  ul {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    li {
+      display: inline-block;
+      a {
+        color: $green;
+      }
+    }
+  }
 
-
+  p {
+    color: #5c5b5b;
+    margin-bottom: 0;
+  }
+}
 /*errors */
 .errors {
   border: none;
@@ -199,15 +217,26 @@ padding-top: 10px;
 }
 
 
-
+//.container {
+//  //width: 1280px;
+//  padding: 0;
+//  @include media ("<=large") {
+//    width: 855px;
+//    padding: 0 15px;
+//  }
+//}
 
 /* Inclusive and exclusive operators for a finer control over the intervals */
 @include media(">medium", "<=large") {
+
   .navbar, .landing, .footer, footer, #landing, #popular, #uitleg {
     width: 100%;
   }
 }
 @include media(">large") {
+  .container{
+    width: 1024px;
+  }
   .navbar, .landing{
     width: 100%;
     margin: 0;
@@ -222,7 +251,7 @@ padding-top: 10px;
   .navbar, .landing {
     width: 100%;
   }
-  .container{
-    width: 1000px !important;
-  }
+  //.container{
+  //  width: 1000px !important;
+  //}
 }
