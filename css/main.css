@@ -1622,50 +1622,52 @@ label {
 #inleiding {
   background: url("../img/platenspeler.jpg") center no-repeat;
   background-size: cover;
+  margin-top: -1%;
   height: 536px;
   width: 100%; }
   #inleiding .container {
     padding-top: 104px;
     height: 100%; }
-    #inleiding .container .info {
+    #inleiding .container .inleidingKader {
       position: relative;
       height: calc(100%/432*332);
       margin: 50px 0;
       width: 314px;
+      background-color: #5165bc;
       color: white; }
-      #inleiding .container .info .top {
+      #inleiding .container .inleidingKader #actie {
         height: calc(100%/332*252); }
-        #inleiding .container .info .top h1 {
+        #inleiding .container .inleidingKader #actie h1 {
           font-size: 3em;
           padding: 30px 0 0 30px;
           height: 71px;
           color: white;
           margin: 0;
           border-bottom: 1px solid #6c7dc6; }
-        #inleiding .container .info .top p {
+        #inleiding .container .inleidingKader #actie p {
           margin: 0;
           font-size: 1.5em;
           padding: 21px 30px 0 30px; }
-        #inleiding .container .info .top span {
+        #inleiding .container .inleidingKader #actie .price {
+          font-size: 1.8em;
+          padding: 0px 30px 0 30px; }
+        #inleiding .container .inleidingKader #actie #euro {
           padding-left: 30px;
           margin-top: 14px;
           display: inline-block; }
-          #inleiding .container .info .top span.bold {
-            font-size: 1.5em; }
-          #inleiding .container .info .top span.euro-size {
-            font-size: 1.8em;
-            padding-left: 0; }
-      #inleiding .container .info #loremBtn {
-        display: inline-block;
+      #inleiding .container .inleidingKader #loremBtn {
         background-color: white;
         height: calc(100%/332*80);
         width: 100%;
-        color: #01a6a0;
-        padding-left: 30px;
-        font-size: 2em;
-        align-items: center; }
-        #inleiding .container .info #loremBtn i {
-          margin-left: 20px; }
+        padding-top: 10px;
+        padding-left: 30px; }
+        #inleiding .container .inleidingKader #loremBtn a {
+          font-size: 2em;
+          color: #01a6a0; }
+        #inleiding .container .inleidingKader #loremBtn i {
+          margin-left: 20px;
+          color: #01a6a0;
+          padding: 20px 0; }
 
 /*errors */
 .errors {
