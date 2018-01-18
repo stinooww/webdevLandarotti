@@ -1385,47 +1385,47 @@ section {
       @media (max-width: 767px) {
         section .container .danceOfTime .row .DescriptionDoT {
           height: auto; } }
-      section .container .danceOfTime .row .DescriptionDoT .col-sm-9 {
+      section .container .danceOfTime .row .DescriptionDoT #descriptionInfoL {
         padding: 0;
         width: calc(100%/984*690);
         margin-right: calc(100%/984*64);
         height: 100%; }
         @media (max-width: 767px) {
-          section .container .danceOfTime .row .DescriptionDoT .col-sm-9 {
+          section .container .danceOfTime .row .DescriptionDoT #descriptionInfoL {
             width: 100%; } }
-        section .container .danceOfTime .row .DescriptionDoT .col-sm-9 .text:first-child {
+        section .container .danceOfTime .row .DescriptionDoT #descriptionInfoL .text:first-child {
           margin-bottom: 27px; }
-        section .container .danceOfTime .row .DescriptionDoT .col-sm-9 .text h4 {
+        section .container .danceOfTime .row .DescriptionDoT #descriptionInfoL .text h4 {
           font-size: 1.3em;
           font-weight: bold;
           color: black;
           margin: 0; }
-        section .container .danceOfTime .row .DescriptionDoT .col-sm-9 .text p {
+        section .container .danceOfTime .row .DescriptionDoT #descriptionInfoL .text p {
           font-size: 1.2em;
           color: #595959;
           line-height: 20px;
           margin-bottom: 0; }
-      section .container .danceOfTime .row .DescriptionDoT .col-sm-3 {
+      section .container .danceOfTime .row .DescriptionDoT #descriptionInfoR {
         height: 100%;
         width: calc(100%/984*230);
         padding: 0 0 0 20px;
         border-left: grey solid 0.8px; }
         @media (max-width: 767px) {
-          section .container .danceOfTime .row .DescriptionDoT .col-sm-3 {
+          section .container .danceOfTime .row .DescriptionDoT #descriptionInfoR {
             width: 100%;
             padding-left: 0;
             margin-top: 20px; } }
-        section .container .danceOfTime .row .DescriptionDoT .col-sm-3 div .artist, section .container .danceOfTime .row .DescriptionDoT .col-sm-3 div .dimensions, section .container .danceOfTime .row .DescriptionDoT .col-sm-3 div .color {
+        section .container .danceOfTime .row .DescriptionDoT #descriptionInfoR div .artist, section .container .danceOfTime .row .DescriptionDoT #descriptionInfoR div .dimensions, section .container .danceOfTime .row .DescriptionDoT #descriptionInfoR div .color {
           margin-bottom: 30px; }
-          section .container .danceOfTime .row .DescriptionDoT .col-sm-3 div .artist p, section .container .danceOfTime .row .DescriptionDoT .col-sm-3 div .dimensions p, section .container .danceOfTime .row .DescriptionDoT .col-sm-3 div .color p {
+          section .container .danceOfTime .row .DescriptionDoT #descriptionInfoR div .artist p, section .container .danceOfTime .row .DescriptionDoT #descriptionInfoR div .dimensions p, section .container .danceOfTime .row .DescriptionDoT #descriptionInfoR div .color p {
             margin: 0;
             font-size: 1.3em;
             color: #595959;
             line-height: 20px; }
-            section .container .danceOfTime .row .DescriptionDoT .col-sm-3 div .artist p.title, section .container .danceOfTime .row .DescriptionDoT .col-sm-3 div .dimensions p.title, section .container .danceOfTime .row .DescriptionDoT .col-sm-3 div .color p.title {
+            section .container .danceOfTime .row .DescriptionDoT #descriptionInfoR div .artist p.title, section .container .danceOfTime .row .DescriptionDoT #descriptionInfoR div .dimensions p.title, section .container .danceOfTime .row .DescriptionDoT #descriptionInfoR div .color p.title {
               font-weight: bold;
               color: black; }
-        section .container .danceOfTime .row .DescriptionDoT .col-sm-3 div .askquestion {
+        section .container .danceOfTime .row .DescriptionDoT #descriptionInfoR div .askquestion {
           height: 59px;
           background-color: #757575;
           width: 209px;
@@ -1433,7 +1433,7 @@ section {
           text-align: center;
           display: flex;
           align-items: center; }
-          section .container .danceOfTime .row .DescriptionDoT .col-sm-3 div .askquestion a {
+          section .container .danceOfTime .row .DescriptionDoT #descriptionInfoR div .askquestion a {
             padding: 8px 0;
             display: block;
             color: white;
@@ -1441,7 +1441,7 @@ section {
             font-size: 1.4em;
             width: 100%;
             height: 100%; }
-            section .container .danceOfTime .row .DescriptionDoT .col-sm-3 div .askquestion a:hover {
+            section .container .danceOfTime .row .DescriptionDoT #descriptionInfoR div .askquestion a:hover {
               text-decoration: none; }
   section #related {
     height: 547px;

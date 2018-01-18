@@ -297,7 +297,7 @@ section{
             height: auto;
           }
 
-          .col-sm-9{
+          #descriptionInfoL{
             padding: 0;
             width: calc(100%/984*690);
             margin-right: calc(100%/984*64);
@@ -326,7 +326,7 @@ section{
             }
           }
 
-          .col-sm-3{
+          #descriptionInfoR{
             height: 100%;
             width: calc(100%/984*230);
             padding: 0 0 0 20px;

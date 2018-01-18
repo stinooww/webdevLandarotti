@@ -29,8 +29,8 @@
             <file leaf-file-name="detail.scss" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/css/sass/detail.scss">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="1731">
-                    <caret line="140" column="36" lean-forward="false" selection-start-line="140" selection-start-column="36" selection-end-line="140" selection-end-column="36" />
+                  <state relative-caret-position="187">
+                    <caret line="299" column="27" lean-forward="false" selection-start-line="299" selection-start-column="27" selection-end-line="299" selection-end-column="27" />
                     <folding />
                   </state>
                 </provider>
@@ -81,8 +81,8 @@
       <file leaf-file-name="detail.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="130" column="36" lean-forward="false" selection-start-line="130" selection-start-column="28" selection-end-line="130" selection-end-column="36" />
+            <state relative-caret-position="-817">
+              <caret line="195" column="62" lean-forward="false" selection-start-line="195" selection-start-column="46" selection-end-line="195" selection-end-column="62" />
               <folding>
                 <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="e#4212#4216#0" expanded="true" />
@@ -303,7 +303,7 @@
       <workItem from="1515580906406" duration="20619000" />
       <workItem from="1515664668161" duration="20709000" />
       <workItem from="1516021304778" duration="12802000" />
-      <workItem from="1516179649495" duration="22307000" />
+      <workItem from="1516179649495" duration="22613000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1514460452668</created>
@@ -501,11 +501,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516227631348</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="detail pagina bijna klaar #bedttijd">
+      <created>1516228287927</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1516228287927</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124427000" />
+    <option name="totallyTimeSpent" value="124733000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1938" y="13" width="1044" height="1047" extended-state="0" />
@@ -536,7 +543,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="first commit" />
     <MESSAGE value="img + favicons + logo" />
     <MESSAGE value="img + favicons + logo deel 2" />
     <MESSAGE value="aanmaken van faq pagina en isearch deel 1" />
@@ -561,7 +567,8 @@
     <MESSAGE value="aanpassingen footer + overal toepassen op elke pagina" />
     <MESSAGE value="detail pagina start + images +css" />
     <MESSAGE value="detail pagina" />
-    <option name="LAST_COMMIT_MESSAGE" value="detail pagina" />
+    <MESSAGE value="detail pagina bijna klaar #bedttijd" />
+    <option name="LAST_COMMIT_MESSAGE" value="detail pagina bijna klaar #bedttijd" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1040,16 +1047,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/sass/detail.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1731">
-          <caret line="140" column="36" lean-forward="false" selection-start-line="140" selection-start-column="36" selection-end-line="140" selection-end-column="36" />
+        <state relative-caret-position="187">
+          <caret line="299" column="27" lean-forward="false" selection-start-line="299" selection-start-column="27" selection-end-line="299" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="130" column="36" lean-forward="false" selection-start-line="130" selection-start-column="28" selection-end-line="130" selection-end-column="36" />
+        <state relative-caret-position="-817">
+          <caret line="195" column="62" lean-forward="false" selection-start-line="195" selection-start-column="46" selection-end-line="195" selection-end-column="62" />
           <folding>
             <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="e#4212#4216#0" expanded="true" />
