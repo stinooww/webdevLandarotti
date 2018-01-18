@@ -9,7 +9,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/sass/_auction.scss" afterPath="$PROJECT_DIR$/css/sass/_auction.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/sass/main.css" afterPath="$PROJECT_DIR$/css/sass/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/sass/main.css.map" afterPath="$PROJECT_DIR$/css/sass/main.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/newauction.html" afterPath="$PROJECT_DIR$/newauction.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -55,8 +54,8 @@
             <file leaf-file-name="_auction.scss" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/css/sass/_auction.scss">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="187">
-                    <caret line="33" column="17" lean-forward="false" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+                  <state relative-caret-position="578">
+                    <caret line="56" column="19" lean-forward="false" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
                     <folding>
                       <element signature="e#95#417#0" expanded="false" />
                     </folding>
@@ -328,7 +327,7 @@
       <workItem from="1515580906406" duration="20619000" />
       <workItem from="1515664668161" duration="20709000" />
       <workItem from="1516021304778" duration="12802000" />
-      <workItem from="1516179649495" duration="36423000" />
+      <workItem from="1516179649495" duration="36572000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1514460452668</created>
@@ -575,11 +574,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516279330506</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary=" add new auction  -- form drop down en inpus">
+      <created>1516280999173</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1516280999173</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138543000" />
+    <option name="totallyTimeSpent" value="138692000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1938" y="13" width="1044" height="1047" extended-state="0" />
@@ -610,7 +616,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="pagina add auction deel 3" />
     <MESSAGE value="aanpassinge in menu header" />
     <MESSAGE value="aanpassinge in menu header css" />
     <MESSAGE value="aanpassinge in menu header css+ aanmaken aprtials" />
@@ -635,7 +640,8 @@
     <MESSAGE value="myauctions pagina platenspeler  fixed" />
     <MESSAGE value="myauctions pagina platenspeler  fixed(1)" />
     <MESSAGE value=" add new auction" />
-    <option name="LAST_COMMIT_MESSAGE" value=" add new auction" />
+    <MESSAGE value=" add new auction  -- form drop down en inpus" />
+    <option name="LAST_COMMIT_MESSAGE" value=" add new auction  -- form drop down en inpus" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1125,8 +1131,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/sass/_auction.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="33" column="17" lean-forward="false" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+        <state relative-caret-position="578">
+          <caret line="56" column="19" lean-forward="false" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
           <folding>
             <element signature="e#95#417#0" expanded="false" />
           </folding>
