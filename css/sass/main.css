@@ -716,43 +716,60 @@ footer {
   #newAuction .container .breadcrumbs p {
     color: #5c5b5b;
     margin-bottom: 0; }
-#newAuction .container form .row {
+#newAuction .container #addNewAuc .row {
   max-width: 753px;
   margin: 0; }
-  #newAuction .container form .row:nth-child(2) .form-group:first-child {
-    margin-right: calc(100%/753*60); }
-  #newAuction .container form .row:nth-child(3) .form-group:first-child, #newAuction .container form .row:nth-child(3) .form-group:nth-child(2) {
-    margin-right: calc(100%/753*60); }
-  #newAuction .container form .row .form-group {
+  #newAuction .container #addNewAuc .row .dropdown {
+    padding-left: 0;
+    margin-bottom: 15px;
+    width: calc(100%/753*482); }
+    #newAuction .container #addNewAuc .row .dropdown .btn, #newAuction .container #addNewAuc .row .dropdown .dropdown-menu {
+      text-align: left;
+      padding-left: 15px;
+      width: 480px;
+      background-color: #f5f5f5;
+      border: 1px solid #e5e5e5;
+      border-radius: 0;
+      font-size: 1.5em;
+      height: 48px;
+      color: #555; }
+      #newAuction .container #addNewAuc .row .dropdown .btn i, #newAuction .container #addNewAuc .row .dropdown .dropdown-menu i {
+        margin-left: 85%; }
+    @media (max-width: 767px) {
+      #newAuction .container #addNewAuc .row .dropdown {
+        width: 100%; } }
+  #newAuction .container #addNewAuc .row .marginsR {
+    margin-left: calc(100%/753*60); }
+  #newAuction .container #addNewAuc .row .form-group {
     padding: 0; }
-  #newAuction .container form .row .select, #newAuction .container form .row .title {
+  #newAuction .container #addNewAuc .row .title {
     width: calc(100%/753*482); }
     @media (max-width: 767px) {
-      #newAuction .container form .row .select, #newAuction .container form .row .title {
+      #newAuction .container #addNewAuc .row .title {
         width: 100%; } }
-  #newAuction .container form .row label span {
+  #newAuction .container #addNewAuc .row label span {
     font-size: .7em; }
-  #newAuction .container form .row .small-input {
+  #newAuction .container #addNewAuc .row .AuctionInput {
     width: calc(100%/753*211); }
     @media (max-width: 767px) {
-      #newAuction .container form .row .small-input {
+      #newAuction .container #addNewAuc .row .AuctionInput {
         width: 100%; } }
-  #newAuction .container form .row input {
+  #newAuction .container #addNewAuc .row input {
     border-radius: 0;
     font-size: 1.5em;
     height: 48px;
     padding: 0 0 0 15px; }
-    #newAuction .container form .row input[type="text"] {
+    #newAuction .container #addNewAuc .row input[type="text"] {
       background-color: #f5f5f5;
       border: 1px solid #e5e5e5; }
     @media (max-width: 767px) {
-      #newAuction .container form .row input {
+      #newAuction .container #addNewAuc .row input {
         padding: 0 15px; } }
-    #newAuction .container form .row input#title {
+    #newAuction .container #addNewAuc .row input#title {
       width: 100%; }
-  #newAuction .container form .row .big-textarea {
+  #newAuction .container #addNewAuc .row .big-textarea {
     width: 100%; }
-    #newAuction .container form .row .big-textarea textarea {
+    #newAuction .container #addNewAuc .row .big-textarea textarea {
       width: 100%;
       height: 125px;
       background-color: #f5f5f5;
@@ -761,14 +778,14 @@ footer {
       padding: 15px 0 0 15px;
       font-size: 1.5em;
       color: #545353; }
-  #newAuction .container form .row .file-upload {
+  #newAuction .container #addNewAuc .row .file-upload {
     width: 100%;
     margin-bottom: 0; }
-    #newAuction .container form .row .file-upload p {
+    #newAuction .container #addNewAuc .row .file-upload p {
       font-size: 1.5em;
       color: #545353;
       margin: 0; }
-    #newAuction .container form .row .file-upload .file-button {
+    #newAuction .container #addNewAuc .row .file-upload .file-button {
       height: 58px;
       width: calc(100%/753*211);
       overflow: hidden;
@@ -783,20 +800,20 @@ footer {
       display: flex;
       justify-content: center;
       align-items: center; }
-      #newAuction .container form .row .file-upload .file-button p {
+      #newAuction .container #addNewAuc .row .file-upload .file-button p {
         color: white;
         font-size: 1em; }
-        #newAuction .container form .row .file-upload .file-button p span {
+        #newAuction .container #addNewAuc .row .file-upload .file-button p span {
           display: block; }
           @media (max-width: 767px) {
-            #newAuction .container form .row .file-upload .file-button p span {
+            #newAuction .container #addNewAuc .row .file-upload .file-button p span {
               display: inline-block; } }
       @media (max-width: 767px) {
-        #newAuction .container form .row .file-upload .file-button {
+        #newAuction .container #addNewAuc .row .file-upload .file-button {
           width: 100%; } }
-      #newAuction .container form .row .file-upload .file-button:last-child {
+      #newAuction .container #addNewAuc .row .file-upload .file-button:last-child {
         margin-right: 0; }
-      #newAuction .container form .row .file-upload .file-button input[type="file"] {
+      #newAuction .container #addNewAuc .row .file-upload .file-button input[type="file"] {
         cursor: pointer;
         height: 100%;
         position: absolute;
@@ -809,58 +826,58 @@ footer {
         opacity: 0;
         -moz-opacity: 0;
         filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0); }
-  #newAuction .container form .row .pricing {
+  #newAuction .container #addNewAuc .row .pricing {
     padding: 0;
     margin-top: 40px; }
-    #newAuction .container form .row .pricing h3 {
+    #newAuction .container #addNewAuc .row .pricing h3 {
       font-family: 'Helvetica', sans-serif;
       font-weight: lighter;
       margin-bottom: 16px; }
-    #newAuction .container form .row .pricing div {
+    #newAuction .container #addNewAuc .row .pricing div {
       margin-bottom: 0; }
-    #newAuction .container form .row .pricing .small-input {
+    #newAuction .container #addNewAuc .row .pricing .small-input {
       margin-right: calc(100%/753*60); }
-      #newAuction .container form .row .pricing .small-input:last-child {
+      #newAuction .container #addNewAuc .row .pricing .small-input:last-child {
         margin: 0; }
-      #newAuction .container form .row .pricing .small-input label {
+      #newAuction .container #addNewAuc .row .pricing .small-input label {
         font-size: 1.8em; }
-    #newAuction .container form .row .pricing .info {
+    #newAuction .container #addNewAuc .row .pricing .info {
       width: calc(100%/753*482); }
       @media (max-width: 767px) {
-        #newAuction .container form .row .pricing .info {
+        #newAuction .container #addNewAuc .row .pricing .info {
           width: 100%; } }
-      #newAuction .container form .row .pricing .info span {
+      #newAuction .container #addNewAuc .row .pricing .info span {
         color: #0a1e75;
         font-size: 1.8em; }
-      #newAuction .container form .row .pricing .info p {
+      #newAuction .container #addNewAuc .row .pricing .info p {
         margin: 0;
         font-size: 1.4em; }
-  #newAuction .container form .row .check {
+  #newAuction .container #addNewAuc .row .check {
     padding: 0;
     margin-top: 80px; }
-    #newAuction .container form .row .check input, #newAuction .container form .row .check p {
+    #newAuction .container #addNewAuc .row .check input, #newAuction .container #addNewAuc .row .check p {
       float: left; }
-    #newAuction .container form .row .check input {
+    #newAuction .container #addNewAuc .row .check input {
       height: auto;
       margin-right: 14px; }
-    #newAuction .container form .row .check p {
+    #newAuction .container #addNewAuc .row .check p {
       font-size: 1.5em;
       margin: 0; }
-      #newAuction .container form .row .check p span {
+      #newAuction .container #addNewAuc .row .check p span {
         color: #01a6a0;
         text-decoration: underline; }
-    #newAuction .container form .row .check::after {
+    #newAuction .container #addNewAuc .row .check::after {
       clear: both;
       display: block;
       content: ""; }
-  #newAuction .container form .row .submit {
+  #newAuction .container #addNewAuc .row .submit {
     padding: 0;
     margin-top: 32px;
     width: calc(100%/753*268); }
     @media (max-width: 767px) {
-      #newAuction .container form .row .submit {
+      #newAuction .container #addNewAuc .row .submit {
         width: 100%; } }
-    #newAuction .container form .row .submit input {
+    #newAuction .container #addNewAuc .row .submit input {
       font-family: 'Helvetica', sans-serif;
       font-weight: lighter;
       font-size: 1.8em;
@@ -870,7 +887,7 @@ footer {
       color: white;
       text-align: center;
       border: none; }
-    #newAuction .container form .row .submit a {
+    #newAuction .container #addNewAuc .row .submit a {
       font-size: 1.4em;
       margin-top: 26px;
       display: block;

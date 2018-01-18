@@ -164,7 +164,7 @@
 
 
 
-        <form method="" action="">
+        <form method="" action="" id="addNewAuc">
             <div class="row">
                 <div class="col-md-6 col-lg-6 col-sm-6  right-marg dropdown">
 
@@ -172,8 +172,9 @@
                     <!-- Single button -->
                     <div class="btn-group ">
                         <button type="button" class="btn  btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Style <span class="caret"></span>
+                            Style <i class="fa fa-chevron-down" aria-hidden="true"></i>
                         </button>
+
                         <ul class="dropdown-menu">
                            <li> <a  href="#">Abstract</a></li>
                            <li> <a  href="#">African American</a></li>
@@ -194,26 +195,27 @@
 
                 </div>
             </div>
-            <div class="row">
+
+            <div class="row" >
                 <div class="col-sm-6 form-group right-marg title">
                     <label for="title">Auction title</label>
                     <input type="text" class="form-control custom-input " name="title" id="title" placeholder="Auction title">
                 </div>
-                <div class="col-sm-6 form-group right-marg small-input">
+                <div class="col-sm-6 form-group right-marg AuctionInput marginsR">
                     <label for="year">Year</label>
                     <input type="text" class="form-control custom-input " name="year" id="year" placeholder="X X X X">
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4 form-group small-input">
+                <div class="col-sm-4 form-group AuctionInput">
                     <label for="width">Width</label>
                     <input type="text" class="form-control custom-input " name="width" id="width" placeholder="X X X X">
                 </div>
-                <div class="col-sm-4 form-group small-input">
+                <div class="col-sm-4 form-group marginsR AuctionInput">
                     <label for="height">Height</label>
-                    <input type="text" class="form-control custom-input " name="height" id="height" placeholder="X X X X">
+                    <input type="text" class=" form-control custom-input " name="height" id="height" placeholder="X X X X">
                 </div>
-                <div class="col-sm-4 form-group small-input">
+                <div class="col-sm-4 form-group marginsR AuctionInput">
                     <label for="depth">Depth <span>(optional)</span></label>
                     <input type="text" class="form-control custom-input " name="depth" id="depth" placeholder="X X X X">
                 </div>
@@ -252,15 +254,15 @@
             <div class="row">
                 <div class="col-sm-12 pricing">
                     <h3>Pricing</h3>
-                    <div class="col-sm-4 form-group small-input">
+                    <div class="col-sm-4 form-group AuctionInput">
                         <label for="minimum">Minimum estimate price</label>
                         <input type="text" class="form-control custom-input " name="minimum" id="minimum" placeholder="X X X X">
                     </div>
-                    <div class="col-sm-4 form-group small-input">
+                    <div class="col-sm-4 form-group AuctionInput">
                         <label for="maximum">Maximum estimate price</label>
                         <input type="text" class="form-control custom-input " name="maximum" id="maximum" placeholder="X X X X">
                     </div>
-                    <div class="col-sm-4 form-group small-input">
+                    <div class="col-sm-4 form-group AuctionInput">
                         <label for="price">Buyout price <span>(optional)</span></label>
                         <input type="text" class="form-control custom-input" name="price" id="price" placeholder="X X X X">
                     </div>
@@ -269,7 +271,7 @@
             <div class="row">
                 <div class="col-sm-12 pricing">
                     <h3>Pricing</h3>
-                    <div class="col-sm-4 form-group small-input">
+                    <div class="col-sm-4 form-group AuctionInput">
                         <label for="end">End date</label>
                         <input type="text" class="form-control custom-input " name="end" id="end" placeholder="DD/MM/YY">
                     </div>
