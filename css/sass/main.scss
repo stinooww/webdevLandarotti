@@ -102,82 +102,74 @@ label {
 /*css van de platenspeler**/
 
 
-
 #inleiding{
-  background-image: url("../img/platenspeler.jpg");
-  background-size: contain;
-  margin-top: -5%;
-  height: 75%;
-  background-repeat: no-repeat;
-  @include media (">large") {
-    margin-top: -5%;
-  }
+  background: url("../img/platenspeler.jpg") center no-repeat  ;
+  background-size: cover;
+
+  height: 536px;
+  width: 100%;
+
   .container {
-    position: relative;
-    @include media (">large") {
+    padding-top: 104px;
+    height: 100%;
 
-    }
-  }
-  .visit {
-    background-color: #5165bc;
-    margin: 10% 0 0 64%;
-    width: 15%;
-    height: 50%;
-    @include media (">large") {
+    .info {
+      position: relative;
+      height: calc(100%/432*332);
+      margin: 50px 0;
+      width: 314px;
 
-    }
+      color: white;
 
-    .inleidingCirkel {
-      position: absolute;
-      top: -16px;
-      left: -16px;
-      background-color: white;
-      border-radius: 50%;
-      width: 32px;
-      height: 32px;
-      z-index: 1;
+      .top {
+        height: calc(100%/332*252);
 
-      .inner {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        background-color: $green;
-        border-radius: 50%;
-        width: 18px;
-        height: 18px;
+        h1 {
+          font-size: 3em;
+          padding: 30px 0 0 30px;
+          height: 71px;
+          color: white;
+          margin: 0;
+
+          border-bottom: 1px solid #6c7dc6;
+        }
+        p {
+          margin: 0;
+          font-size: 1.5em;
+          padding: 21px 30px 0 30px;
+        }
+
+        span {
+          padding-left: 30px;
+          margin-top: 14px;
+          display: inline-block;
+
+          &.bold {
+            font-size: 1.5em;
+          }
+
+          &.euro-size {
+            font-size: 1.8em;
+            padding-left: 0;
+          }
+        }
       }
 
-    }
-    #actie{
-      color:white;
-      h1{
-        color: white;
-        margin: 10px 0 20px 0;
-        font-size: 3em;
-        padding: 0 15px 12px 15px;
-        border-bottom: solid 1px white;
-      }
-      p{
-        padding: 0 15px;
-        margin: 0;
-        font-size: 1.2em;
-        text-overflow: ellipsis;
+      #loremBtn{
+        display: inline-block;
+        background-color: white;
+        height: calc(100%/332*80);
+        width: 100%;
+        color: $green;
+        padding-left: 30px;
+        font-size: 2em;
 
-      }
 
-    }
-    #loremBtn{
-      height: 70px;
-      width: 100%;
-      padding: 15px 20px;
-      color: $green;
-      font-size: 2em;
-      background-color: white;
-      i{
-        height: 22px;
-        width: 11px;
-        margin-left: 20px;
+        align-items: center;
+
+        i{
+                margin-left: 20px;
+        }
       }
     }
   }

@@ -1494,7 +1494,7 @@ table {
       font-size: .9em;
       line-height: 20px; }
     table tbody tr td:nth-child(4) {
-      font-size: 1em; }
+      font-size: 1.5em; }
     table tbody tr td .info {
       float: left;
       height: 100%;
@@ -1620,63 +1620,52 @@ label {
 
 /*css van de platenspeler**/
 #inleiding {
-  background-image: url("../img/platenspeler.jpg");
-  background-size: contain;
-  margin-top: -5%;
-  height: 75%;
-  background-repeat: no-repeat; }
-  @media (min-width: 1025px) {
-    #inleiding {
-      margin-top: -5%; } }
+  background: url("../img/platenspeler.jpg") center no-repeat;
+  background-size: cover;
+  height: 536px;
+  width: 100%; }
   #inleiding .container {
-    position: relative; }
-  #inleiding .visit {
-    background-color: #5165bc;
-    margin: 10% 0 0 64%;
-    width: 15%;
-    height: 50%; }
-    #inleiding .visit .inleidingCirkel {
-      position: absolute;
-      top: -16px;
-      left: -16px;
-      background-color: white;
-      border-radius: 50%;
-      width: 32px;
-      height: 32px;
-      z-index: 1; }
-      #inleiding .visit .inleidingCirkel .inner {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        background-color: #01a6a0;
-        border-radius: 50%;
-        width: 18px;
-        height: 18px; }
-    #inleiding .visit #actie {
+    padding-top: 104px;
+    height: 100%; }
+    #inleiding .container .info {
+      position: relative;
+      height: calc(100%/432*332);
+      margin: 50px 0;
+      width: 314px;
       color: white; }
-      #inleiding .visit #actie h1 {
-        color: white;
-        margin: 10px 0 20px 0;
-        font-size: 3em;
-        padding: 0 15px 12px 15px;
-        border-bottom: solid 1px white; }
-      #inleiding .visit #actie p {
-        padding: 0 15px;
-        margin: 0;
-        font-size: 1.2em;
-        text-overflow: ellipsis; }
-    #inleiding .visit #loremBtn {
-      height: 70px;
-      width: 100%;
-      padding: 15px 20px;
-      color: #01a6a0;
-      font-size: 2em;
-      background-color: white; }
-      #inleiding .visit #loremBtn i {
-        height: 22px;
-        width: 11px;
-        margin-left: 20px; }
+      #inleiding .container .info .top {
+        height: calc(100%/332*252); }
+        #inleiding .container .info .top h1 {
+          font-size: 3em;
+          padding: 30px 0 0 30px;
+          height: 71px;
+          color: white;
+          margin: 0;
+          border-bottom: 1px solid #6c7dc6; }
+        #inleiding .container .info .top p {
+          margin: 0;
+          font-size: 1.5em;
+          padding: 21px 30px 0 30px; }
+        #inleiding .container .info .top span {
+          padding-left: 30px;
+          margin-top: 14px;
+          display: inline-block; }
+          #inleiding .container .info .top span.bold {
+            font-size: 1.5em; }
+          #inleiding .container .info .top span.euro-size {
+            font-size: 1.8em;
+            padding-left: 0; }
+      #inleiding .container .info #loremBtn {
+        display: inline-block;
+        background-color: white;
+        height: calc(100%/332*80);
+        width: 100%;
+        color: #01a6a0;
+        padding-left: 30px;
+        font-size: 2em;
+        align-items: center; }
+        #inleiding .container .info #loremBtn i {
+          margin-left: 20px; }
 
 /*errors */
 .errors {
