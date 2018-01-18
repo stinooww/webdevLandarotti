@@ -54,15 +54,23 @@
 
             <div class="collapse navbar-collapse navigation">
 
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav loggin">
 
                     <li><a href=""><img src="img/icon/watchlist.png" alt="profile" class="navicons">watchlist</a></li>
                     <li><a href=""><img src="img/icon/profile.png" alt="profile" class="navicons">profile</a></li>
                     <li><a href="">logout</a></li>
-                    <li><a href="">register</a></li>
-                    <li><a href="">login</a></li>
-
                 </ul>
+
+                <ul class="nav navbar-nav login">
+
+                    <li><a href="">register</a></li>
+                    <li  id="btnLogin"><a href="">login</a></li>
+                    </ul>
+<form id="interaction">
+    <input type="text" id="User" name="username" placeholder="User">
+    <input type="text" id="Psw" name="search" placeholder="Password">
+    <span class="fa fa-chevron-right" aria-hidden="true"> </span>
+</form>
 
 
                 <form action="#" method="GET" class="navbar-right input-field find">
@@ -361,7 +369,7 @@
 
             <div class="col-sm-12 col-xs-12  col-md-3">
 
-                <div class=" col-sm-4  find1">
+                <div class="   find1">
                     <h4>FIND WHAT YOU NEED.</h4>
                     <form action="#" method="GET" class="input-field ">
 
@@ -371,7 +379,7 @@
 
                     </form>
                 </div>
-                <div class=" col-sm-4 contact">
+                <div class="  contact">
                     <h4>CONTACT</h4>
                     <ul>
                         <li>Landoretti ART</li>
@@ -391,7 +399,7 @@
                         <!--<li><a href="#">google</a></li>-->
                     </ul>
                 </div>
-                <div class="col-sm-4 copy">
+                <div class=" copy">
                     <div class=""><img src="img/rapidssl.jpg" alt="RapidSSL"></div>
                     <p>&copy; 2013 Studio6, Inc. All rights reserved.</p>
                 </div>

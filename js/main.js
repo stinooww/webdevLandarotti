@@ -41,14 +41,25 @@ if(selectDdl === 0){
 }
 
 }
+function loginForm(e) {
+    e.preventDefault();
+    console.log('leeg');
+    var btnLogin = document.getElementById("btnLogin");
+    btnLogin.style.display = "none";
+    var form = document.getElementById("interaction");
+    form.style.display = "inherit";
 
+}
 
 
 
 /**function bindEvents: functie  die alle event handlers  aan de functies verbind */
 function bindEvents() {
-    var formbtn = document.getElementById("addNewAuc");
-    formbtn.addEventListener('submit', send);
+    // var formbtn = document.getElementById("addNewAuc");
+    // formbtn.addEventListener('submit', send);
+    //
+    var login = document.getElementById("btnLogin");
+    login.addEventListener('click', loginForm);
 }
 
 bindEvents();

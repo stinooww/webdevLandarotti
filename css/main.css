@@ -58,12 +58,11 @@
   border: none;
   padding-right: 0; }
   .navigation ul {
-    margin: 5px 0 5px 40px;
-    padding-left: 67px;
-    /* todo: logged in fixe                                         */ }
+    margin: 10px 0 10px 40px;
+    padding-left: 67px; }
     .navigation ul li {
       margin-left: 25px;
-      font-size: 0.9em;
+      font-size: 1.1em;
       float: left; }
       @media (min-width: 1025px) {
         .navigation ul li {
@@ -81,7 +80,7 @@
             height: 19px; } }
       .navigation ul li:nth-child(2) {
         border-right: 1px solid #0a1e75;
-        padding-left: 10px;
+        padding-left: 30px;
         padding-right: 10px;
         height: 19px; }
         @media (min-width: 1025px) {
@@ -89,7 +88,8 @@
             padding-left: 10px;
             padding-right: 20px; } }
       .navigation ul li a {
-        padding: 5px 7px; }
+        padding: 0px 7px;
+        color: #0a1e75 !important; }
       @media (max-width: 1024px) {
         .navigation ul li {
           margin: 0; } }
@@ -100,47 +100,36 @@
     @media (min-width: 1025px) {
       .navigation ul {
         margin: 15px 0 15px 132px; } }
-    .navigation ul.loggedin li {
-      font-size: 1.3em; }
-      .navigation ul.loggedin li:nth-child(1):before {
-        content: "";
-        display: block;
-        background: url("/img/icon/watchlist.png") no-repeat;
-        width: 11px;
-        height: 10px;
-        float: left;
-        margin: 5px 10px 5px 0; }
-      .navigation ul.loggedin li:nth-child(1) a {
-        border-right: 1px solid #0a1e75;
-        float: left;
-        padding-right: 20px; }
-      .navigation ul.loggedin li:nth-child(2):before {
-        content: "";
-        display: block;
-        background: url("/img/icon/profile.png") no-repeat;
-        width: 13px;
-        height: 14px;
-        margin: 3px 10px 3px 20px;
-        float: left; }
-      .navigation ul.loggedin li:nth-child(2) a {
-        border-right: 1px solid #0a1e75;
-        float: left;
-        padding-right: 20px; }
-      .navigation ul.loggedin li a {
-        padding: 0;
-        color: #0a1e75; }
-      .navigation ul.loggedin li:last-child {
-        padding-left: 20px; }
-    .navigation ul.login li {
-      font-size: 1.3em; }
-      .navigation ul.login li:nth-child(1) a {
-        border-right: 1px solid #0a1e75;
-        padding-right: 40px; }
-      .navigation ul.login li a {
-        padding: 0;
-        color: #0a1e75; }
-      .navigation ul.login li:last-child {
-        padding-left: 40px; }
+  .navigation #btnLogin {
+    display: inherit; }
+  .navigation #interaction {
+    display: none;
+    margin: 5px 0;
+    background-color: white; }
+    .navigation #interaction input {
+      margin-top: 5px;
+      font-style: italic;
+      font-size: 1.3em;
+      padding-left: 4px;
+      width: 100px;
+      margin-right: 20px; }
+    .navigation #interaction span {
+      background-color: #f5f5f5;
+      width: 20px;
+      height: 20px;
+      color: #4e4e4e;
+      padding: 5px; }
+  .navigation .loggin {
+    display: none; }
+  .navigation .login {
+    display: inherit; }
+    .navigation .login li:nth-child(1) {
+      border: none; }
+      .navigation .login li:nth-child(1) a {
+        padding-right: 30px; }
+    .navigation .login li:nth-child(2) {
+      border-left: 1px solid #0a1e75;
+      border-right: none; }
   @media (max-width: 767px) {
     .navigation {
       margin-top: 90px; } }
@@ -154,6 +143,7 @@
       padding-left: 8px;
       font-size: 1.5em; }
       .navigation .find input[type="text"] {
+        font-style: italic;
         height: 24px;
         width: 146px;
         border: 1px solid;

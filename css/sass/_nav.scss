@@ -103,11 +103,11 @@ $breakpoints: (small: 320px, medium: 768px, large: 1024px);
   border: none;
   padding-right: 0;
   ul {
-    margin: 5px 0 5px 40px;
+    margin: 10px 0 10px 40px;
     padding-left: 67px;
     li{
       margin-left: 25px;
-      font-size: 0.9em;
+      font-size: 1.1em;
       float: left;
       @include media (">large") {
         margin-left: 30px;
@@ -115,7 +115,10 @@ $breakpoints: (small: 320px, medium: 768px, large: 1024px);
       }
       &:nth-child(1){
         padding-right: 7px;
+
           border-right: 1px solid $blue ;
+
+
           height: 19px;
         .navicons{
           margin:0 5px 5px 0;
@@ -127,7 +130,7 @@ $breakpoints: (small: 320px, medium: 768px, large: 1024px);
       }
       &:nth-child(2) {
         border-right: 1px solid $blue ;
-        padding-left: 10px;
+        padding-left: 30px;
         padding-right: 10px;
         height: 19px;
         @include media (">large") {
@@ -137,8 +140,8 @@ $breakpoints: (small: 320px, medium: 768px, large: 1024px);
         }
       }
       a{
-          padding: 5px 7px;
-
+          padding: 0px 7px;
+        color: $blue !important;
         }
 
       @include media ("<=large") {
@@ -155,77 +158,49 @@ $breakpoints: (small: 320px, medium: 768px, large: 1024px);
       margin: 15px 0 15px 132px;
 
     }
-    /* todo: logged in fixe                                         */
-    &.loggedin {
-      li {
-        font-size: 1.3em;
 
-        &:nth-child(1) {
-          &:before {
-            content: "";
-            display: block;
-            background: url('/img/icon/watchlist.png') no-repeat;
-            width: 11px;
-            height: 10px;
-            float: left;
-            margin: 5px 10px 5px 0;
-          }
 
-          a {
-            border-right: 1px solid $blue;
-            float: left;
-            padding-right: 20px;
-          }
-        }
+  }
+  #btnLogin{
+    display: inherit;
+  }
+  #interaction{
+    display: none;
+    margin: 5px 0;
+    background-color: $lightgrey;
+    input{
+      margin-top: 5px;
+      font-style: italic;
+      font-size: 1.3em;
+      padding-left: 4px;
+      width: 100px;
 
-        &:nth-child(2) {
-          &:before {
-            content: "";
-            display: block;
-            background: url('/img/icon/profile.png') no-repeat;
-            width: 13px;
-            height: 14px;
-            margin: 3px 10px 3px 20px;
-            float: left;
-          }
-
-          a {
-            border-right: 1px solid $blue;
-            float: left;
-            padding-right: 20px;
-          }
-        }
-
+          margin-right: 20px;
+    }
+    span{
+background-color:$lightestGrey ;
+      width: 20px;
+      height: 20px;
+      color:$darkgrey;
+      padding: 5px;
+    }
+  }
+  .loggin{
+    display: none;
+  }
+  .login{
+    display: inherit;
+    li {
+      &:nth-child(1) {
+        border: none;
         a {
-          padding: 0;
-          color: $blue;
-        }
 
-        &:last-child {
-          padding-left: 20px;
+          padding-right: 30px;
         }
       }
-    }
-
-    &.login {
-      li {
-        font-size: 1.3em;
-
-        &:nth-child(1) {
-          a {
-            border-right: 1px solid $blue;
-            padding-right: 40px;
-          }
-        }
-
-        a {
-          padding: 0;
-          color: $blue;
-        }
-
-        &:last-child {
-          padding-left: 40px;
-        }
+      &:nth-child(2) {
+        border-left: 1px solid $blue ;
+        border-right: none;
       }
     }
   }
@@ -244,6 +219,7 @@ $breakpoints: (small: 320px, medium: 768px, large: 1024px);
       padding-left: 8px;
       font-size: 1.5em;
       &[type="text"] {
+       font-style: italic;
         height: 24px;
         width: 146px;
         border: 1px solid ;
