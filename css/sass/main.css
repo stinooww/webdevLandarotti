@@ -735,14 +735,24 @@ footer {
       color: #555; }
       #newAuction .container #addNewAuc .row .dropdown .btn i {
         margin-left: 85%; }
-    #newAuction .container #addNewAuc .row .dropdown .dropdown-menu li {
-      text-align: left;
-      padding-left: 15px;
-      width: 480px;
-      background-color: #f5f5f5;
-      font-size: 1.2em;
-      height: 48px;
-      color: #555; }
+    #newAuction .container #addNewAuc .row .dropdown .dropdown-menu {
+      padding: 0;
+      margin: 0; }
+      #newAuction .container #addNewAuc .row .dropdown .dropdown-menu li {
+        padding-left: 0;
+        padding-top: 5px;
+        width: 480px;
+        background-color: #f5f5f5;
+        border-bottom: solid 1px #e5e5e5;
+        height: 48px; }
+        #newAuction .container #addNewAuc .row .dropdown .dropdown-menu li:hover {
+          background-color: #e5e5e5; }
+        #newAuction .container #addNewAuc .row .dropdown .dropdown-menu li a {
+          color: #555;
+          text-align: left;
+          font-size: 1.1em; }
+          #newAuction .container #addNewAuc .row .dropdown .dropdown-menu li a:hover {
+            background-color: #e5e5e5; }
     @media (max-width: 767px) {
       #newAuction .container #addNewAuc .row .dropdown {
         width: 100%; } }
@@ -775,9 +785,11 @@ footer {
         padding: 0 15px; } }
     #newAuction .container #addNewAuc .row input#title {
       width: 100%; }
-  #newAuction .container #addNewAuc .row .big-textarea {
+  #newAuction .container #addNewAuc .row #price {
+    margin-top: 13%; }
+  #newAuction .container #addNewAuc .row .textInput {
     width: 100%; }
-    #newAuction .container #addNewAuc .row .big-textarea textarea {
+    #newAuction .container #addNewAuc .row .textInput textarea {
       width: 100%;
       height: 125px;
       background-color: #f5f5f5;
@@ -786,14 +798,18 @@ footer {
       padding: 15px 0 0 15px;
       font-size: 1.5em;
       color: #545353; }
-  #newAuction .container #addNewAuc .row .file-upload {
+  #newAuction .container #addNewAuc .row .photos {
     width: 100%;
     margin-bottom: 0; }
-    #newAuction .container #addNewAuc .row .file-upload p {
+    #newAuction .container #addNewAuc .row .photos h3 {
+      font-size: 2em;
+      color: #0a1e75;
+      font-weight: normal; }
+    #newAuction .container #addNewAuc .row .photos p {
       font-size: 1.5em;
       color: #545353;
       margin: 0; }
-    #newAuction .container #addNewAuc .row .file-upload .file-button {
+    #newAuction .container #addNewAuc .row .photos .btnImage {
       height: 58px;
       width: calc(100%/753*211);
       overflow: hidden;
@@ -804,24 +820,23 @@ footer {
       margin-right: calc(100%/753*60);
       margin-top: 35px;
       font-size: 1.5em;
-      text-transform: uppercase;
       display: flex;
       justify-content: center;
       align-items: center; }
-      #newAuction .container #addNewAuc .row .file-upload .file-button p {
+      #newAuction .container #addNewAuc .row .photos .btnImage p {
         color: white;
         font-size: 1em; }
-        #newAuction .container #addNewAuc .row .file-upload .file-button p span {
+        #newAuction .container #addNewAuc .row .photos .btnImage p span {
           display: block; }
           @media (max-width: 767px) {
-            #newAuction .container #addNewAuc .row .file-upload .file-button p span {
+            #newAuction .container #addNewAuc .row .photos .btnImage p span {
               display: inline-block; } }
       @media (max-width: 767px) {
-        #newAuction .container #addNewAuc .row .file-upload .file-button {
+        #newAuction .container #addNewAuc .row .photos .btnImage {
           width: 100%; } }
-      #newAuction .container #addNewAuc .row .file-upload .file-button:last-child {
+      #newAuction .container #addNewAuc .row .photos .btnImage:last-child {
         margin-right: 0; }
-      #newAuction .container #addNewAuc .row .file-upload .file-button input[type="file"] {
+      #newAuction .container #addNewAuc .row .photos .btnImage input[type="file"] {
         cursor: pointer;
         height: 100%;
         position: absolute;
@@ -1497,58 +1512,7 @@ footer {
                 font-size: 1.2em;
                 font-weight: bold; }
 
-table {
-  width: 100%; }
-  table thead tr {
-    border: 1px solid #cacaca; }
-    table thead tr th {
-      background-color: #f8f8f8;
-      text-align: center;
-      height: 35px;
-      color: #545353;
-      font-size: .95em;
-      font-weight: normal; }
-      table thead tr th:first-child {
-        width: calc(100%/1024*535); }
-      table thead tr th:nth-child(2) {
-        width: calc(100%/1024*162); }
-      table thead tr th:nth-child(3) {
-        width: calc(100%/1024*162); }
-      table thead tr th:nth-child(4) {
-        width: calc(100%/1024*165); }
-  table tbody tr td {
-    height: 135px;
-    border: 1px solid #cacaca;
-    text-align: center;
-    color: #545353; }
-    table tbody tr td .image {
-      background-color: red;
-      display: block;
-      height: 100%;
-      width: 135px;
-      float: left; }
-    table tbody tr td:nth-child(2) {
-      font-size: 1.35em; }
-    table tbody tr td:nth-child(3) {
-      font-size: .9em;
-      line-height: 20px; }
-    table tbody tr td:nth-child(4) {
-      font-size: 1.5em; }
-    table tbody tr td .info {
-      float: left;
-      height: 100%;
-      margin-left: 47px;
-      text-align: left;
-      display: flex;
-      align-items: center; }
-      table tbody tr td .info h3 {
-        font-size: 1.45em;
-        font-weight: normal;
-        margin: 0 !important; }
-      table tbody tr td .info a {
-        font-size: 1.05em;
-        color: #0a1e75; }
-
+/* css van myAuctions*/
 #myAuctions h1 {
   margin-bottom: 0; }
 #myAuctions > a {
@@ -1609,6 +1573,58 @@ table {
       margin-left: 6px; }
     #my-watchlist .container .watchlist .filter ul li a {
       color: #545353; }
+
+table {
+  width: 100%; }
+  table thead tr {
+    border: 1px solid #cacaca; }
+    table thead tr th {
+      background-color: #f8f8f8;
+      text-align: center;
+      height: 35px;
+      color: #545353;
+      font-size: .95em;
+      font-weight: normal; }
+      table thead tr th:first-child {
+        width: calc(100%/1024*535); }
+      table thead tr th:nth-child(2) {
+        width: calc(100%/1024*162); }
+      table thead tr th:nth-child(3) {
+        width: calc(100%/1024*162); }
+      table thead tr th:nth-child(4) {
+        width: calc(100%/1024*165); }
+  table tbody tr td {
+    height: 135px;
+    border: 1px solid #cacaca;
+    text-align: center;
+    color: #545353; }
+    table tbody tr td .image {
+      background-color: red;
+      display: block;
+      height: 100%;
+      width: 135px;
+      float: left; }
+    table tbody tr td:nth-child(2) {
+      font-size: 1.35em; }
+    table tbody tr td:nth-child(3) {
+      font-size: .9em;
+      line-height: 20px; }
+    table tbody tr td:nth-child(4) {
+      font-size: 1.5em; }
+    table tbody tr td .info {
+      float: left;
+      height: 100%;
+      margin-left: 47px;
+      text-align: left;
+      display: flex;
+      align-items: center; }
+      table tbody tr td .info h3 {
+        font-size: 1.45em;
+        font-weight: normal;
+        margin: 0 !important; }
+      table tbody tr td .info a {
+        font-size: 1.05em;
+        color: #0a1e75; }
 
 /*algemene css*/
 body, html {

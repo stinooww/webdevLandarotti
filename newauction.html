@@ -166,7 +166,7 @@
 
         <form method="" action="" id="addNewAuc">
             <div class="row">
-                <div class="col-md-6 col-lg-6 col-sm-6  right-marg dropdown">
+                <div class="col-md-6 col-lg-6 col-sm-6  right-marg dropdown" >
 
 
                     <!-- Single button -->
@@ -175,7 +175,7 @@
                             Style <i class="fa fa-chevron-down" aria-hidden="true"></i>
                         </button>
 
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu" id="ddl">
                            <li> <a  href="#">Abstract</a></li>
                            <li> <a  href="#">African American</a></li>
                            <li> <a  href="#">Asian Contemporary</a></li>
@@ -221,31 +221,31 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4 form-group big-textarea">
+                <div class="col-sm-4 form-group textInput">
                     <label for="description">Description</label>
                     <textarea name="description" id="description" class="">What's the condition of the artwork?</textarea>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4 form-group big-textarea">
+                <div class="col-sm-4 form-group textInput">
                     <label for="origin">Origin</label>
                     <textarea name="origin" id="origin" >What's the origin of the artwork?</textarea>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-12 form-group file-upload">
-                    <label for="photos">Photos</label>
+                <div class="col-sm-12 form-group photos">
+                    <h3>Photos</h3>
                     <p>Please upload one picture with the signature of the artwork and one picture of the artwork.</p>
                     <p>You can upload to 3 pictures with a maximum of of 10MB each.</p>
-                    <div class="col-sm-4 file-button">
+                    <div class="col-sm-4 btnImage text-uppercase">
                         <p>upload image <span>of the artwork</span></p>
                         <input type="file" name="image" id="image">
                     </div>
-                    <div class="col-sm-4 file-button">
+                    <div class="col-sm-4 btnImage text-uppercase">
                         <p>upload image <span>of the signature</span></p>
                         <input type="file" name="signature" id="signature">
                     </div>
-                    <div class="col-sm-4 file-button">
+                    <div class="col-sm-4 btnImage text-uppercase">
                         <p>optional image</p>
                         <input type="file" name="optional" id="optional">
                     </div>
@@ -256,15 +256,15 @@
                     <h3>Pricing</h3>
                     <div class="col-sm-4 form-group AuctionInput">
                         <label for="minimum">Minimum estimate price</label>
-                        <input type="text" class="form-control custom-input " name="minimum" id="minimum" placeholder="X X X X">
+                        <input type="text" class="form-control custom-input " name="minimum" id="minimum" placeholder="€ X X X X">
                     </div>
-                    <div class="col-sm-4 form-group AuctionInput">
+                    <div class="col-sm-4 form-group marginsR AuctionInput">
                         <label for="maximum">Maximum estimate price</label>
-                        <input type="text" class="form-control custom-input " name="maximum" id="maximum" placeholder="X X X X">
+                        <input type="text" class="form-control  custom-input " name="maximum" id="maximum" placeholder="€ X X X X">
                     </div>
-                    <div class="col-sm-4 form-group AuctionInput">
+                    <div class="col-sm-4 form-group marginsR AuctionInput">
                         <label for="price">Buyout price <span>(optional)</span></label>
-                        <input type="text" class="form-control custom-input" name="price" id="price" placeholder="X X X X">
+                        <input type="text" class="form-control  custom-input" name="price" id="price" placeholder="€ X X X X">
                     </div>
                 </div>
             </div>
@@ -275,7 +275,7 @@
                         <label for="end">End date</label>
                         <input type="text" class="form-control custom-input " name="end" id="end" placeholder="DD/MM/YY">
                     </div>
-                    <div class="col-sm-8 form-group info">
+                    <div class="col-sm-8 form-group marginsR info">
                         <span>Attention</span>
                         <p>You can not change the information after adding this auction.</p>
                         <p>If you're not certain about the information of your artwork, please ask for help.</p>
@@ -292,7 +292,7 @@
             <div class="row">
                 <div class="col-sm-12 submit">
                     <input type="submit" name="submit" value="ADD AUCTION">
-                    <a href="#">ASK A QUESTION ></a>
+                    <a href="faq.html">ASK A QUESTION ></a>
                 </div>
             </div>
         </form>

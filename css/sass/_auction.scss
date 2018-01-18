@@ -38,8 +38,8 @@
             text-align: left;
           padding-left: 15px;
             width: 480px;
-            background-color: #f5f5f5;
-            border: 1px solid #e5e5e5;
+            background-color: $lightestGrey;
+            border: 1px solid $lightergrey;
             border-radius: 0;
             font-size: 1.5em;
             height: 48px;
@@ -48,14 +48,31 @@
              margin-left: 85%;
             }
           }
-          .dropdown-menu li{
-            text-align: left;
-            padding-left: 15px;
-            width: 480px;
-            background-color: #f5f5f5;
-            font-size: 1.2em;
-            height: 48px;
-            color: #555;
+          .dropdown-menu{
+            padding: 0;
+            margin: 0;
+            li{
+              padding-left: 0;
+              padding-top: 5px;
+              width: 480px;
+              background-color: $lightestGrey;
+border-bottom: solid 1px $lightergrey;
+              height: 48px;
+              &:hover{
+                background-color: $lightergrey;
+              }
+              a{
+                color: #555;
+                text-align: left;
+                font-size: 1.1em;
+
+                &:hover{
+                  background-color: $lightergrey;
+                }
+              }
+            }
+
+
           }
 
 
@@ -112,8 +129,11 @@
             width: 100%;
           }
         }
+        #price{
+          margin-top: 13%;
+        }
 
-        .big-textarea {
+        .textInput {
           width: 100%;
           textarea {
             width: 100%;
@@ -129,17 +149,21 @@
           }
         }
 
-        .file-upload {
+        .photos {
           width: 100%;
           margin-bottom: 0;
-
+h3{
+  font-size: 2em;
+  color: #0a1e75;
+  font-weight: normal;
+}
           p {
             font-size: 1.5em;
             color: #545353;
             margin: 0;
           }
 
-          .file-button {
+          .btnImage {
             height: 58px;
             width: calc(100%/753*211);
             overflow: hidden;
@@ -150,7 +174,7 @@
             margin-right: calc(100%/753*60);
             margin-top: 35px;
             font-size: 1.5em;
-            text-transform: uppercase;
+
 
             p {
               color: white;
