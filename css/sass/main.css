@@ -702,61 +702,6 @@ footer {
       padding: 0 15px; } }
 
 /*	CSS van add new auction*/
-#inleiding {
-  background-image: url("../img/platenspeler.jpg");
-  background-size: contain;
-  margin-top: -5%;
-  height: 75%;
-  background-repeat: no-repeat; }
-  @media (min-width: 1025px) {
-    #inleiding {
-      margin-top: -5%; } }
-  #inleiding .container {
-    position: relative; }
-  #inleiding .visit {
-    background-color: #5165bc;
-    margin: 10% 0 0 64%;
-    width: 15%;
-    height: 50%; }
-    #inleiding .visit .inleidingCirkel {
-      position: absolute;
-      top: -16px;
-      left: -16px;
-      background-color: white;
-      border-radius: 50%;
-      width: 32px;
-      height: 32px;
-      z-index: 1; }
-      #inleiding .visit .inleidingCirkel .inner {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        background-color: #01a6a0;
-        border-radius: 50%;
-        width: 18px;
-        height: 18px; }
-    #inleiding .visit #actie {
-      color: white; }
-      #inleiding .visit #actie h1 {
-        color: white;
-        margin: 10px 0 20px 0;
-        font-size: 3em;
-        padding: 0 15px 12px 15px;
-        border-bottom: solid 1px white; }
-      #inleiding .visit #actie p {
-        padding: 0 15px;
-        margin: 0;
-        font-size: 1.2em;
-        text-overflow: ellipsis; }
-    #inleiding .visit #loremBtn {
-      height: 70px;
-      width: 100%;
-      padding: 15px 20px;
-      color: #01a6a0;
-      font-size: 3em;
-      background-color: white; }
-
 #newAuction .container form .row {
   max-width: 753px;
   margin: 0; }
@@ -1672,6 +1617,66 @@ label {
   font-size: 2em;
   color: #0a1e75;
   font-weight: normal; }
+
+/*css van de platenspeler**/
+#inleiding {
+  background-image: url("../img/platenspeler.jpg");
+  background-size: contain;
+  margin-top: -5%;
+  height: 75%;
+  background-repeat: no-repeat; }
+  @media (min-width: 1025px) {
+    #inleiding {
+      margin-top: -5%; } }
+  #inleiding .container {
+    position: relative; }
+  #inleiding .visit {
+    background-color: #5165bc;
+    margin: 10% 0 0 64%;
+    width: 15%;
+    height: 50%; }
+    #inleiding .visit .inleidingCirkel {
+      position: absolute;
+      top: -16px;
+      left: -16px;
+      background-color: white;
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      z-index: 1; }
+      #inleiding .visit .inleidingCirkel .inner {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #01a6a0;
+        border-radius: 50%;
+        width: 18px;
+        height: 18px; }
+    #inleiding .visit #actie {
+      color: white; }
+      #inleiding .visit #actie h1 {
+        color: white;
+        margin: 10px 0 20px 0;
+        font-size: 3em;
+        padding: 0 15px 12px 15px;
+        border-bottom: solid 1px white; }
+      #inleiding .visit #actie p {
+        padding: 0 15px;
+        margin: 0;
+        font-size: 1.2em;
+        text-overflow: ellipsis; }
+    #inleiding .visit #loremBtn {
+      height: 70px;
+      width: 100%;
+      padding: 15px 20px;
+      color: #01a6a0;
+      font-size: 2em;
+      background-color: white; }
+      #inleiding .visit #loremBtn i {
+        height: 22px;
+        width: 11px;
+        margin-left: 20px; }
 
 /*errors */
 .errors {
