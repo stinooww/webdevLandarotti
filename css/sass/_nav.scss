@@ -130,7 +130,7 @@ $breakpoints: (small: 320px, medium: 768px, large: 1024px);
       }
       &:nth-child(2) {
         border-right: 1px solid $blue ;
-        padding-left: 30px;
+        padding-left: 20px;
         padding-right: 10px;
         height: 19px;
         @include media (">large") {
@@ -165,26 +165,34 @@ $breakpoints: (small: 320px, medium: 768px, large: 1024px);
     display: inherit;
   }
   #interaction{
+    float: left;
     display: none;
-    margin: 5px 0;
+    padding: 0;
     background-color: $lightgrey;
+    margin-top: 0;
     input{
-      margin-top: 5px;
+
+      margin-top: 0px;
       font-style: italic;
       font-size: 1.3em;
       padding-left: 8px;
       width: 100px;
 
           margin-right: 20px;
+        &:active, &:focus{
+          border: 1px solid $darkergrey;
+        }
 
-    }
-    span{
-background-color:$lightestGrey ;
-      width: 28px;
-      height: 24px;
-      color: #4e4e4e;
-      padding: 8px;
-    }
+      &[type="image"]{
+        background-color:$lightestGrey ;
+        width: 28px;
+        height: 24px;
+        margin-top: 2px;
+        color: #4e4e4e;
+        padding: 4px;
+
+      }
+       }
   }
   .loggin{
     display: none;
@@ -196,7 +204,7 @@ background-color:$lightestGrey ;
         border: none;
         a {
 
-          padding-right: 30px;
+          padding-right: 15px;
         }
       }
       &:nth-child(2) {
@@ -359,7 +367,7 @@ float: left;
 
             margin-right: 30px;
 
-            @include media ("<large") {
+            @include media ("<=large") {
               font-size: 1.2em;
               margin-right: 25px;
             }
@@ -387,13 +395,16 @@ float: left;
               }
             }
             @include media(">medium", "<=large") {
-              padding-left: 100px;
+              padding-left: 198px;
+            }
+            @include media(">large") {
+              padding-left: 100px !important;
             }
           }
 
           /*tweede ul menu*/
           &:last-child {
-            padding-right: 116px;
+            padding-right: 99px;
             font-weight: bold !important;
             color: red;
             li {

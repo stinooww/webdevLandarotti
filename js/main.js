@@ -43,12 +43,32 @@ if(selectDdl === 0){
 }
 function loginForm(e) {
     e.preventDefault();
-    console.log('leeg');
+    // console.log('testlogin');
     var btnLogin = document.getElementById("btnLogin");
     btnLogin.style.display = "none";
     var form = document.getElementById("interaction");
     form.style.display = "inherit";
+}
 
+
+function loggInForm(e) {
+    e.preventDefault();
+    console.log('testlogin1');
+    var userInput = document.getElementById("User");
+    var pswInput = document.getElementById("Psw");
+    var loggedIn = document.querySelector(".loggin");
+    var inter =  document.getElementById("interaction");
+    var register =  document.querySelector(".login");
+
+    if(userInput.value === "stijn" && pswInput.value === "test"){
+        console.log('testlogin2');
+inter.style.display = "none";
+loggedIn.style.display = "inherit";
+register.style.display = "none";
+    }else{
+        userInput.classList.add("errors");
+        pswInput.classList.add("errors");
+    }
 }
 
 
@@ -60,6 +80,9 @@ function bindEvents() {
     //
     var login = document.getElementById("btnLogin");
     login.addEventListener('click', loginForm);
+
+    var loggIn = document.getElementById("interaction");
+    loggIn.addEventListener('submit', loggInForm);
 }
 
 bindEvents();
