@@ -244,6 +244,9 @@ padding-top: 10px;
   }
 }
 @include media(">small", "<=medium") {
+  .container{
+    width: 100%;
+  }
   .navbar, .landing {
     width: 1500px;
   }
