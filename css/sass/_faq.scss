@@ -1,10 +1,6 @@
 /*css van faq*/
-#faq-filter {
-  padding-top: 5%;
-#faqImg{
-  width: 100%;
-  height: 60%;
-}
+#filterFaq{
+
   .inleiding{
   background-color:   #162a81a3;
 
@@ -20,7 +16,7 @@ p{
   color: white;
 }
   }
-  // icon van de blauwe achtergnd
+
   .inleidingCirkel{
     position: absolute;
     top: -16px;
@@ -32,39 +28,33 @@ p{
     z-index: 1;
 
     .inner {
+      border-radius: 50%;
+      width: 18px;
+      height: 18px;
       position: absolute;
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
       background-color: $green;
-      border-radius: 50%;
-      width: 18px;
-      height: 18px;
+
     }
   }
   .container {
-    //padding: 0;
-    @media (min-width: 991px) {
-      padding: 0;
-    }
+  padding: 0;
+
 
     .filter {
+      font-weight: bold;
+      border: 1px solid $lightergrey;
       background-color: #f7f8f7;
       height: 134px;
       padding: 0 47px 0 50px;
       font-size: 1.8em;
-      font-weight: bold;
-      border: 1px solid $lightergrey;
-
       display: flex;
       align-items: center;
 
-      @media (max-width: 991px) {
-        height: auto;
-        padding: 15px;
-      }
 
-      .filter-items {
+      .questions {
         width: 100%;
         float: left;
 
@@ -86,13 +76,14 @@ p{
     .button {
       float: right;
       a {
-        display: inline-block;
-        text-align: center;
-        line-height: 48px;
-        width: 117px;
-        height: 48px;
         background-color: $lightestGrey;
         border: 1px solid $lightergrey;
+        display: inline-block;
+        text-align: center;
+        line-height: 45px;
+        width: 118px;
+        height: 48px;
+
         border-top: 0;
         font-weight: bold;
         color: $blue;
@@ -107,32 +98,28 @@ p{
   }
 }
 
-#faq-list {
+#faq {
   margin-top: 57px;
 
   .container {
-    .articles {
+    .qa {
       article {
         min-height: 135px;
         margin-bottom: 35px;
         border-bottom: 1px solid #f4f4f4;
-
-        @media (max-width: 991px) {
-          height: auto;
-        }
 
         &:last-child {
           border: none;
           margin-bottom: 0;
         }
 
-        .qa {
+        .questions {
           float: left;
           ul {
             li {
               color: $blue;
               font-size: 3em;
-
+              padding-bottom: 10px;
               &:last-child {
                 color: #545353;
               }
@@ -140,14 +127,19 @@ p{
           }
         }
 
-        .info {
+        .answer {
           margin-left: 85px;
+          h5{
+            padding-top: 8px;
+          }
           p {
-            font-size: 1.6em;
-            line-height: 22px;
+
+            line-height: 24px;
             color: $darkgrey;
             margin-top: 30px;
             margin-bottom: 0;
+            font-size: 1.6em;
+
 
             span {
               font-weight: bold;
