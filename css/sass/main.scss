@@ -8,7 +8,7 @@
 @import "detail";
 @import "myauctions";
 @import "mywatchlist";
-
+@import "registratie";
 $font-weight-light:300;
 $font-weight-regular:400;
 $font-weight-bold:600;
@@ -25,14 +25,14 @@ $lightergrey : lighten($lightgrey, 10%);
 $hoverGreyBtn: #e1e1e1;
 $lightestGrey: #f5f5f5;
 $lightergrey: #e5e5e5;
-$darkgrey: darken($grey, 20%);
-$darkergrey: darken($darkgrey, 10%);
+
 
 $darkgrey: #4e4e4e;
 $darkestgrey: #1d1d1b;
 
 $darkerGrey: #757575;
-
+$darkgrey: darken($grey, 20%);
+$darkergrey: darken($darkgrey, 10%);
 $footerGrey: #5c5c5c;
 
 $hoverGrey: #565656;

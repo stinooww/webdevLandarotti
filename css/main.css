@@ -1550,6 +1550,79 @@ table {
         font-size: 1.05em;
         color: #0a1e75; }
 
+/*css van de register pagina*/
+#registratie .row {
+  margin: 0; }
+  @media (min-width: 768px) {
+    #registratie .row.margin-bottom {
+      margin-bottom: 40px; } }
+  #registratie .row .inputs {
+    background-color: #f5f5f5;
+    border: 1px solid #e5e5e5;
+    border-radius: 0;
+    font-size: 1.5em;
+    height: 48px;
+    padding: 0 0 0 15px; }
+  #registratie .row .form-group {
+    padding: 0;
+    margin-bottom: 0; }
+    @media (max-width: 768px) {
+      #registratie .row .form-group {
+        width: 100% !important;
+        margin-bottom: 20px; } }
+  #registratie .row .special-input {
+    width: calc(100%/1024*482); }
+    #registratie .row .special-input label {
+      width: 100%; }
+    #registratie .row .special-input .phone {
+      float: left;
+      width: calc(100%/482*90);
+      margin-right: calc(100%/482*8); }
+    #registratie .row .special-input .number {
+      float: left;
+      width: calc(100%/482*384); }
+  #registratie .row .inputBig {
+    width: calc(100%/1024*482); }
+  #registratie .row .inputSmall {
+    width: calc(100%/1024*211); }
+  #registratie .row .marginR {
+    margin-right: calc(100%/1024*60); }
+  #registratie .row .check {
+    padding: 0;
+    margin-top: 66px; }
+    #registratie .row .check input, #registratie .row .check p {
+      float: left; }
+    #registratie .row .check input {
+      height: auto;
+      margin-right: 14px; }
+    #registratie .row .check p {
+      font-size: 1.5em;
+      margin: 0; }
+      #registratie .row .check p span {
+        color: #01a6a0;
+        text-decoration: underline; }
+    #registratie .row .check::after {
+      clear: both;
+      display: block;
+      content: ""; }
+  #registratie .row .btnSubmit {
+    padding: 0;
+    margin-top: 32px;
+    width: calc(100%/1024*268); }
+    @media (max-width: 767px) {
+      #registratie .row .btnSubmit {
+        width: 100%; } }
+    #registratie .row .btnSubmit #submit {
+      font-family: 'Helvetica', sans-serif;
+      font-weight: lighter;
+      font-size: 1.8em;
+      background-color: #01a6a0;
+      height: 60px;
+      width: 100%;
+      color: white;
+      text-align: center;
+      border: none; }
+
 /*algemene css*/
 body, html {
   height: 100%; }

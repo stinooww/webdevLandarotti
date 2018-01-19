@@ -1,0 +1,113 @@
+/*css van de register pagina*/
+
+
+#registratie  {
+      .row {
+        margin: 0;
+
+        &.margin-bottom {
+          @media (min-width: 768px) {
+            margin-bottom: 40px;
+          }
+        }
+.inputs{
+  background-color: #f5f5f5;
+  border: 1px solid #e5e5e5;
+  border-radius: 0;
+  font-size: 1.5em;
+  height: 48px;
+  padding: 0 0 0 15px;
+}
+        .form-group {
+          padding: 0;
+          margin-bottom: 0;
+
+          @include media("<=medium"){
+            width: 100% !important;
+            margin-bottom: 20px;
+          }
+        }
+        .special-input {
+          width: calc(100%/1024*482);
+
+          label {
+            width: 100%;
+          }
+
+
+          .phone {
+            float: left;
+            width: calc(100%/482*90);
+            margin-right: calc(100%/482*8);
+          }
+
+          .number {
+            float: left;
+            width: calc(100%/482*384);
+          }
+        }
+        .inputBig {
+          width: calc(100%/1024*482);
+        }
+
+        .inputSmall {
+          width: calc(100%/1024*211);
+        }
+
+        .marginR {
+          margin-right: calc(100%/1024*60);
+        }
+
+
+
+        .check {
+          padding: 0;
+          margin-top: 66px;
+          input, p {
+            float: left;
+          }
+
+          input {
+            height: auto;
+            margin-right: 14px;
+          }
+
+          p {
+            font-size: 1.5em;
+            margin: 0;
+            span {
+              color: $green;
+              text-decoration: underline;
+            }
+          }
+
+          &::after {
+            clear: both;
+            display: block;
+            content: "";
+          }
+        }
+
+        .btnSubmit {
+          padding: 0;
+          margin-top: 32px;
+          width: calc(100%/1024*268);
+          @include media("<medium"){
+            width: 100%;
+          }
+          #submit{
+            font-family: 'Helvetica', sans-serif;
+            font-weight: lighter;
+            font-size: 1.8em;
+            background-color: $green;
+            height: 60px;
+            width: 100%;
+            color: white;
+            text-align: center;
+            border: none;
+          }
+        }
+      }
+
+
+}

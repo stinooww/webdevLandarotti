@@ -50,7 +50,7 @@ function loginForm(e) {
     form.style.display = "inherit";
 }
 
-
+/*functie die interactie voorziet voor login*/
 function loggInForm(e) {
     e.preventDefault();
     console.log('testlogin1');
@@ -73,16 +73,16 @@ register.style.display = "none";
 
 
 
-/**function bindEvents: functie  die alle event handlers  aan de functies verbind */
 function bindEvents() {
-    var formbtn = document.getElementById("addNewAuc");
-    formbtn.addEventListener('submit', send);
-
     var login = document.getElementById("btnLogin");
     login.addEventListener('click', loginForm);
 
     var loggIn = document.getElementById("interaction");
     loggIn.addEventListener('submit', loggInForm);
+    // var formbtn = document.getElementById("addNewAuc");
+    // formbtn.addEventListener('submit', send);
+
+
 }
 
 bindEvents();
