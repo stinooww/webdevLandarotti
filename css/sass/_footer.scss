@@ -322,10 +322,10 @@ width: 100%;
       }
       ul {
         margin: 0;
-        padding-left: 170px;
+       padding-left: 126px;
         text-transform: uppercase;
-        @include media("<=large") {
-          padding-left: 155px;
+        @include media(">large") {
+          padding-left: 170px;
         }
         @include media("<=small") {
           width: 50%;
@@ -337,7 +337,8 @@ width: 100%;
             font-weight: bold;
             margin-right: 65px;
             @include media("<=large") {
-              margin-right: 45px;
+              margin-right: 40px;
+              //padding-left: 155px;
             }
             @include media("<=small") {
               margin-right: 0px;
@@ -352,42 +353,43 @@ width: 100%;
             }
           }
         }
-        /*tweede menu*/
-        &:nth-child(2) {
-          padding-left: 0 !important;
-          padding-right: 34px;
-          @include media(">large") {
-            padding-right: 50px;
-          }
 
-          font-size: 1.3em;
-          @include media("<=small") {
-            width: 20%;
-            float: right;
-          }
-          li {
-            a {
-
-              font-weight: normal;
-              color: $blue;
-
-            }
-            @include media("<=small") {
-              margin-right: 0px;
-              float: left;
-              width: 40px;
-            }
-            .active{
-              font-weight: bold;
-            }
-          }
-        }
 
         @include media("<medium") {
           padding-left: 0;
         }
 
 
+      }
+      /*tweede menu*/
+      #talen{
+        padding-left: 0 !important;
+        padding-right: 34px;
+        @include media(">large") {
+          padding-right: 50px;
+        }
+
+        font-size: 1.3em;
+        @include media("<=small") {
+          width: 20%;
+          float: right;
+        }
+        li {
+          a {
+
+            font-weight: normal;
+            color: $blue;
+
+          }
+          @include media("<=small") {
+            margin-right: 0px;
+            float: left;
+            width: 40px;
+          }
+          .active{
+            font-weight: bold;
+          }
+        }
       }
     }
   }

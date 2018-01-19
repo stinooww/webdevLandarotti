@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="google-site-verification" content="bZrlsX87Je_E-996kJTqa0KdxW_XV4w0Wl0F61Z8U-4" />
-    <title>Landoretti</title>
+    <title>Landoretti ~ Modern Auction ArtPlatform</title>
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
@@ -21,12 +21,30 @@
     <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
     <link rel="manifest" href="/img/favicon/manifest.json">
+    <link rel="canonical" href="https://landarotti.stijn.heynderickx.mtantwerp.eu">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <meta name="description" content="landoretti biedt u mooie kunstwerken aan voor een schappelijke prijs">
     <meta name="keywords" content="landoretti,kunstwerken,veilingsite,webdevelopment">
     <meta name="author" content="Stijn Heynderickx">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Landoretti" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="title" content="Landoretti">
+    <meta name="locale" content="en">
+    <meta name="robots" content="all">
+    <meta property="og:title" content="Landoretti auctions" />
+    <meta property="og:site_name" content="Landoretti" />
+    <meta property="og:description" content="Landoretti auctions unique and rare pieces from all over the world" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="img/logo.png" />
+    <meta property="og:url"  content="img/logo.png"  />
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:title" content="Landoretti auctions" />
+    <meta property="twitter:description" content="Landoretti auctions unique and rare pieces from all over the world" />
+    <meta property="twitter:image"  content="img/logo.png"  />
+    <meta property="twitter:url"  content="img/logo.png"  />
     <!-- Css files -->
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -140,72 +158,73 @@
         <form method="" action="#">
             <div class="row  margin-bottom">
                 <div class="col-sm-6 form-group right-marg big-form">
-                    <label for="company">Company or name</label>
-                    <input type="text" class="form-control custom-input" name="company" id="company" placeholder="Studio 6">
+                    <label for="name">Company or name</label>
+                    <input type="text" class="form-control custom-input" name="name" id="name" placeholder="Studio 6" required>
                 </div>
                 <div class="col-sm-6 form-group big-form">
                     <label for="email">Email</label>
-                    <input type="text" class="form-control custom-input " name="email" id="email" placeholder="name@provider.com">
+                    <input type="text" class="form-control custom-input " name="email" id="email" placeholder="name@provider.com" required>
                 </div>
             </div>
             <div class="row margin-bottom">
                 <div class="col-sm-6 form-group big-form right-marg">
                     <label for="password">Password</label>
-                    <input type="password" class="form-control custom-input " name="password" id="password" placeholder="Password">
+                    <input type="password" class="form-control custom-input " name="password" id="password" placeholder="Password" required>
                 </div>
                 <div class="col-sm-6 form-group big-form">
-                    <label for="password_confirmation">Password confirmation</label>
-                    <input type="password" class="form-control custom-input " name="password_confirmation" id="password_confirmation" placeholder="Password">
+                    <label for="pswConf">Password confirmation</label>
+                    <input type="password" class="form-control custom-input " name="pswConf" id="pswConf" placeholder="Password" required
+                    >
                 </div>
             </div>
             <div class="row margin-bottom">
                 <div class="col-sm-6 form-group big-form right-marg">
                     <label for="country">Country</label>
-                    <input type="text" class="form-control custom-input " name="country" id="country" placeholder="Password">
+                    <input type="text" class="form-control custom-input " name="country" id="country" placeholder="Country" required>
                 </div>
                 <div class="col-sm-3 form-group small-form right-marg">
-                    <label for="zipcode">Zip code</label>
-                    <input type="text" class="form-control custom-input" name="zipcode" id="zipcode" placeholder="8400">
+                    <label for="zip">Zip code</label>
+                    <input type="text" class="form-control custom-input" name="zip" id="zip" placeholder="8400" required>
                 </div>
                 <div class="col-sm-3 form-group small-form">
                     <label for="city">City</label>
-                    <input type="text" class="form-control custom-input " name="city" id="city" placeholder="Oostende">
+                    <input type="text" class="form-control custom-input " name="city" id="city" placeholder="Oostende" required>
                 </div>
             </div>
             <div class="row margin-bottom">
                 <div class="col-sm-6 form-group right-marg big-form">
                     <label for="address">Address</label>
-                    <input type="text" class="form-control custom-input" name="address" id="address" placeholder="Zuidstraat 15 C4">
+                    <input type="text" class="form-control custom-input" name="address" id="address" placeholder="Zuidstraat 15 C4" required>
                 </div>
                 <div class="col-sm-6 form-group special-input">
-                    <label for="phone_number">Phone Number</label>
+                    <label for="phone">Phone Number</label>
                     <div class="phone-code">
-                        <input type="text" class="form-control custom-input " name="phone-code" id="phone-code" placeholder="+ 32">
+                        <input type="text" class="form-control custom-input " required name="phone" id="phone" placeholder="+ 32">
                     </div>
                     <div class="phone-number">
-                        <input type="text" class="form-control custom-input " name="phone-number" id="phone-number" placeholder="XX XXX XX XX">
+                        <input type="text" class="form-control custom-input "  required name="phoneNumber" id="phoneNumber" placeholder="XX XXX XX XX">
                     </div>
                 </div>
             </div>
             <div class="row margin-bottom">
                 <div class="col-sm-6 form-group right-marg big-form">
-                    <label for="account_number">Account number</label>
-                    <input type="text" class="form-control custom-input " name="account_number" id="account_number" placeholder="XX XXX XX XX">
+                    <label for="accnumber">Account number</label>
+                    <input type="text" class="form-control custom-input " required name="accnumber" id="accnumber" placeholder="XX XXX XX XX">
                 </div>
                 <div class="col-sm-6 form-group big-form">
-                    <label for="vat-number">VAT-number</label>
-                    <input type="text" class="form-control custom-input " name="vat-number" id="vat-number" placeholder="XX XXX XX XX">
+                    <label for="vat">VAT-number</label>
+                    <input type="text" class="form-control custom-input " required name="vat" id="vat" placeholder="XX XXX XX XX">
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-12 form-group">
                     <label for="payment">Alternative payment methods</label>
-                    <input type="text" class="form-control custom-input " name="payment" id="payment" placeholder="Lorem ipsum, dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim">
+                    <input type="text" class="form-control custom-input " name="payment" id="payment" required placeholder="Lorem ipsum, dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim">
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-12 check">
-                    <input type="checkbox" name="check" id="check">
+                    <input type="checkbox" name="check" id="check" required>
                     <p>I Agree to <span>The Terms & Conditions</span></p>
                 </div>
             </div>
@@ -217,6 +236,7 @@
         </form>
     </div>
 </section>
+
 <section class="footer">
     <div class="line hidden-xs"></div>
 
@@ -415,18 +435,18 @@
         <div class="row">
 
             <div class="logo"><img src="img/logo.png" alt="Landoretti"></div>
-            <div class="col-xs-visible col-xs-12">
+            <div class="">
                 <ul class="nav navbar-nav hidden-xs">
                     <li><a href="index.html">home</a></li>
-                    <li><a href="art.html">art</a></li>
+                    <li><a href="index.html">art</a></li>
                     <li><a href="isearch.html">isearch</a></li>
                     <li><a href="myauctions.html">myauctions</a></li>
                     <li><a href="myauctions.html">mybids</a></li>
-                    <li><a href="contact.html">contact</a></li>
+                    <li><a href="index.html">contact</a></li>
 
                 </ul>
-                <p id="rights" class="col-xs-visible">&copy; 2013 Studio6, Inc. All rights reserved.</p>
-                <ul class="nav navbar-nav navbar-right language hidden-xs">
+                <p id="rights" class="hidden-lg hidden-md hidden-sm col-xs-visible">&copy; 2013 Studio6, Inc. All rights reserved.</p>
+                <ul class="nav navbar-nav navbar-right language hidden-xs" id="talen">
 
                     <li><a href="nl">nl</a></li>
                     <li><a href="fr">fr</a></li>
@@ -441,7 +461,7 @@
 
     </div>
 
-    </div>
+
 </footer>
 <script src="https://use.fontawesome.com/4501d3005f.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>

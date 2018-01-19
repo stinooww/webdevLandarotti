@@ -501,63 +501,64 @@ footer {
           margin-left: 5%;
           height: 55px;
           width: 30px; } }
-    @media (max-width: 320px) {
-      footer .container div #rights {
-        width: 34%;
-        margin: 19% 0 0 50%; } }
-    footer .container div ul {
-      margin: 0;
-      padding-left: 170px;
-      text-transform: uppercase;
-      /*eerste menu*/
+    footer .container div {
       /*tweede menu*/ }
-      @media (max-width: 1024px) {
-        footer .container div ul {
-          padding-left: 155px; } }
       @media (max-width: 320px) {
-        footer .container div ul {
-          width: 50%;
-          float: left; } }
-      footer .container div ul:first-child li {
-        font-weight: bold;
-        margin-right: 65px; }
-        @media (max-width: 1024px) {
-          footer .container div ul:first-child li {
-            margin-right: 45px; } }
+        footer .container div #rights {
+          width: 34%;
+          margin: 19% 0 0 50%; } }
+      footer .container div ul {
+        margin: 0;
+        padding-left: 126px;
+        text-transform: uppercase;
+        /*eerste menu*/ }
+        @media (min-width: 1025px) {
+          footer .container div ul {
+            padding-left: 170px; } }
         @media (max-width: 320px) {
-          footer .container div ul:first-child li {
-            margin-right: 0px;
-            float: left;
-            width: 40%; } }
-        footer .container div ul:first-child li a {
-          font-size: 1.5em;
-          color: #4e4e4e;
-          padding: 0;
-          line-height: 50px; }
-      footer .container div ul:nth-child(2) {
+          footer .container div ul {
+            width: 50%;
+            float: left; } }
+        footer .container div ul:first-child li {
+          font-weight: bold;
+          margin-right: 65px; }
+          @media (max-width: 1024px) {
+            footer .container div ul:first-child li {
+              margin-right: 40px; } }
+          @media (max-width: 320px) {
+            footer .container div ul:first-child li {
+              margin-right: 0px;
+              float: left;
+              width: 40%; } }
+          footer .container div ul:first-child li a {
+            font-size: 1.5em;
+            color: #4e4e4e;
+            padding: 0;
+            line-height: 50px; }
+        @media (max-width: 767px) {
+          footer .container div ul {
+            padding-left: 0; } }
+      footer .container div #talen {
         padding-left: 0 !important;
         padding-right: 34px;
         font-size: 1.3em; }
         @media (min-width: 1025px) {
-          footer .container div ul:nth-child(2) {
+          footer .container div #talen {
             padding-right: 50px; } }
         @media (max-width: 320px) {
-          footer .container div ul:nth-child(2) {
+          footer .container div #talen {
             width: 20%;
             float: right; } }
-        footer .container div ul:nth-child(2) li a {
+        footer .container div #talen li a {
           font-weight: normal;
           color: #0a1e75; }
         @media (max-width: 320px) {
-          footer .container div ul:nth-child(2) li {
+          footer .container div #talen li {
             margin-right: 0px;
             float: left;
             width: 40px; } }
-        footer .container div ul:nth-child(2) li .active {
+        footer .container div #talen li .active {
           font-weight: bold; }
-      @media (max-width: 767px) {
-        footer .container div ul {
-          padding-left: 0; } }
 
 /*mainpage*/
 #landing #landingImg {
@@ -655,7 +656,7 @@ footer {
     text-align: center;
     font-size: 1.5em; }
 
-/** css van most popular section*/
+/**  most popular section*/
 #popular {
   background-color: #eaeaea;
   padding: 50px 0 100px 0; }
@@ -669,67 +670,44 @@ footer {
       @media (max-width: 768px) {
         #popular .poprows div#leftArt {
           width: 100%; } }
-      #popular .poprows div#leftArt div.overlay a {
+      #popular .poprows div#leftArt div.filters a {
         display: none; }
-        #popular .poprows div#leftArt div.overlay a .svg-icon {
-          position: absolute;
-          left: 50%;
-          top: 50%;
-          transform: translate(-50%, -50%);
-          background: url("/img/icon/download.svg");
-          background-size: contain;
-          background-repeat: no-repeat;
-          width: calc(100%/702*115);
-          height: calc(100%/348*113);
-          z-index: 1; }
-        #popular .poprows div#leftArt div.overlay a .transparent {
+        #popular .poprows div#leftArt div.filters a .transparent {
           position: absolute;
           background-color: #565656;
           height: 100%;
           width: 100%;
           opacity: 0.702; }
-      #popular .poprows div#leftArt div.overlay:hover a {
+      #popular .poprows div#leftArt div.filters:hover a {
         display: block; }
       #popular .poprows div#leftArt div img {
         width: 100%; }
       #popular .poprows div#leftArt div:first-child {
         margin-bottom: 7.5px; }
     #popular .poprows div#juweel {
-      background-color: blue;
       width: calc(100%/1024*702);
       margin-left: calc(100%/1024*8); }
       #popular .poprows div#juweel img {
         width: 100%; }
-      #popular .poprows div#juweel.overlay {
+      #popular .poprows div#juweel.filters {
         -webkit-transition: 3s ease;
         -o-transition: 3s ease;
         -moz-transition: 3s ease;
         transition: 3s ease; }
-        #popular .poprows div#juweel.overlay a {
+        #popular .poprows div#juweel.filters a {
           display: none; }
-          #popular .poprows div#juweel.overlay a .svg-icon {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            background: url("/img/icon/download.svg");
-            background-size: contain;
-            background-repeat: no-repeat;
-            width: calc(100%/702*115);
-            height: calc(100%/348*113);
-            z-index: 1; }
-          #popular .poprows div#juweel.overlay a .transparent {
+          #popular .poprows div#juweel.filters a .transparent {
             position: absolute;
             background-color: #565656;
             height: 100%;
             width: 100%;
             opacity: 0.702; }
-        #popular .poprows div#juweel.overlay:hover {
+        #popular .poprows div#juweel.filters:hover {
           -webkit-transition: 3s ease;
           -o-transition: 3s ease;
           -moz-transition: 3s ease;
           transition: 3s ease; }
-          #popular .poprows div#juweel.overlay:hover a {
+          #popular .poprows div#juweel.filters:hover a {
             display: block; }
       @media (max-width: 768px) {
         #popular .poprows div#juweel {
