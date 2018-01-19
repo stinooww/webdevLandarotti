@@ -221,6 +221,10 @@
   .main-menu {
     padding-left: 29px; } }
 
+  @media (min-width: 1025px) {
+    .main-menu .container {
+      width: 1200px; } }
+
 .menu {
   padding-right: 0; }
   .menu ul {
@@ -255,11 +259,12 @@
 
       @media (min-width: 1025px) {
         .menu ul:first-child {
-          padding-left: 100px !important; } }
+          padding-left: 25px !important; } }
     .menu ul:last-child {
-      padding-right: 99px;
-      font-weight: bold !important;
-      color: red; }
+      padding-right: 99px; }
+      @media (min-width: 1025px) {
+        .menu ul:last-child {
+          padding-right: 65px !important; } }
       .menu ul:last-child li {
         margin-right: 15px; }
         .menu ul:last-child li a {

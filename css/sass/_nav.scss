@@ -355,7 +355,18 @@ float: left;
     padding-left: 29px;
   }
 
+.container{
+  @include media(">large") {
+   width: 1200px;
+  }
+  //.menu ul:first-child {
+  //  @include media(">large") {
+  //    padding-left: 25px !important;
+  //  }
+  //
+  //}
 
+}
 }
       .menu {
 
@@ -398,15 +409,17 @@ float: left;
               padding-left: 198px;
             }
             @include media(">large") {
-              padding-left: 100px !important;
+              padding-left: 25px !important;
             }
           }
 
           /*tweede ul menu*/
           &:last-child {
             padding-right: 99px;
-            font-weight: bold !important;
-            color: red;
+
+            @include media(">large") {
+              padding-right: 65px !important;
+            }
             li {
               margin-right: 15px;
               a {

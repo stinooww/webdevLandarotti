@@ -221,6 +221,10 @@
   .main-menu {
     padding-left: 29px; } }
 
+  @media (min-width: 1025px) {
+    .main-menu .container {
+      width: 1200px; } }
+
 .menu {
   padding-right: 0; }
   .menu ul {
@@ -255,11 +259,12 @@
 
       @media (min-width: 1025px) {
         .menu ul:first-child {
-          padding-left: 100px !important; } }
+          padding-left: 25px !important; } }
     .menu ul:last-child {
-      padding-right: 99px;
-      font-weight: bold !important;
-      color: red; }
+      padding-right: 99px; }
+      @media (min-width: 1025px) {
+        .menu ul:last-child {
+          padding-right: 65px !important; } }
       .menu ul:last-child li {
         margin-right: 15px; }
         .menu ul:last-child li a {
@@ -1570,38 +1575,45 @@ table {
         font-size: 1.05em;
         color: #0a1e75; }
 
-#my-watchlist .container h1 {
+/*css van my watchlist*/
+#myWatchlist h1 {
   margin-bottom: 0; }
-#my-watchlist .container .btns {
+#myWatchlist .knoppen {
   height: 50px; }
-  #my-watchlist .container .btns a {
+  #myWatchlist .knoppen a {
     font-size: 1.2em;
     color: #0a1e75;
     font-weight: bold;
+    margin-right: 5px;
     background-color: #f5f5f5;
     border: 1px solid #e5e5e5;
-    width: 157px;
+    width: 158px;
     height: 100%;
     line-height: 50px;
     text-align: center;
     margin-bottom: 46px; }
-    #my-watchlist .container .btns a.small-margin {
-      margin-right: 5px; }
-#my-watchlist .container .watchlist .filter ul {
+    #myWatchlist .knoppen a span {
+      margin-left: 8px; }
+#myWatchlist .checkboxes {
+  margin: 115px 0; }
+  #myWatchlist .checkboxes:first-child {
+    margin: 100px 0; }
+#myWatchlist .watchlist .filter ul {
   display: inline-block; }
-  #my-watchlist .container .watchlist .filter ul li {
+  #myWatchlist .watchlist .filter ul li {
     float: left;
     font-size: 1.2em; }
-    #my-watchlist .container .watchlist .filter ul li:first-child {
+    #myWatchlist .watchlist .filter ul li:first-child {
       font-weight: bold; }
-      #my-watchlist .container .watchlist .filter ul li:first-child a {
+      #myWatchlist .watchlist .filter ul li:first-child a {
         padding-bottom: 7px;
         border-bottom: 3px solid #d4d4d4; }
-    #my-watchlist .container .watchlist .filter ul li:nth-child(2), #my-watchlist .container .watchlist .filter ul li:nth-child(3) {
+    #myWatchlist .watchlist .filter ul li:nth-child(2), #myWatchlist .watchlist .filter ul li:nth-child(3) {
       margin-left: 6px; }
-    #my-watchlist .container .watchlist .filter ul li a {
+    #myWatchlist .watchlist .filter ul li a {
       color: #545353; }
 
+/* css van de tabel*/
 table {
   width: 100%; }
   table thead tr {
@@ -1610,9 +1622,8 @@ table {
       background-color: #f8f8f8;
       text-align: center;
       height: 35px;
-      color: #545353;
-      font-size: .95em;
-      font-weight: normal; }
+      color: #565656;
+      font-size: 1em; }
       table thead tr th:first-child {
         width: calc(100%/1024*535); }
       table thead tr th:nth-child(2) {
