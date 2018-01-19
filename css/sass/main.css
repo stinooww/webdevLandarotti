@@ -463,7 +463,7 @@ footer {
       /*tweede menu*/ }
       @media (max-width: 1024px) {
         footer .container div ul {
-          padding-left: 240px; } }
+          padding-left: 155px; } }
       @media (max-width: 320px) {
         footer .container div ul {
           width: 50%;
@@ -473,7 +473,7 @@ footer {
         margin-right: 65px; }
         @media (max-width: 1024px) {
           footer .container div ul:first-child li {
-            margin-right: 25px; } }
+            margin-right: 45px; } }
         @media (max-width: 320px) {
           footer .container div ul:first-child li {
             margin-right: 0px;
@@ -486,6 +486,7 @@ footer {
           line-height: 50px; }
       footer .container div ul:nth-child(2) {
         padding-left: 0;
+        padding-right: 34px;
         font-size: 1.3em; }
         @media (min-width: 1025px) {
           footer .container div ul:nth-child(2) {
@@ -1516,6 +1517,58 @@ footer {
   color: #545353; }
 #myAuctions .sold {
   margin-bottom: 0; }
+
+table {
+  width: 100%; }
+  table thead tr {
+    border: 1px solid #cacaca; }
+    table thead tr th {
+      background-color: #f8f8f8;
+      text-align: center;
+      height: 35px;
+      color: #545353;
+      font-size: .95em;
+      font-weight: normal; }
+      table thead tr th:first-child {
+        width: calc(100%/1024*535); }
+      table thead tr th:nth-child(2) {
+        width: calc(100%/1024*162); }
+      table thead tr th:nth-child(3) {
+        width: calc(100%/1024*162); }
+      table thead tr th:nth-child(4) {
+        width: calc(100%/1024*165); }
+  table tbody tr td {
+    height: 135px;
+    border: 1px solid #cacaca;
+    text-align: center;
+    color: #545353; }
+    table tbody tr td .image {
+      background-color: red;
+      display: block;
+      height: 100%;
+      width: 135px;
+      float: left; }
+    table tbody tr td:nth-child(2) {
+      font-size: 1.35em; }
+    table tbody tr td:nth-child(3) {
+      font-size: .9em;
+      line-height: 20px; }
+    table tbody tr td:nth-child(4) {
+      font-size: 1.5em; }
+    table tbody tr td .info {
+      float: left;
+      height: 100%;
+      margin-left: 47px;
+      text-align: left;
+      display: flex;
+      align-items: center; }
+      table tbody tr td .info h3 {
+        font-size: 1.45em;
+        font-weight: normal;
+        margin: 0 !important; }
+      table tbody tr td .info a {
+        font-size: 1.05em;
+        color: #0a1e75; }
 
 #my-watchlist .container h1 {
   margin-bottom: 0; }

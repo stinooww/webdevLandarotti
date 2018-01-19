@@ -1,3 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Landoretti</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Css files -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<nav class="navbar navbar-default">
+
+    <div  id="headnav">
+
+
+        <div class="navbar-header">
+
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navigation">
+
+                <span class="icon-bar"></span>
+
+                <span class="icon-bar"></span>
+
+                <span class="icon-bar"></span>
+
+            </button>
+
+            <a href="index.html" class="navbar-brand logo"></a>
+
+        </div>
+
+        <div class="top-menu">
+
+            <div class="collapse navbar-collapse navigation">
+
+                <ul class="nav navbar-nav loggin">
+
+                    <li><a href="mywatchlist.html"><img src="img/icon/watchlist.png" alt="profile" class="navicons">watchlist</a></li>
+                    <li><a href="profile.html"><img src="img/icon/profile.png" alt="profile" class="navicons">profile</a></li>
+                    <li><a href="">logout</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav login">
+
+                    <li><a href="register.html">register</a></li>
+                    <li  id="btnLogin"><a href="">login</a></li>
+                </ul>
+                <form id="interaction">
+                    <input type="text" id="User" name="username" placeholder="User">
+                    <input type="text" id="Psw" name="psw" placeholder="Password">
+
+                    <input type="image" alt="Submit" value="search" src="img/pijltjeR.png">
+                </form>
+
+
+                <form action="#" method="GET" class="navbar-right input-field find">
+
+                    <input type="text" name="search" placeholder="Search">
+
+                    <input type="image" value="search" src="img/icon/search.png">
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="main-menu">
+
+        <div class="container">
+
+            <div class="collapse navbar-collapse menu">
+
+                <ul class="nav navbar-nav">
+
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="art.html">art</a></li>
+                    <li><a href="isearch.html">isearch</a></li>
+                    <li><a href="myauctions.html">myauctions</a></li>
+                    <li><a href="myauctions.html">mybids</a></li>
+                    <li><a href="contact.html">contact</a></li>
+
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right taal">
+
+                    <li><a href="nl">nl</a></li>
+                    <li><a href="fr">fr</a></li>
+                    <li><a href="en" class="active">en</a></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</nav>
+
 <section id="register">
     <div class="container">
         <div class="breadcrumbs">
@@ -11,15 +134,7 @@
 
         <h1>Register</h1>
 
-        <?php if(!empty($errors)) { ?>
-        <div class="errors alert alert-danger">
-            <ul>
-                <?php foreach($errors as $error) { ?>
-                <li><?= $error ?></li>
-                <?php } ?>
-            </ul>
-        </div>
-        <?php } ?>
+
 
         <form method="POST" action="index.php?page=register">
             <div class="row  margin-bottom">
@@ -101,7 +216,6 @@
         </form>
     </div>
 </section>
-
 <section class="footer">
     <div class="line hidden-xs"></div>
 
@@ -212,7 +326,7 @@
 
             <div class="col-sm-12 col-xs-12  col-md-3">
 
-                <div class=" col-sm-4  find1">
+                <div class="   find1">
                     <h4>FIND WHAT YOU NEED.</h4>
                     <form action="#" method="GET" class="input-field ">
 
@@ -222,7 +336,7 @@
 
                     </form>
                 </div>
-                <div class=" col-sm-4 contact">
+                <div class="  contact">
                     <h4>CONTACT</h4>
                     <ul>
                         <li>Landoretti ART</li>
@@ -242,7 +356,7 @@
                         <!--<li><a href="#">google</a></li>-->
                     </ul>
                 </div>
-                <div class="col-sm-4 copy">
+                <div class=" copy">
                     <div class=""><img src="img/rapidssl.jpg" alt="RapidSSL"></div>
                     <p>&copy; 2013 Studio6, Inc. All rights reserved.</p>
                 </div>
@@ -288,6 +402,7 @@
 
     </div>
 </footer>
+<script src="https://use.fontawesome.com/4501d3005f.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>

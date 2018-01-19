@@ -288,7 +288,7 @@ footer {
         padding-left: 170px;
         text-transform: uppercase;
         @include media("<=large") {
-          padding-left: 240px;
+          padding-left: 155px;
         }
         @include media("<=small") {
 width: 50%;
@@ -300,7 +300,7 @@ float: left;
             font-weight: bold;
             margin-right: 65px;
             @include media("<=large") {
-              margin-right: 25px;
+              margin-right: 45px;
             }
             @include media("<=small") {
               margin-right: 0px;
@@ -318,6 +318,7 @@ width: 40px;
         /*tweede menu*/
         &:nth-child(2) {
           padding-left: 0;
+          padding-right: 34px;
           @include media(">large") {
             padding-right: 50px;
           }

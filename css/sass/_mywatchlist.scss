@@ -1,59 +1,59 @@
-/* css van myAuctions*/
 
-
-
-
-#myAuctions{
+#myWatchlist {
 
     h1 {
       margin-bottom: 0;
     }
 
-    .links{
-      font-size: 1.2em;
-      color: $blue;
-      font-weight: bold;
-
-      background-color: $lightestGrey;
-      border: 1px solid $lightergrey;
-      width: 157px;
+    .knoppen {
       height: 50px;
-      line-height: 50px;
-      text-align: center;
-    }
-  //#arrow{
-  //  color: $blue;
-  //}
-    .pending, .refused, .active, .expired, .sold {
-      margin-bottom: 55px;
-      h3 {
-        font-family: 'Helvetica', sans-serif;
-        font-weight: lighter;
-        margin-bottom: 27px;
+      a {
+        font-size: 1.2em;
+        color: $blue;
+        font-weight: bold;
+
+        background-color: $lightestGrey;
+        border: 1px solid $lightergrey;
+        width: 157px;
+        height: 100%;
+        line-height: 50px;
+        text-align: center;
+        margin-bottom: 46px;
+
+
+          margin-right: 5px;
+
       }
     }
 
-    .pending {
-      clear: both;
-      display: block;
-      content: "";
-      margin-bottom: 55px;
-    }
+    .watchlist {
+      .filter {
+        ul {
+          display: inline-block;
+          li {
+            float: left;
+            font-size: 1.2em;
 
-    .active {
-      p {
-        font-size: 1.6em;
-        color: #545353;
+            &:first-child {
+              font-weight: bold;
+              a {
+                padding-bottom: 7px;
+                border-bottom: 3px solid #d4d4d4;
+              }
+            }
+
+            &:nth-child(2), &:nth-child(3) {
+              margin-left: 6px;
+            }
+            a {
+              color: #545353;
+            }
+          }
+        }
       }
     }
-
-    .sold {
-      margin-bottom: 0;
-    }
-
 
 }
-
 table {
   width: 100%;
   thead {

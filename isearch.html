@@ -32,7 +32,7 @@
 <body>
 <nav class="navbar navbar-default">
 
-    <div class="container">
+    <div  id="headnav">
 
 
         <div class="navbar-header">
@@ -47,26 +47,41 @@
 
             </button>
 
-            <a href="/" class="navbar-brand logo">Landoretti</a>
+            <a href="index.html" class="navbar-brand logo"></a>
 
         </div>
 
-        <div class="information">
+        <div class="top-menu">
 
             <div class="collapse navbar-collapse navigation">
 
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav loggin">
 
-
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="art.html">art</a></li>
-                    <li><a href="isearch.html">isearch</a></li>
-                    <li><a href="myauctions.html">myauctions</a></li>
-                    <li><a href="mybids.html">mybids</a></li>
-                    <li><a href="contact.html">contact</a></li>
+                    <li><a href="mywatchlist.html"><img src="img/icon/watchlist.png" alt="profile" class="navicons">watchlist</a></li>
+                    <li><a href="profile.html"><img src="img/icon/profile.png" alt="profile" class="navicons">profile</a></li>
+                    <li><a href="">logout</a></li>
                 </ul>
 
+                <ul class="nav navbar-nav login">
 
+                    <li><a href="register.html">register</a></li>
+                    <li  id="btnLogin"><a href="">login</a></li>
+                </ul>
+                <form id="interaction">
+                    <input type="text" id="User" name="username" placeholder="User">
+                    <input type="text" id="Psw" name="psw" placeholder="Password">
+
+                    <input type="image" alt="Submit" value="search" src="img/pijltjeR.png">
+                </form>
+
+
+                <form action="#" method="GET" class="navbar-right input-field find">
+
+                    <input type="text" name="search" placeholder="Search">
+
+                    <input type="image" value="search" src="img/icon/search.png">
+
+                </form>
 
             </div>
 
@@ -74,24 +89,28 @@
 
     </div>
 
-    <div class="main-navigation">
+    <div class="main-menu">
 
         <div class="container">
 
-            <div class="collapse navbar-collapse navigation">
+            <div class="collapse navbar-collapse menu">
 
                 <ul class="nav navbar-nav">
 
-
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="art.html">art</a></li>
+                    <li><a href="isearch.html">isearch</a></li>
+                    <li><a href="myauctions.html">myauctions</a></li>
+                    <li><a href="myauctions.html">mybids</a></li>
+                    <li><a href="contact.html">contact</a></li>
 
                 </ul>
 
-                <ul class="nav navbar-nav navbar-right language">
+                <ul class="nav navbar-nav navbar-right taal">
 
                     <li><a href="nl">nl</a></li>
-
                     <li><a href="fr">fr</a></li>
-                    <li><a href="en">en</a></li>
+                    <li><a href="en" class="active">en</a></li>
 
                 </ul>
 
