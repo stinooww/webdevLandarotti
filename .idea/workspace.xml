@@ -2,25 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e17788e8-bd02-436d-bc9a-b13213b5bc47" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/sass/_mywatchlist.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/.sass-cache/654a45c0d1142468d393d61408432722c8c486a1/_footer.scssc" afterPath="$PROJECT_DIR$/css/.sass-cache/654a45c0d1142468d393d61408432722c8c486a1/_footer.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/.sass-cache/654a45c0d1142468d393d61408432722c8c486a1/main.scssc" afterPath="$PROJECT_DIR$/css/.sass-cache/654a45c0d1142468d393d61408432722c8c486a1/main.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css.map" afterPath="$PROJECT_DIR$/css/main.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/sass/_footer.scss" afterPath="$PROJECT_DIR$/css/sass/_footer.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/sass/_myauctions.scss" afterPath="$PROJECT_DIR$/css/sass/_myauctions.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/sass/main.css" afterPath="$PROJECT_DIR$/css/sass/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/sass/main.css.map" afterPath="$PROJECT_DIR$/css/sass/main.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/sass/main.scss" afterPath="$PROJECT_DIR$/css/sass/main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/detail.html" afterPath="$PROJECT_DIR$/detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/faq.html" afterPath="$PROJECT_DIR$/faq.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/isearch.html" afterPath="$PROJECT_DIR$/isearch.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myauctions.html" afterPath="$PROJECT_DIR$/myauctions.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/sass/_mywatchlist.scss" afterPath="$PROJECT_DIR$/css/sass/_mywatchlist.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mywatchlist.html" afterPath="$PROJECT_DIR$/mywatchlist.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/newauction.html" afterPath="$PROJECT_DIR$/newauction.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/profile.html" afterPath="$PROJECT_DIR$/profile.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/register.html" afterPath="$PROJECT_DIR$/register.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -95,8 +79,8 @@
             <file leaf-file-name="_mywatchlist.scss" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/css/sass/_mywatchlist.scss">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="374">
-                    <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+                  <state relative-caret-position="0">
+                    <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
                     <folding />
                   </state>
                 </provider>
@@ -159,11 +143,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mywatchlist.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mywatchlist.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mywatchlist.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="234" column="54" lean-forward="false" selection-start-line="234" selection-start-column="54" selection-end-line="234" selection-end-column="54" />
+            <state relative-caret-position="3230">
+              <caret line="394" column="84" lean-forward="false" selection-start-line="394" selection-start-column="84" selection-end-line="394" selection-end-column="84" />
               <folding>
                 <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -172,17 +156,17 @@
                 <element signature="e#5532#5536#0" expanded="true" />
                 <element signature="e#5772#5776#0" expanded="true" />
                 <element signature="e#5870#5874#0" expanded="true" />
-                <element signature="e#9037#9043#0" expanded="true" />
-                <element signature="e#9902#9908#0" expanded="true" />
-                <element signature="e#10769#10775#0" expanded="true" />
-                <element signature="e#11633#11639#0" expanded="true" />
-                <element signature="e#12501#12507#0" expanded="true" />
-                <element signature="e#13365#13371#0" expanded="true" />
-                <element signature="e#14230#14236#0" expanded="true" />
-                <element signature="e#15098#15104#0" expanded="true" />
-                <element signature="e#15963#15969#0" expanded="true" />
-                <element signature="e#16828#16834#0" expanded="true" />
-                <element signature="e#17698#17704#0" expanded="true" />
+                <element signature="e#9071#9077#0" expanded="true" />
+                <element signature="e#9926#9932#0" expanded="true" />
+                <element signature="e#10787#10793#0" expanded="true" />
+                <element signature="e#11648#11654#0" expanded="true" />
+                <element signature="e#12502#12508#0" expanded="true" />
+                <element signature="e#13363#13369#0" expanded="true" />
+                <element signature="e#14216#14222#0" expanded="true" />
+                <element signature="e#15082#15088#0" expanded="true" />
+                <element signature="e#15948#15954#0" expanded="true" />
+                <element signature="e#16817#16823#0" expanded="true" />
+                <element signature="e#17671#17677#0" expanded="true" />
                 <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#1;n#div#0;n#div#1;n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -193,11 +177,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/sass/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+            <state relative-caret-position="612">
+              <caret line="36" column="10" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -310,8 +294,8 @@
         <option value="$PROJECT_DIR$/css/sass/main.scss" />
         <option value="$PROJECT_DIR$/css/sass/mywatchlist.scss" />
         <option value="$PROJECT_DIR$/css/sass/_myauctions.scss" />
-        <option value="$PROJECT_DIR$/css/sass/_mywatchlist.scss" />
         <option value="$PROJECT_DIR$/mywatchlist.html" />
+        <option value="$PROJECT_DIR$/css/sass/_mywatchlist.scss" />
       </list>
     </option>
   </component>
@@ -436,7 +420,7 @@
       <workItem from="1515580906406" duration="20619000" />
       <workItem from="1515664668161" duration="20709000" />
       <workItem from="1516021304778" duration="12802000" />
-      <workItem from="1516179649495" duration="64065000" />
+      <workItem from="1516179649495" duration="65145000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1514460452668</created>
@@ -739,11 +723,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516360567956</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="my watchlist  pagina aangemaakt,  html + scss  todo: responsive make">
+      <created>1516363831501</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1516363831501</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166185000" />
+    <option name="totallyTimeSpent" value="167265000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1953" y="7" width="1044" height="1047" extended-state="0" />
@@ -774,7 +765,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="responsive nav (2)" />
     <MESSAGE value="responsive nav (3)" />
     <MESSAGE value="landingpage fine tuning" />
     <MESSAGE value="landingpage fine tuning deel 2" />
@@ -799,7 +789,8 @@
     <MESSAGE value=" add new auction  -- start form validatie  aanpasinge auction css" />
     <MESSAGE value="login en logged in" />
     <MESSAGE value="login en loggedin helemaal gefixd" />
-    <option name="LAST_COMMIT_MESSAGE" value="login en loggedin helemaal gefixd" />
+    <MESSAGE value="my watchlist  pagina aangemaakt,  html + scss  todo: responsive make" />
+    <option name="LAST_COMMIT_MESSAGE" value="my watchlist  pagina aangemaakt,  html + scss  todo: responsive make" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1212,14 +1203,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/sass/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1261,18 +1244,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/sass/_mywatchlist.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mywatchlist.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="234" column="54" lean-forward="false" selection-start-line="234" selection-start-column="54" selection-end-line="234" selection-end-column="54" />
+        <state relative-caret-position="3230">
+          <caret line="394" column="84" lean-forward="false" selection-start-line="394" selection-start-column="84" selection-end-line="394" selection-end-column="84" />
           <folding>
             <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -1281,23 +1256,39 @@
             <element signature="e#5532#5536#0" expanded="true" />
             <element signature="e#5772#5776#0" expanded="true" />
             <element signature="e#5870#5874#0" expanded="true" />
-            <element signature="e#9037#9043#0" expanded="true" />
-            <element signature="e#9902#9908#0" expanded="true" />
-            <element signature="e#10769#10775#0" expanded="true" />
-            <element signature="e#11633#11639#0" expanded="true" />
-            <element signature="e#12501#12507#0" expanded="true" />
-            <element signature="e#13365#13371#0" expanded="true" />
-            <element signature="e#14230#14236#0" expanded="true" />
-            <element signature="e#15098#15104#0" expanded="true" />
-            <element signature="e#15963#15969#0" expanded="true" />
-            <element signature="e#16828#16834#0" expanded="true" />
-            <element signature="e#17698#17704#0" expanded="true" />
+            <element signature="e#9071#9077#0" expanded="true" />
+            <element signature="e#9926#9932#0" expanded="true" />
+            <element signature="e#10787#10793#0" expanded="true" />
+            <element signature="e#11648#11654#0" expanded="true" />
+            <element signature="e#12502#12508#0" expanded="true" />
+            <element signature="e#13363#13369#0" expanded="true" />
+            <element signature="e#14216#14222#0" expanded="true" />
+            <element signature="e#15082#15088#0" expanded="true" />
+            <element signature="e#15948#15954#0" expanded="true" />
+            <element signature="e#16817#16823#0" expanded="true" />
+            <element signature="e#17671#17677#0" expanded="true" />
             <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#1;n#div#0;n#div#1;n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#1;n#div#0;n#div#1;n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/sass/_mywatchlist.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/sass/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="10" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>

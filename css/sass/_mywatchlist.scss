@@ -1,4 +1,4 @@
-
+/*css van my watchlist*/
 #myWatchlist {
 
     h1 {
@@ -54,6 +54,7 @@
     }
 
 }
+/* css van de tabel*/
 table {
   width: 100%;
   thead {
@@ -63,9 +64,9 @@ table {
         background-color: #f8f8f8;
         text-align: center;
         height: 35px;
-        color: #545353;
-        font-size: .95em;
-        font-weight: normal;
+        color: $hoverGrey;
+        font-size: 1em;
+
 
         &:first-child {
           width: calc(100%/1024*535);
