@@ -75,9 +75,9 @@ register.style.display = "none";
 
 /**function bindEvents: functie  die alle event handlers  aan de functies verbind */
 function bindEvents() {
-    // var formbtn = document.getElementById("addNewAuc");
-    // formbtn.addEventListener('submit', send);
-    //
+    var formbtn = document.getElementById("addNewAuc");
+    formbtn.addEventListener('submit', send);
+
     var login = document.getElementById("btnLogin");
     login.addEventListener('click', loginForm);
 

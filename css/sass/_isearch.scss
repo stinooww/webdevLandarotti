@@ -1,114 +1,21 @@
 
-
-
-/*
-*
-*	CSS of the ISEARCH page
-*
-*/
-.isearch-bg {
-  background: url('/img/platenspeler.jpg');
-  background-size: cover;
-  background-position-x: center;
-  background-repeat: no-repeat;
-  height: 536px;
-  width: 100%;
-
-  .container {
-    padding-top: 104px;
-    height: 100%;
-
-    .info {
-      position: relative;
-      height: calc(100%/432*332);
-      margin: 50px 0;
-      width: 314px;
-
-      color: white;
-
-      .top {
-        height: calc(100%/332*252);
-
-        h1 {
-          font-size: 3em;
-          padding: 30px 0 0 30px;
-          height: 71px;
-          color: white;
-          margin: 0;
-
-          border-bottom: 1px solid #6c7dc6;
-        }
-        p {
-          margin: 0;
-          font-size: 1.5em;
-          padding: 21px 30px 0 30px;
-        }
-
-        span {
-          padding-left: 30px;
-          margin-top: 14px;
-          display: inline-block;
-
-          &.bold {
-            font-size: 1.5em;
-          }
-
-          &.euro-size {
-            font-size: 1.8em;
-            padding-left: 0;
-          }
-        }
-      }
-
-      .bottom {
-        display: inline-block;
-        background-color: white;
-        height: calc(100%/332*80);
-        width: 100%;
-        color: $green;
-        padding-left: 30px;
-        font-size: 2em;
-        text-transform: uppercase;
-
-        align-items: center;
-
-        span {
-          display: inline-block;
-          background: url('/img/icon/link-arrow.png');
-          background-repeat: no-repeat;
-          height: 22px;
-          width: 11px;
-          margin-left: 20px;
-        }
-
-        &:hover {
-          text-decoration: none;
-        }
-      }
-    }
-  }
-}
-
-#isearch-content {
+/*isearch css*/
+#isearch{
   .container {
     padding: 0;
 
-    @media (max-width: 767px) {
-      padding: 0 15px;
-    }
 
     h3 {
-      font-family: 'Helvetica', sans-serif;
+
       font-weight: lighter;
       color: #545353;
       margin-bottom: 23px;
     }
 
     form {
-      margin-left: 15px;
-      margin-right: 15px;
+     margin: 0 15px;
 
-      .right-marg {
+      .marginR {
         margin-right: calc(100%/1024*60);
       }
 
@@ -117,7 +24,7 @@
           padding: 0;
           margin-bottom: 0;
 
-          @media (max-width: 767px) {
+          @include media("<=medium") {
             width: 100% !important;
             margin-bottom: 40px;
           }
@@ -141,7 +48,7 @@
             width: calc(100%/1024*482);
           }
 
-          @media (min-width: 768px) {
+          @include media(">=medium") {
             margin-bottom: 40px;
           }
         }
@@ -166,112 +73,30 @@
           }
         }
 
-        .button {
-          width: calc(100%/1024*211);
-
-          @media (max-width: 767px) {
+       #submit {
+         float: left;
+         margin-top: 3%;
+          width: 140px;
+         background-color: $darkerGrey;
+         color: white;
+         font-weight: bold;
+         font-size: 1.4em;
+          @include media("<=medium") {
             margin-bottom: 0;
           }
 
-          input {
-            background-color: $darkerGrey;
-            width: 100%;
-            color: white;
-            font-weight: bold;
-            font-size: 1.4em;
-          }
+
+
+
         }
       }
+
     }
-  }
-}
 
-#isearch-overview {
-  margin-top: 75px;
-
-  .container {
-    padding: 0;
-    @media (max-width: 767px) {
+    @include media("<=medium") {
       padding: 0 15px;
     }
-    h3 {
-      font-family: 'Helvetica', sans-serif;
-      font-weight: lighter;
-      color: #545353;
-      margin-bottom: 28px;
-    }
-
-    .articles {
-      float: left;
-      height: auto;
-      &::after {
-        clear: both;
-        display: block;
-        content: "";
-      }
-      article {
-        padding: 0;
-        height: 95px;
-        border: 1px solid $lightergrey;
-        border-bottom: 0;
-
-        display: flex;
-        align-items: center;
-
-        @media (max-width: 767px) {
-          height: auto;
-          padding: 15px 0;
-        }
-
-        &:last-child {
-          border-bottom: 1px solid $lightergrey;
-        }
-
-        .info {
-          width: calc(100%/1024*813);
-          padding-left: 0;
-          p {
-            padding-left: 46px;
-            margin-bottom: 0;
-            font-size: 1.5em;
-            color: $footerGrey;
-
-            @media (max-width: 767px) {
-              padding-left: 15px;
-            }
-
-            span {
-              font-weight: bold;
-            }
-          }
-        }
-
-        .button {
-          width: calc(100%/1024*211);
-
-          display: flex;
-          justify-content: center;
-
-          a {
-            display: inline-block;
-            width: 172px;
-            background-color: $lightestGrey;
-            height: 48px;
-            text-align: center;
-            line-height: 48px;
-            border: 1px solid $lightergrey;
-            font-size: 1.2em;
-            font-weight: bold;
-            color: $blue;
-            text-decoration: none;
-
-            &:hover {
-              background-color: $hoverGreyBtn;
-            }
-          }
-        }
-      }
-    }
   }
-}
 
+
+}

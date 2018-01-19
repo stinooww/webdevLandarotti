@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="google-site-verification" content="bZrlsX87Je_E-996kJTqa0KdxW_XV4w0Wl0F61Z8U-4" />
     <title>Landoretti</title>
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
@@ -23,6 +24,9 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="landoretti biedt u mooie kunstwerken aan voor een schappelijke prijs">
+    <meta name="keywords" content="landoretti,kunstwerken,veilingsite,webdevelopment">
+    <meta name="author" content="Stijn Heynderickx">
     <!-- Css files -->
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -125,10 +129,7 @@
     <div class="container">
         <div class="breadcrumbs">
             <ul>
-                <li><a href="index.html">Home &gt;</a></li>
-               <a href="#">Auctions &gt;</a>
-               <a href="#">Salvador Dali &gt;</a>
-               <a href="#">Dance of Time III</a></li>
+                <li><a href="index.html">Home &gt;</a>               <a href="#">Auctions &gt;</a>               <a href="#">Salvador Dali &gt;</a>               <a href="#">Dance of Time III</a></li>
             </ul>
         </div>
 
@@ -324,7 +325,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-12 col-xs-12  col-md-3">
+            <div class=" hidden-sm hidden-xs  col-md-3">
 
                 <div class="   find1">
                     <h4>FIND WHAT YOU NEED.</h4>
@@ -349,7 +350,7 @@
 
                     </ul>
                     <ul class="social-media">
-                        <img src="img/socialmedia.png" alt="social media" id="social">
+                        <img src="img/socialmedia.png" alt="social media" class="social">
                         <!--<li><a href="#">facebook</a></li>-->
                         <!--<li><a href="#">twitter</a></li>-->
                         <!--<li><a href="#">youtube</a></li>-->
@@ -360,6 +361,45 @@
                     <div class=""><img src="img/rapidssl.jpg" alt="RapidSSL"></div>
                     <p>&copy; 2013 Studio6, Inc. All rights reserved.</p>
                 </div>
+            </div>
+
+            <div class="hidden-md hidden-lg">
+                <div class=" col-sm-4 col-xs-12 find1">
+                    <h4>FIND WHAT YOU NEED.</h4>
+                    <form action="#" method="GET" class="input-field ">
+
+                        <input type="text" name="search" placeholder="Search">
+
+                        <input type="image" value="search" src="img/icon/search.png">
+
+                    </form>
+                </div>
+                <div class="col-sm-4 col-xs-12 contact">
+                    <h4>CONTACT</h4>
+                    <ul>
+                        <li>Landoretti ART</li>
+                        <li>Straatnaam xxx</li>
+                        <li>xxxx, Oostende</li>
+
+                        <li class="contactInf"><i class="fa fa-phone" aria-hidden="true"></i>    +xx (0)x xxx xx xx</li>
+                        <li class="contactInf"><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="#">      info@landorettiart.com</a></li>
+
+
+                    </ul>
+
+                </div>
+                <div class="col-sm-4 col-xs-12 copy">
+                    <ul class="social-media">
+                        <img src="img/socialmedia.png" alt="social media" class="social">
+                        <!--<li><a href="#">facebook</a></li>-->
+                        <!--<li><a href="#">twitter</a></li>-->
+                        <!--<li><a href="#">youtube</a></li>-->
+                        <!--<li><a href="#">google</a></li>-->
+                    </ul>
+                    <div class="hidden-xs"><img src="img/rapidssl.jpg" alt="RapidSSL"></div>
+                    <p class="hidden-xs">&copy; 2013 Studio6, Inc. All rights reserved.</p>
+                </div>
+
             </div>
 
 
@@ -376,16 +416,17 @@
 
             <div class="logo"><img src="img/logo.png" alt="Landoretti"></div>
             <div class="col-xs-visible col-xs-12">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav hidden-xs">
                     <li><a href="index.html">home</a></li>
                     <li><a href="art.html">art</a></li>
+                    <li><a href="isearch.html">isearch</a></li>
                     <li><a href="myauctions.html">myauctions</a></li>
-                    <li><a href="mybids.html">mybids</a></li>
+                    <li><a href="myauctions.html">mybids</a></li>
                     <li><a href="contact.html">contact</a></li>
 
                 </ul>
-
-                <ul class="nav navbar-nav navbar-right language">
+                <p id="rights" class="col-xs-visible">&copy; 2013 Studio6, Inc. All rights reserved.</p>
+                <ul class="nav navbar-nav navbar-right language hidden-xs">
 
                     <li><a href="nl">nl</a></li>
                     <li><a href="fr">fr</a></li>

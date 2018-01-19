@@ -8,6 +8,7 @@
 @import "detail";
 @import "myauctions";
 @import "mywatchlist";
+
 $font-weight-light:300;
 $font-weight-regular:400;
 $font-weight-bold:600;
@@ -53,10 +54,13 @@ body {
 
 h1 {
   font-family: 'Helvetica', sans-serif;
-  font-size: 4.5em;
+  font-size: 4em;
   font-weight: $font-weight-regular;
   margin: 55px 0;
-  color: #545353;
+  //color: #545353;
+  color: #0a1e75;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 h2 {
